@@ -1,3 +1,11 @@
+@font-face {
+    font-family: museo slab;
+    src: url(../fonts/museoslab_500_macroman/Museo_Slab_500_2-webfont.woff);
+}
+@font-face {
+    font-family: museo sans;
+    src: url(../fonts/museosans_500_macroman/MuseoSans_500-webfont.woff);
+}
 *{
     box-sizing: border-box;
     margin: 0;
