@@ -11,3 +11,74 @@
     margin: 0;
     padding: 0;
 }
+ul li, a{
+    text-decoration: none;
+    list-style: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.flex_container{
+    background-color: black;
+}
+.flex_box{
+    margin: auto;
+    width: 1140px;
+}
+.logo-mark{
+    width: 250px;
+    height: 75px;
+    color: white;
+}
+.flex_box h6{
+    text-align: center;
+    color: white; 
+     font-size: 20px;
+     font-weight: lighter;
+    font-family: museo sans;
+    margin: 30px 0px 10px -130px;  
+}
+.flex_box h3{
+    font-size: 30px;
+    font-family: museo sans;
+    color: #bac0c3;
+}
+.godaddy_guides h1 {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: museo sans;
+    font-weight: normal;
+}
+.godaddy_guides h1 svg, .godaddy_guides h1 p{
+    margin: 20px 0px 0px 20px;  
+}
+.footer_links{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 50px 0px 0px 0px; 
+}
+.footer_left-block, .footer_right-block{
+    display: flex;
+    /* align-items:center; */
+    justify-content: space-between;
+}
+.single_block--left{
+    margin: 0px 0px 0px 50px; 
+}
+.single_block--right{
+    margin: 0px 50px 0px 0px; 
+}
+.single_block--left .plain_title, .single_block--left .footer--responsive li,
+.single_block--right .plain_title, .single_block--right .footer--responsive li
+{
+    margin: 0px 0px 25px 0px; 
+    font-family: museo sans;
+    font-size: 16px;
+    font-weight: normal;
+    color: #9ba2a5;
+}
+.single_block--left .plain_title{
+    padding: 0px 0px 25px 0px; 
+}
