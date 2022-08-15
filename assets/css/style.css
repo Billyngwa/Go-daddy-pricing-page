@@ -6,6 +6,19 @@
     font-family: museo sans;
     src: url(../fonts/museosans_500_macroman/MuseoSans_500-webfont.woff);
 }
+@font-face {
+    font-family: source code;
+    src: url(../fonts/source_code/fonts/SourceCodePro-Regular.woff);
+}
+@font-face {
+    font-family: cantarell;
+    src: url(../fonts/cantarel/cantarell-regular-webfont.woff);
+}
+hr{
+    background-color:#e4e7eb48; ;
+    border: none;
+    height: 1px;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -19,14 +32,14 @@ a:hover{
     text-decoration: underline;
 }
 .flex_container{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.948);
 }
 .flex_box{
     margin: auto;
-    width: 1140px;
+    width: 1210px;
 }
 .logo-mark{
-    width: 250px;
+    width: 0px;
     height: 75px;
     color: white;
 }
@@ -36,22 +49,27 @@ a:hover{
      font-size: 20px;
      font-weight: lighter;
     font-family: museo sans;
-    margin: 30px 0px 10px -130px;  
+    margin: 40px 0px 20px -20px;  
 }
 .flex_box h3{
     font-size: 30px;
     font-family: museo sans;
     color: #bac0c3;
 }
+.godaddy_guides h3{
+    padding: 30px 0px 0px 0px; 
+}
 .godaddy_guides h1 {
     display: flex;
     align-items: center;
-    font-size: 30px;
-    font-family: museo sans;
+    font-size: 40px;
+    font-family: cantarell;
     font-weight: normal;
+    color: white;
 }
 .godaddy_guides h1 svg, .godaddy_guides h1 p{
-    margin: 20px 0px 0px 20px;  
+    margin: 10px 0px 10px -329px; 
+    width: 40%;
 }
 .footer_links{
     display: flex;
@@ -65,20 +83,26 @@ a:hover{
     justify-content: space-between;
 }
 .single_block--left{
-    margin: 0px 0px 0px 50px; 
+    margin: 0px 0px 0px 60px; 
 }
 .single_block--right{
-    margin: 0px 50px 0px 0px; 
+    margin: 0px 60px 0px 0px; 
 }
 .single_block--left .plain_title, .single_block--left .footer--responsive li,
 .single_block--right .plain_title, .single_block--right .footer--responsive li
 {
-    margin: 0px 0px 25px 0px; 
+    margin: 0px 0px 30px 0px; 
+}
+.footer--responsive li a{
     font-family: museo sans;
     font-size: 16px;
     font-weight: normal;
-    color: #9ba2a5;
+    color: #e4e7eba2;
 }
-.single_block--left .plain_title{
-    padding: 0px 0px 25px 0px; 
+.single_block--left h1.plain-title, .single_block--right h1.plain-title{
+    color:white;
+    margin: 0px 0px 30px 0px; 
+    font-family: museo sans;
+    font-weight: normal;
+    font-size: 20px;
 }
