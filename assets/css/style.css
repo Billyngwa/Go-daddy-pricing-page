@@ -14,6 +14,9 @@
     font-family: cantarell;
     src: url(../fonts/cantarel/cantarell-regular-webfont.woff);
 }
+button{
+    cursor:pointer;
+}
 hr{
     background-color:#e4e7eb48; ;
     border: none;
@@ -38,7 +41,7 @@ a:hover{
     margin: auto;
     width: 1210px;
 }
-.logo-mark{
+.logo-mark, .lang-currency .logo-mark{
     width: 0px;
     height: 75px;
     color: white;
@@ -77,10 +80,12 @@ a:hover{
     justify-content: space-between;
     margin: 50px 0px 0px 0px; 
 }
-.footer_left-block, .footer_right-block{
+.about_godaddy--content, .footer_right-block{
     display: flex;
-    /* align-items:center; */
     justify-content: space-between;
+}
+.footer_left-block{
+    display: block;
 }
 .single_block--left{
     margin: 0px 0px 0px 60px; 
@@ -105,4 +110,46 @@ a:hover{
     font-family: museo sans;
     font-weight: normal;
     font-size: 20px;
+}
+/* ****************************stylling of the dropdownI********************************************* */
+.nonform{
+    display: flex;
+    align-items: center;
+}
+.logo--godaddy .logo-mark{
+    color: white;
+    width: 300px;
+    height: 75px;
+    justify-content:space-around;
+}
+.dropdown--relative{
+    position: relative;
+    display:inline-block;
+    font-size: 20px;
+    font-family: museo sans;
+    background: none;
+    border: none;
+    color: white;
+}
+.dropdown--absolute{
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+.dropdown--relative:focus .dropdown--absolute{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:1210px;
+}
+.dropdown--absolute .dropdown_ul .ul--btn{
+    margin: 0px 0px 30px 0px; 
+    text-align: justify;
+    display: block;
+    font-size: 20px;
+    font-family: museo sans;
+    color: rgb(40, 185, 166);
+}
+.ul--btn a:visited{
+    color: aqua;
 }
