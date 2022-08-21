@@ -136,7 +136,6 @@ select{
 .nonform i{
     color:white;
     font-size:20px;
-    padding-left: -4px;
 }
 /* ****************************stylling of the dropdownI********************************************* */
 .nonform{
@@ -244,4 +243,53 @@ select{
 }
 .policy li a{
     color: #bac0c3;
+}
+/* ********************* end of footer and header styles ******************** */
+
+/* ********************** start of main styles ******************************* */
+.web_marketting--one, .million_customers--two, .disclaimers--four{
+    background-color: #ffff;
+    margin:90px 0px 0px 0px; 
+}
+.business_tools{
+ text-align: center;
+ font-size: 50px;
+}
+.flex_box .tool_description{
+    text-align: center;
+    font-size: 20px;
+    color: #708090;;;
+    font-family:museo sans;
+    font-weight: normal;
+
+}
+.webmarketting--emails{
+    display: flex;
+    justify-content: space-between;
+    margin:0px 0px 0px 0px; 
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+.web_marketing--image{
+    width: 561px;
+    height: 561px;
+   
+}
+.web_marketing--image img.rounded_corners{
+    width: 561px;
+    height: 561px;
+    object-fit: contain;
+    border-radius: 120px;
+}
+/* *********** style for the review ********************** */
+
+.review--star{
+    display: inline-flex;
+    flex-direction: row;
+}
+.review--star li i{
+    color: aqua;
+}
+.fivestar_fourstar--reviews{
+    display: flex;
+    justify-content: space-between;
 }
