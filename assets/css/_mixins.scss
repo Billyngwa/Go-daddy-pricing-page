@@ -1,0 +1,42 @@
+@mixin styleType {
+    list-style: none;
+    text-decoration: none;
+}
+@mixin displayElementsflex ($align) {
+    display: flex;
+    justify-content: space-between;
+    align-items: $align;
+}
+@mixin animation_variables 
+($animation_name,$animation_timing_function,$animation_duration,$animation_delay,$animation_direcion,$animation_iteration_count){
+    animation-name:$animation_name;
+    animation-timing-function:$animation_timing_function;
+    animation-duration:$animation_duration;
+    animation-delay:$animation_delay;
+    animation-direction:$animation_direcion;
+    animation-iteration-count:$animation_iteration_count;
+}
+@mixin container{
+    width: 95%;
+    margin-left:2.5%;
+}
+@mixin sectionWidth-backgroudColor ($back-ground,$width) {
+    background-color: $back-ground;
+    width: $width;
+}
+@mixin inputSearch($border-bottom,$background,$color,$font-size,$width,$height){
+    border: none;
+    outline: none;
+    border-bottom:$border-bottom;
+    background: $background;
+    color: $color;
+    font-size: $font-size;
+    width: $width;
+    height: $height;
+}
+@mixin footerContainer ($display,$width, $marginLeft) {
+    display: $display;
+    width: $width;
+    margin:80px 0px 0px 0px;
+    margin-left: $marginLeft;
+}

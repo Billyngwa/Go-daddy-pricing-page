@@ -15,20 +15,20 @@
     <header>
         <section class="header_section">
             <div class="container">
-                <nav class="nav_panel">
-                    <a href="#" class="logo">
-                        <div class="logo-div">
-                            <img src="assets/images/godaddy_logo.svg" alt="">
-                        </div>
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/godaddy_logo.svg" alt="the logo is here">
                     </a>
+                </div>
+                <nav class="nav_panel">
                     <ul class="nav_panel--elements">
                         <li class="nav_list--relative">
-                            <p>DOMAINS
+                            DOMAINS
                             <i class="fa-solid fa-circle-chevron-down"></i>
-                            </p>
-                            <ul class="nav_list--absolute">
+                        
+                            <ul class="nav_list_absolute">
                                 <form action="#" class="search_input">
-                                    <input type="search" placeholder="Find a domain" />
+                                    <input type="search" class="type-search" placeholder="Find a domain" />
                                     <button class="search_button">
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                     </button>
@@ -42,82 +42,87 @@
                             </ul>
                         </li>
                         <li class="nav_list--relative">
-                            <p>WEBSITE BUILDER
+                            WEBSITE BUILDER
                                 <i class="fa-solid fa-circle-chevron-down"></i>
-                            </p>
-                            <ul class="nav_list--absolute">
+                            <ul class="nav_list_absolute">
                                 <li class="list_items"><a href="#">Website Builder</a></li>
                                 <li class="list_items"><a href="#">Online Store Builder</a></li>
                                 <li class="list_items"><a href="#">Web Design & Marketing Services</a></li>
                             </ul>
                         </li>
                         <li class="nav_list--relative">
-                            <p>EMAIL & MARKETING
+                            EMAIL & MARKETING
                             <i class="fa-solid fa-circle-chevron-down"></i>
-                            </p>
-                            <ul class="nav_list--absolute">
+                           
+                            <ul class="nav_list_absolute">
                                 <li class="list_items"><a href="#">Google Workspace / G Suite</a></li>
                                 <li class="list_items"><a href="#">Second Phone Number</a></li>
                             </ul>
                         </li>
                         <li class="nav_list--relative">
-                            <p>WEB HOSTING
+                            WEB HOSTING
                             <i class="fa-solid fa-circle-chevron-down"></i>
-                            </p>
-                            <ul class="nav_list--absolute">
+                            
+                            <ul class="nav_list_absolute">
                                 <li class="list_items"><a href="#">Hosting Plans</a></li>
                                 <li class="list_items"><a href="#">WordPress Hosting</a></li>
                                 <li class="list_items"><a href="#">WP Live</a></li>
                             </ul>
                         </li>
                         <li class="nav_list--relative">
-                            <p>SECURITY
+                            SECURITY
                             <i class="fa-solid fa-circle-chevron-down"></i>
-                            </p>
-                            <ul class="nav_list--absolute">
+                        
+                            <ul class="nav_list_absolute">
                                 <li class="list_items"><a href="#">SSL Certificates</a></li>
                                 <li class="list_items"><a href="#">SiteLock Security</a></li>
                                 <li class="list_items"><a href="#">Compare Security Products</a></li>
                             </ul>
                         </li>
-                        <li class="nav_list--relative">
-                            <P style="cursor: pointer ;">Help</P>
-                            <div style="right:0px;" class="nav_list--absolute">
-                                <p class="call_us">
-                                    <span style="font-size:16px ;">Call Us</span> <br>
+                    </ul>
+                </nav>
+                <div class="help_cart_login">
+                    <div class="nav_list_relative_help ">
+                        <h3>Help</h3>
+                        <div style="right:-130px; width:300px;" class="nav_list_absolute_help help_header">
+                            <div class="help_divs">
+                                <h4 class="call_heading">Call Us</h4>
+                                <p class="heading_description">
                                     Our support team is available to help from MON-FRI, 7 AM ET to 11 PM ET.
                                 </p>
-                                <p class="call">
+                                <p class="call_number">
                                     <i class="fa-solid fa-phone"></i>
                                     (800) 403-3568
                                 </p>
-                                <hr>
-                                <p class="call_us">
-                                    <span style="font-size: 16px;">Chat with Us</span> <br>
-                                    Chat now with our support team for quick answers.
-                                </p>
+                            </div>
+                            <hr>
+                            <div class="help_divs">
+                                <h4 class="call_heading">Chat with Us</h4>
+                                <p  class="heading_description">Chat now with our support team for quick answers.</p>
                                 <button class="chat_now"><a href="#">CHAT NOW</a></button>
-                                <hr>
-                                <p class="call_us">
-                                    <span style="font-size:16px ;">find answers</span> <br>
-                                    Chat now with our support team for quick answers.
-                                </p>
+                            </div>
+                            <hr>
+                            <div class="help_divs">
+                                <h4 class="call_heading">find answers</h4>
+                                <p  class="heading_description">Chat now with our support team for quick answers.</p>
                                 <button class="browse_article"><a href="#">BROWSE ARTICLES</a></button>
                             </div>
-                        </li>
-                        <li class="nav_list--relative">
-                            <p style="cursor:pointer;"><i class="fa-solid fa-cart-shopping"></i></p>
-                            <div class="nav_list--absolute-cart">
-                                <p class="cart">Cart</p>
-                                <hr>
-                                <p>Your cart is empty.</p>
-                                <hr>
-                                <button class="cart_search"><a href="#">SEARCH FOR A DOMAIN</a></button>
-                            </div>
-                        </li>
-                        <li class="login"><a href="#">Login</a></li>
-                    </ul>
-                </nav>
+                        </div>
+                    </div>
+                    <div class="nav_list_relative_cart header_cart">
+                        <p><i class="fa-solid fa-cart-shopping"></i></p>
+                        <div class="nav_list_absolute_cart">
+                           <label for="cart">Cart</label>
+                            <form action="#" class="shopping_cart_form">
+                                <input type="number" placeholder="Your cart is empty" />
+                                <button class="cart_search">SEARCH FOR A DOMAIN</button>
+                            </form>
+                        </div>
+                    </div>
+                    <button class="login"><a href="#">Login</a></button>
+                </div>
+            </div>
+            <div class="hero">
                 <div class="banner_section">
                     <div class="form_and_headings">
                         <h4>DOMAIN NAME SEARCH</h4>
@@ -135,6 +140,11 @@
     </header>
     <section>
         <section class="section-one container">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/godaddy_logo.svg" alt="">
+                </a>
+            </div>
             <ul class="section-one-ul">
                 <li class="list-items">
                     <h1 class="section-one-heading"><span>.</span>com</h1>

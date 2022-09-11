@@ -1,48 +1,7 @@
 @import './variables';
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-@mixin styleType {
-    list-style: none;
-    text-decoration: none;
-}
-@mixin displayElementsflex ($align) {
-    display: flex;
-    justify-content: space-between;
-    align-items: $align;
-}
-@mixin container{
-    width: 95%;
-    margin-left:2.5%;
-}
-@mixin sectionWidth-backgroudColor ($back-ground,$width) {
-    background-color: $back-ground;
-    width: $width;
-}
-@mixin inputSearch($border-bottom,$background,$color,$font-size,$width,$height){
-    border: none;
-    outline: none;
-    border-bottom:$border-bottom;
-    background: $background;
-    color: $color;
-    font-size: $font-size;
-    width: $width;
-    height: $height;
-}
-@mixin footerContainer ($display,$width, $marginLeft) {
-    display: $display;
-    width: $width;
-    margin:80px 0px 0px 0px;
-    margin-left: $marginLeft;
-}
-// ul li, li{
-//     list-style: none;
-// }
-// ul li a, a{
-//     text-decoration: none;
-// }
+@import './reset';
+@import './mixins';
 @import './header';
 @import './footer';
-@import './body';
+// @import './body';
+// @import './sectionone';
