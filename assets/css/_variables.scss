@@ -1,22 +1,11 @@
-@font-face {
-    font-family: museo slab;
-    src: url(../fonts/museoslab_500_macroman/Museo_Slab_500_2-webfont.woff);
-}
-@font-face {
-    font-family: museo sans;
-    src: url(../fonts/museosans_500_macroman/MuseoSans_500-webfont.woff);
-}
-@font-face {
-    font-family: source code;
-    src: url(../fonts/source_code/fonts/SourceCodePro-Regular.woff);
-}
-@font-face {
-    font-family: cantarell;
-    src: url(../fonts/cantarel/cantarell-regular-webfont.woff);
-}
-$global:white;
-$red_color:#b63837;
-$black_color:rgb(53, 47, 47); /* or #555; 666*/
-$copyright_color:#666;
-$footer_headings:cantarell;
-$li_color:rgba(24, 243, 243, 0.685);
+$font_family:'Lato', sans-serif;
+$footer_background:#333333;
+$blue_backgroundhover:#24819a;
+$blue_background:#2a9dbc;
+$onhover_dropdownlist:#e7e7e7;
+$black_color:#000000;
+$red_background:#e24747;
+$red_backgroundhover:#b63838;
+$hero_background:#f4f4f4;
+$global:#ffff;
+$copyright_color:#666666;
