@@ -12,7 +12,15 @@ ul li a, a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+header .header_section {
+  background-color: white;
+}
 header .header_section .container {
+  padding: 0px 0px;
   width: 95%;
   margin-left: 2.5%;
   display: flex;
@@ -20,10 +28,11 @@ header .header_section .container {
   align-items: center;
 }
 header .header_section .container .logo {
-  width: 200px;
+  width: 210px;
 }
 header .header_section .container .logo a img {
   width: 100%;
+  height: 100px;
 }
 header .header_section .container nav {
   display: flex;
@@ -38,10 +47,10 @@ header .header_section .container nav .nav_panel--elements {
 header .header_section .container nav .nav_panel--elements .nav_list--relative {
   position: relative;
   cursor: default;
-  margin: 0px 0px 0px 20px;
+  margin: 0px 0px 0px 10px;
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  font-weight: 700px;
+  font-weight: 600;
   color: #333333;
 }
 header .header_section .container nav .nav_panel--elements .nav_list--relative:hover .nav_list_absolute {
@@ -52,39 +61,47 @@ header .header_section .container nav .nav_panel--elements .nav_list--relative .
   z-index: 1;
   display: none;
   background-color: white;
-  width: 23vw;
+  width: 24vw;
+  padding-top: 20px;
 }
 header .header_section .container nav .nav_panel--elements .nav_list--relative .nav_list_absolute .search_input {
   border-radius: 5px;
   border: 1px solid rgb(223, 221, 221);
-  margin: 68px 20px 0px 10px;
+  margin: 68px 20px 20px 10px;
   color: #333333;
-  height: 43px;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 43px;
 }
 header .header_section .container nav .nav_panel--elements .nav_list--relative .nav_list_absolute .search_input .type-search {
   color: #333333;
+  border: none;
+  font-size: 20px;
+  padding-left: 15px;
+  outline: none;
 }
 header .header_section .container nav .nav_panel--elements .nav_list--relative .nav_list_absolute .search_input .search_button {
   border: none;
   background-color: transparent;
   color: #b63838;
+  margin: 0px 20px 0px 0px;
 }
 header .header_section .container nav .nav_panel--elements .nav_list--relative .nav_list_absolute .search_input .search_button i {
   color: #b63838;
+  font-size: 30px;
 }
 header .header_section .container nav .nav_panel--elements .nav_list--relative .nav_list_absolute .list_items {
   width: 100%;
-  height: 9vh;
+  height: 8vh;
   padding: 20px 0px 0px 0px;
 }
 header .header_section .container nav .nav_panel--elements .nav_list--relative .nav_list_absolute .list_items:hover {
   background-color: #e7e7e7;
 }
 header .header_section .container nav .nav_panel--elements .nav_list--relative .nav_list_absolute .list_items a {
-  color: #000000;
-  font-weight: normal;
+  color: #333333;
+  font-weight: 600;
   font-size: 20px;
   text-align: center;
   margin: 0px 0px 0px 10px;
@@ -93,6 +110,13 @@ header .header_section .container nav .nav_panel--elements .nav_list--relative .
   color: #333333;
   font-size: 20px;
   text-decoration: underline;
+}
+header .header_section .container nav .nav_panel--elements .nav_list--relative .nav_list_absolute .list_items .security {
+  color: #24819a;
+  text-decoration: underline;
+}
+header .header_section .container nav .nav_panel--elements .nav_list--relative .nav_list_absolute .list_items .security:hover {
+  color: #24819a;
 }
 
 .help_cart_login {
@@ -122,8 +146,8 @@ header .header_section .container nav .nav_panel--elements .nav_list--relative .
   display: none;
   background-color: white;
   width: 23vw;
-  right: -130px;
-  width: 22vw;
+  right: -106px;
+  width: 24vw;
 }
 .help_cart_login .nav_list_relative_help .nav_list_absolute_help .help_divs {
   margin-top: 10px;
@@ -193,7 +217,8 @@ header .header_section .container nav .nav_panel--elements .nav_list--relative .
 .help_cart_login .nav_list_relative_cart {
   position: relative;
   cursor: default;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 10px 0px 0px;
+  font-size: 25px;
 }
 .help_cart_login .nav_list_relative_cart:hover .nav_list_absolute_cart {
   display: block;
@@ -247,18 +272,79 @@ header .header_section .container nav .nav_panel--elements .nav_list--relative .
   background-color: white;
   font-size: 20px;
   font-family: "Lato", sans-serif;
+  margin: 0px 0px 0px 10px;
 }
 .help_cart_login button.login a {
-  color: #000000;
+  color: #333333;
+}
+.help_cart_login button.login a:hover {
+  color: #e24747;
+  text-decoration: underline;
 }
 
 header .header_section .hero {
-  background-image: url("../../images/hero_img.jpg");
+  background-image: url("../../images/hero.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;
   width: 100%;
-  padding: 120px 0px 0px 30px;
+  padding: 150px 0px 0px 30px;
+}
+header .header_section .hero .banner_section .form_and_headings h3 {
+  color: white;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  line-height: 60px;
+}
+header .header_section .hero .banner_section .form_and_headings h1 {
+  color: white;
+  font-size: 70px;
+  font-family: "Lato", sans-serif;
+}
+header .header_section .hero .banner_section .form_and_headings form {
+  margin: 40px 0px 0px 0px;
+}
+header .header_section .hero .banner_section .form_and_headings form input {
+  color: #666666;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  text-transform: lowercase;
+  width: 78%;
+  height: 80px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0px 0px 0px 10px;
+}
+header .header_section .hero .banner_section .form_and_headings form button {
+  border: none;
+  background-color: #e24747;
+  width: 200px;
+  height: 80px;
+  margin-left: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+}
+header .header_section .hero .banner_section .form_and_headings form button:hover {
+  background-color: #b63838;
+}
+header .header_section .hero .banner_section .form_and_headings .transfer_domain a {
+  color: white;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  line-height: 60px;
+  font-weight: 700;
+}
+header .header_section .hero .banner_section .form_and_headings .domain_consideration {
+  color: white;
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  word-spacing: 5px;
+  margin: 120px 5px 0px 0px;
 }
 
 footer div.footer_section {

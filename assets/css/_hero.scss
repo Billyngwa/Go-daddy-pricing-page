@@ -2,15 +2,76 @@ header{
     .header_section{
         
         .hero{
-            background-image: url("../../images/hero_img.jpg");
+            background-image: url("../../images/hero.png");
             background-size:cover;
             background-repeat:no-repeat;
             height:800px;
             width:100%;
-            padding:120px 0px 0px 30px;
-            // .banner_section{
+            padding:150px 0px 0px 30px;
+            .banner_section{
+                .form_and_headings{
+                    h3{
+                        color:$global;
+                        font-size: 20px;
+                        font-family: $font_family;
+                        line-height: 60px;
+                    }
+                    h1{
+                        color:$global;
+                        font-size: 70px;
+                        font-family:$font_family;
+                    }
+                    form{
+                        // @include displayElementsflex(center);
+                        margin: 40px 0px 0px 0px;
+                         input{
+                            color:$copyright_color;
+                            font-size: 20px;
+                            font-family: $font_family;
+                            text-transform: lowercase;
+                            width:78%;
+                            height:80px;
+                            outline: none;
+                            border:none;
+                            border-radius: 10px;
+                            padding:0px 0px 0px 10px;
+                         }
+                         button{
+                            border:none;
+                            background-color:$red_background;
+                            width:200px;
+                            height:80px;
+                            margin-left: 10px;
+                            color:$global;
+                            text-align: center;
+                            border-radius: 10px;
+                            font-size:20px;
 
-            // }
+                            &:hover{
+                                background-color:$red_backgroundhover;
+                            }
+                         }
+                    }
+                    .transfer_domain{
+                        a{
+                            color:$global;
+                            font-size: 20px;
+                            font-family: $font_family;
+                            line-height: 60px;
+                            font-weight: 700;
+                        }
+                    }
+                    .domain_consideration{
+                        color:$global;
+                        font-size: 30px;
+                        font-family: $font_family;
+                        font-weight: 700;
+                        text-align: center;
+                        word-spacing: 5px;
+                        margin:120px 5px 0px 0px;
+                    }
+                }
+            }
         }
     }
 }

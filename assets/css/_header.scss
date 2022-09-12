@@ -1,14 +1,17 @@
 header{
     .header_section{
+        background-color: $global;
+      
         .container{
+            padding: 0px 0px ;
             @include container;
             @include displayElementsflex(center);
             .logo{
-                width:200px;
-                // height:100px;
+                width:210px;
+                // height:10px;
                 a img{
                     width:100%;
-                    // height:100px;
+                    height:100px;
                 }
             }
             nav{
@@ -21,10 +24,10 @@ header{
                     .nav_list--relative{
                         position: relative;
                         cursor: default;
-                        margin: 0px 0px 0px 20px;
+                        margin: 0px 0px 0px 10px;
                         font-family:$font_family;
                         font-size:18px;
-                        font-weight:700px;
+                        font-weight:600;
                         color:$footer_background;
 
                         &:hover  .nav_list_absolute{
@@ -36,43 +39,50 @@ header{
                             z-index: 1;
                             display: none;
                             background-color: $global;
-                            width: 23vw;
+                            width: 24vw;
+                            padding-top: 20px;
 
                             .search_input{
                                 border-radius: 5px;
                                 border: 1px solid rgb(223, 221, 221);
-                                margin: 68px 20px 0px 10px;
+                                margin: 68px 20px 20px 10px;
                                 color: $footer_background;
-                                height:43px;
-                                width:100%;
+                                @include displayElementsflex(center);
+                                // width:100%;
                                 height:43px;
                                 .type-search{
                                     color: $footer_background;
-                                  
+                                    border:none;
+                                    font-size: 20px;
+                                    padding-left:15px;
+                                    outline:none;
+
                                 }
                                 .search_button{
                                     border: none;
                                     background-color:transparent;
                                     color:$red_backgroundhover;
+                                    margin: 0px 20px 0px 0px;
 
                                     i{
                                         color:$red_backgroundhover;
+                                        font-size: 30px;
+                                        // padding: 0px 80px 0px 0px;
                                     }
                                 }
                             }
 
                             .list_items{
                                 width: 100%;
-                                height:9vh;
+                                height:8vh;
                                 padding: 20px 0px 0px 0px;
-
                                 &:hover{
                                     background-color:$onhover_dropdownlist;
                                 }
 
                                 a{
-                                    color:$black_color;
-                                    font-weight:normal;
+                                    color:$footer_background;
+                                    font-weight:600;
                                     font-size: 20px;
                                     text-align: center;
                                     margin: 0px 0px 0px 10px; 
@@ -81,6 +91,13 @@ header{
                                         color: $footer_background;
                                         font-size: 20px;
                                         text-decoration: underline;
+                                    }
+                                }
+                                .security{
+                                    color:$blue_backgroundhover;
+                                    text-decoration: underline;
+                                    &:hover{
+                                        color:$blue_backgroundhover;
                                     }
                                 }
                             }
@@ -121,8 +138,8 @@ header{
             display: none;
             background-color: $global;
             width: 23vw;
-            right:-130px; 
-            width:22vw;
+            right:-106px; 
+            width:24vw;
             .help_divs{
                 margin-top:10px;
                 // margin-bottom:30px;
@@ -191,8 +208,6 @@ header{
                 }
             }
             hr{
-                // margin-top:30px;
-                // margin-bottom:30px;
                 width:100%;
             }
         }
@@ -202,7 +217,8 @@ header{
     .nav_list_relative_cart{
         position: relative;
         cursor: default;
-        margin: 0px 20px 0px 0px;
+        margin: 0px 10px 0px 0px;
+        font-size: 25px;
 
         &:hover  .nav_list_absolute_cart{
             display: block;
@@ -261,8 +277,13 @@ header{
         background-color: white;
         font-size:20px; 
         font-family:$font_family;
+        margin: 0px 0px 0px 10px;
         a{
-            color:$black_color;
+            color:$footer_background ;
+            &:hover{
+                color:$red_background;
+                text-decoration: underline;
+            }
         }
     }
 }
