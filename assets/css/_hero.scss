@@ -2,23 +2,28 @@ header{
     .header_section{
         
         .hero{
-            background-image: url("../../images/hero.png");
+            background-image: url("../../images/hero.jpg");
             background-size:cover;
             background-repeat:no-repeat;
-            height:800px;
+            height:14.5cm;
             width:100%;
-            padding:150px 0px 0px 30px;
+            // padding:150px 0px 0px 30px;
             .banner_section{
+                background-color: #f4f4f431;
+                height:600px;
                 .form_and_headings{
+                    padding:80px 0px 0px 0px;
+                    @include container(85%,7.5%);
                     h3{
                         color:$global;
-                        font-size: 20px;
+                        font-size: 16px;
                         font-family: $font_family;
                         line-height: 60px;
                     }
                     h1{
                         color:$global;
-                        font-size: 70px;
+                        font-size: 45px;
+                        word-spacing: 4px;
                         font-family:$font_family;
                     }
                     form{
@@ -29,8 +34,8 @@ header{
                             font-size: 20px;
                             font-family: $font_family;
                             text-transform: lowercase;
-                            width:78%;
-                            height:80px;
+                            width:85%;
+                            height:60px;
                             outline: none;
                             border:none;
                             border-radius: 10px;
@@ -39,8 +44,8 @@ header{
                          button{
                             border:none;
                             background-color:$red_background;
-                            width:200px;
-                            height:80px;
+                            width:12%;
+                            height:60px;
                             margin-left: 10px;
                             color:$global;
                             text-align: center;
@@ -53,22 +58,30 @@ header{
                          }
                     }
                     .transfer_domain{
+                        margin-top: -15px;
                         a{
                             color:$global;
-                            font-size: 20px;
+                            font-size: 14px;
                             font-family: $font_family;
                             line-height: 60px;
                             font-weight: 700;
+                            transition:margin-left 6s ease-in 7s;
+                        // 
+
+                            &:hover i{
+                                margin-left: 14px;
+                               
+                            }
                         }
                     }
                     .domain_consideration{
                         color:$global;
-                        font-size: 30px;
+                        font-size: 28px;
                         font-family: $font_family;
                         font-weight: 700;
                         text-align: center;
-                        word-spacing: 5px;
-                        margin:120px 5px 0px 0px;
+                        word-spacing: 3px;
+                        margin:70px 20px 0px 0px;
                     }
                 }
             }

@@ -16,9 +16,9 @@
     animation-direction:$animation_direcion;
     animation-iteration-count:$animation_iteration_count;
 }
-@mixin container{
-    width: 95%;
-    margin-left:2.5%;
+@mixin container($width,$margin_left){
+    width: $width;
+    margin-left:$margin_left;
 }
 @mixin sectionWidth-backgroudColor ($back-ground,$width) {
     background-color: $back-ground;

@@ -4,19 +4,20 @@ header{
       
         .container{
             padding: 0px 0px ;
-            @include container;
+            @include container(85%,7.5%);
             @include displayElementsflex(center);
+            padding: 25px 0px 18px 0px;
             .logo{
-                width:210px;
+                width:150px;
                 // height:10px;
                 a img{
                     width:100%;
-                    height:100px;
+                    // height:0px;
                 }
             }
             nav{
                 @include displayElementsflex(center);
-                margin: 0px 40px 0px 0px;
+                margin: 0px 158px 0px 0px;
                 .nav_panel--elements{
                     display: inherit;
                     justify-content: space-between;
@@ -26,8 +27,8 @@ header{
                         cursor: default;
                         margin: 0px 0px 0px 10px;
                         font-family:$font_family;
-                        font-size:18px;
-                        font-weight:600;
+                        font-size:14px;
+                        font-weight:500;
                         color:$footer_background;
 
                         &:hover  .nav_list_absolute{
@@ -39,19 +40,21 @@ header{
                             z-index: 1;
                             display: none;
                             background-color: $global;
-                            width: 24vw;
+                            width: 260px;
                             padding-top: 20px;
 
                             .search_input{
                                 border-radius: 5px;
                                 border: 1px solid rgb(223, 221, 221);
-                                margin: 68px 20px 20px 10px;
+                                margin: 68px 90px 20px 10px;
                                 color: $footer_background;
                                 @include displayElementsflex(center);
-                                // width:100%;
+                                width:100%;
                                 height:43px;
+                                overflow: hidden;
                                 .type-search{
                                     color: $footer_background;
+                                    background: transparent;
                                     border:none;
                                     font-size: 20px;
                                     padding-left:15px;
@@ -62,7 +65,7 @@ header{
                                     border: none;
                                     background-color:transparent;
                                     color:$red_backgroundhover;
-                                    margin: 0px 20px 0px 0px;
+                                    // margin: 0px 60px 0px 0px;
 
                                     i{
                                         color:$red_backgroundhover;
@@ -74,22 +77,22 @@ header{
 
                             .list_items{
                                 width: 100%;
-                                height:8vh;
-                                padding: 20px 0px 0px 0px;
+                                height:45px;
+                                padding: 10px 0px 0px 0px;
                                 &:hover{
                                     background-color:$onhover_dropdownlist;
                                 }
 
                                 a{
                                     color:$footer_background;
-                                    font-weight:600;
-                                    font-size: 20px;
+                                    font-weight:500;
+                                    font-size:16px;
                                     text-align: center;
                                     margin: 0px 0px 0px 10px; 
 
                                     &:hover{
                                         color: $footer_background;
-                                        font-size: 20px;
+                                        font-size:16px;
                                         text-decoration: underline;
                                     }
                                 }
@@ -117,7 +120,10 @@ header{
      //style for the help
     .nav_list_relative_help{
         position: relative;
-        margin: 0px 20px 0px 0px;
+        padding: 0px 35px 0px 0px;
+        font-family:$font_family;
+        font-size:14px;
+        font-weight:500;
         &:hover  .nav_list_absolute_help{
             display: block;
         }
@@ -137,9 +143,8 @@ header{
             z-index: 1;
             display: none;
             background-color: $global;
-            width: 23vw;
-            right:-106px; 
-            width:24vw;
+            right:-36px; 
+            width:250px;
             .help_divs{
                 margin-top:10px;
                 // margin-bottom:30px;
@@ -148,26 +153,26 @@ header{
                 .call_heading{
                     font-family:$font_family;
                     color: $footer_background;
-                    font-size:20px; 
+                    font-size:16px; 
                     font-weight: normal;
                 }
                 .heading_description{
                     font-family:$font_family;
                     color: $footer_background;
-                    font-size:14px; 
-                    line-height:30px;
+                    font-size:12px; 
+                 
                 }
                 .call_number{
-                    margin-top: 20px;
+                    margin-top: 13px;
                     
                 }
                 .chat_now{
                     width: 100%;
-                    height:60px;
+                    height:50px;
                     border-radius:5px;
-                    border:4px solid $red_background;
+                    border:3px solid $red_background;
                     color:$red_background;
-                    font-size:20px;
+                    font-size:14px;
                     font-weight:bold;
                     background-color:transparent;
                     margin: 20px 0px 0px 0px;
@@ -185,15 +190,15 @@ header{
                 }
                 .browse_article{
                     width: 100%;
-                    height:70px;
+                    height:50px;
                     border-radius:7px;
                     border:1px solid $blue_background;
                     color:$black_color;
-                    font-size:20px;
+                    font-size:14px;
                     font-weight:bold;
                     background-color:$blue_background;
                     margin: 20px 0px 0px 0px;
-                    padding:10px;
+                    padding:0px;
 
                     a{
                         color:$footer_background;
@@ -217,8 +222,10 @@ header{
     .nav_list_relative_cart{
         position: relative;
         cursor: default;
-        margin: 0px 10px 0px 0px;
-        font-size: 25px;
+        padding: 0px 35px 0px 0px;
+        font-family:$font_family;
+        font-size:14px;
+        font-weight:500;
 
         &:hover  .nav_list_absolute_cart{
             display: block;
@@ -275,8 +282,9 @@ header{
     button.login{
         border:none;
         background-color: white;
-        font-size:20px; 
         font-family:$font_family;
+        font-size:14px;
+        font-weight:500;
         margin: 0px 0px 0px 10px;
         a{
             color:$footer_background ;
