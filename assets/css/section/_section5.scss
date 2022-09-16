@@ -1,0 +1,71 @@
+section{
+    .section-five{
+        margin:20px 0px 60px 0px;
+        @include container(85%,7.5%);
+        border-radius: 5px;
+        box-shadow: 9px 9px 8px $hero_background;
+        .section5_flexbox{
+            // @include displayElementsflex(center);
+            display: flex;
+            align-items: center;
+            .right-block{
+                margin:20px 0px 0px 60px;
+                .section-five-heading{
+                    font-size: 22px;
+                    font-weight: 300;
+                    color: $footer_background;
+                    padding: 0px 0px 15px 0px;
+                   
+                }
+                .heading-description{
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: $footer_background;
+                    padding: 0px 0px 30px 0px;
+                }
+                .how-to-choose-domain{
+                    padding: 0px 0px 20px 0px;
+
+                    a{
+                        font-size: 16px;
+                        font-weight: 700;
+                        color:$blue_background;
+
+                        &:hover{
+                            color: $blue_backgroundhover;
+                            text-decoration: underline;
+
+                            i{
+                                margin-left: 14px;
+                            }
+                        }
+                    }
+                }
+                hr{
+                    margin: 10px 0px 40px 0px;
+                }
+            }
+        }
+    }
+}
+
+.regular_rate{
+    margin-bottom: 50px;
+    @include container(85%,7.5%);
+    p{
+        font-size:14px;
+        font-weight:400;
+        color: $copyright_color;
+
+        a{
+            font-size:14px;
+            font-weight:700;
+            color: $blue_background;
+
+            &:hover{
+                color: $blue_backgroundhover;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+section{
+    .section-three {
+        @include container(85%,7.5%);
+        margin-top: 90px;
+
+        h1{
+            text-align: center;
+            font-size: 40px;
+            font-weight:700;
+            padding:0px 0px 20px 0px;
+            text-shadow: 1px 1px 3px $footer_background;
+        }
+        p{
+            text-align: center;
+            font-size: 26px;
+            font-weight: 300;
+            padding:0px 0px 100px 0px;
+            color: $copyright_color;
+        }
+        .reasons-to-choose-Domain{
+            @include displayElementsflex(null);
+
+            .reason{
+                @include displayElementsflex(null);
+                width: 32%;
+
+                .section4_image{
+                    margin:0px 0px 0px 0px;
+                }
+                .trusted_source{
+                    margin:0px 0px 0px 15px;
+                    h2{
+                        font-size: 18px;
+                        font-weight: 700;
+                        padding:0px 0px 20px 0px;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-weight: 300;
+                        display: inline;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+}

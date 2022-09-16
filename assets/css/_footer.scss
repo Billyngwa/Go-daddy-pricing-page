@@ -2,13 +2,13 @@ footer{
     div.footer_section{
         @include displayElementsflex (0px 0px 0px 0px);
         div.footer_logo{
-            @include sectionWidth-backgroudColor($red_background,25%);
+            @include sectionWidth-backgroudColor($red_backgroundhover,35%);
             svg{
                 margin:190px 0px 0px 70px;
             }
         }
         div.footer_right--blog{
-            @include sectionWidth-backgroudColor($footer_background,75%);
+            @include sectionWidth-backgroudColor($footer_background,65%);
             div.footer_container{
                 @include footerContainer (block,85%,7.5%);
                 div.form_line{
