@@ -15,7 +15,7 @@ header{
                     // height:0px;
                 }
             }
-            nav{
+            #nav_panel{
                 @include displayElementsflex(center);
                 margin: 0px 158px 0px 0px;
                 .nav_panel--elements{
@@ -296,8 +296,32 @@ header{
     }
 }
 
-// .help_header{
+// style for hamburger_section
+.container{
+    .hamburger_cart{
+        display: none;
+        i{
+            font-size: 29px;
+        }
+        #hamburger_btn{
+            border: none;
+            background: transparent;
+            margin:0px 0px 0px 4px;
 
-// }
-
-//style for hero section
+            .first_line{
+                background-color: $footer_background;
+                border-radius: 30px;
+                width: 30px;
+                height: 4px;
+                margin:4px 3px 3px 4px;
+            }
+            .second_line{
+                background-color: $footer_background;
+                border-radius: 30px;
+                width: 23px;
+                height: 4px;
+                margin:4px 0px 3px 4px;
+            }
+        }
+    }
+}

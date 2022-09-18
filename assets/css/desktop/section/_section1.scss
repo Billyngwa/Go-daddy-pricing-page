@@ -11,11 +11,11 @@ section{
             .list-items{ 
                 width:95%;
                 // height:200px;
-                background-color: $hero_background;
+                background-color: $global;
                 border-radius: 5px;
                 margin:20px 0px 0px 0px;
                 padding:27px 20px 30px 30px; 
-                // box-shadow: 1px 3px 10px $footer_background ;
+                box-shadow: 0px 5px 4px $hero_background ;
 
                 h1{
                     font-size: 45px;

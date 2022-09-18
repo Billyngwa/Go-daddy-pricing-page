@@ -1,13 +1,18 @@
-@import './reset';
-@import './variables';
-@import './mixins';
-@import './header';
-@import './hero';
-@import './section/section1';
-@import './section/section2';
-@import './section/section3';
-@import './section/section4';
-@import './section/section5';
-@import './section/section6';
-@import './footer';
+@import './settings/reset';
+@import './settings/variables';
+@import './settings/mixins';
+@import './desktop/header/header';
+@import './desktop/header/hero';
+@import './desktop/section/section1';
+@import './desktop/section/section2';
+@import './desktop/section/section3';
+@import './desktop/section/section4';
+@import './desktop/section/section5';
+@import './desktop/section/section6';
+@import './desktop/footer/footer';
 
+@media (max-width: 576px){
+    @import './mobile/header';
+    @import './mobile/footer';
+    @import './mobile/section';
+}

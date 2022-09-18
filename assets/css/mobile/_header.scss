@@ -1,0 +1,62 @@
+header{
+    .header_section{
+        .container{
+           @include container(95%, 2.5%);
+            #nav_panel, .help_cart_login{
+                display: none;
+                // float: right;
+            }
+            .hamburger_cart{
+                display:flex;
+            }
+        }
+        .hero{
+            height: 12cm;
+            .banner_section{
+                .form_and_headings{
+                    padding:40px 0px 0px 0px;
+                    @include container(90%,5%);
+                    h1{
+                        font-size: 29px;
+                        font-weight: 900;
+                        width:100%;
+                        text-align: center;
+                    }
+                    form{
+                        width:100%;
+                        display: block;
+                        margin: 35px 0px 0px 0px;
+                        input{
+                            width: 100%;
+                            border-radius: 5px;
+                        }
+                        button{
+                            width:100%;
+                            margin:20px 0px 0px 0px;
+                            border-radius: 5px;
+                            height:50px;
+                            font-size:15px;
+                            font-weight: 600;
+
+                        }
+                    }
+                    .transfer_domain{
+                        padding-top: 10px;
+                        a{
+                            font-size:16px;
+                        }
+                    }
+                    .domain_consideration{
+                        margin:18px 20px 0px 0px;
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//stle for hero
+   

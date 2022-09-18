@@ -70,9 +70,8 @@ header{
 
                             &:hover i{
                                 margin-left: 14px;
-                               
-                            }
-                        }
+                                transition: 1s;
+                            }                        }
                     }
                     .domain_consideration{
                         color:$global;
