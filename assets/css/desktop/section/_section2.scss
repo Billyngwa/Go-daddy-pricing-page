@@ -2,6 +2,9 @@
     @include displayElementsflex(null);
     @include container(85%, 7.5%);
 
+    .right-div_before{
+       display:none;
+    }
     .left-div{
         width: 50%;
         margin-left: 25px;

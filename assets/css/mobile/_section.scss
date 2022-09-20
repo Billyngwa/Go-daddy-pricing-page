@@ -3,6 +3,152 @@ section{
         top: -50px;
         .section-one{
             display:block;
+
+            .list-items{
+                width:95%;
+                // padding:27px 0px 30px 0px;
+                // margin:20px 0px 0px 50px; 
+                box-shadow: 2px 3px 6px #33333346; 
+            }
+        }
+    }
+    .section-two{
+        @include container(99%, 0.5%);
+        display: block;
+
+        .right-div_before{
+            display:block;
+            padding:30px 0px 60px 90px;
+            justify-content: center;
+         }
+
+        .left-div{
+            width:100%;
+
+            h1{
+                font-size: 30px;
+                text-align: center;
+                margin-right:60px;
+            }
+            p{
+                font-size: 23px;
+                font-weight: 300;
+                text-align: center;
+                letter-spacing: 0px;
+                padding:30px 0px 10px 0px;
+            }
+
+            ul{
+                li{
+                    line-height: 1.8;
+                }
+            }
+            button{
+                width:90%;
+                margin-right:30px;
+                padding:14px;
+            }
+        }
+        .right-div{
+            display:none;
+         }
+    }
+    .section-three{
+        h1{
+            font-size: 28px;
+            font-weight: 700;
+            // width:100%;
+            // text-align: left;
+        }
+        p{
+            font-size: 22px;
+
+        }
+        .reasons-to-choose-Domain{
+            display:block;
+            margin: -50px 0px 10px 0px;
+            .reason{
+                width:100%;
+                margin: 15px 0px 10px 0px;
+                
+            .trusted_source{
+                padding-top: 40px;
+                h2{
+                    font-size: 16px;
+                    font-weight: 300px;
+                    color: $footer_background;
+                }
+            }
+            }
+        }
+    }
+    .section-four{
+        .section-four-header{
+            padding-bottom:15px;
+            padding-top: 80px;
+            font-size:20px;
+        }
+        .section-four-relative{
+            h1{
+                font-size:16px;
+            }
+        }
+    }
+    .section-five{
+        .section5_flexbox{
+            display: block;
+            .section-five_mobile-img{
+                display: block;
+                padding:30px 0px 60px 90px;
+            }
+            .section-five-img{
+                display:none;
+            }
+            .right-block{
+                margin:10px 0px 0px 0px;
+                .heading-description{
+                    font-size: 16px;
+                    font-weight: 300;
+                    // color: $footer_background;
+                    // padding: 0px 0px 30px 0px;
+                }
+                .how-to-choose-domain{
+                    a{
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.regular_rate{
+    p{
+        a{
+            font-size:14px;
+            font-weight:500;
+        }
+    }
+}
+
+//style for section six
+
+section{
+    .section-six{
+        display: block;
+        h1{
+            text-align: center;
+        }
+        ul{
+            text-align: center;
+            display: block;
+            li{
+                padding:15px 0px 5px 0px;
+               a{
+                    font-size: 14px;
+               }
+            }
         }
     }
 }

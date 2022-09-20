@@ -15,8 +15,8 @@ section{
                 border-radius: 5px;
                 margin:20px 0px 0px 0px;
                 padding:27px 20px 30px 30px; 
-                box-shadow: 0px 5px 4px $hero_background ;
-
+                // box-shadow: 0px 5px 4px $hero_background ;
+                box-shadow: 2px 4px 6px #33333346; 
                 h1{
                     font-size: 45px;
                     color:$footer_background;
@@ -37,7 +37,7 @@ section{
                     font-size:20px;
                     font-weight:300;
                     color:$copyright_color;
-                    padding-bottom:20px;
+                    // padding-bottom:20px;
                     letter-spacing: 1px;
                 }
                 button{

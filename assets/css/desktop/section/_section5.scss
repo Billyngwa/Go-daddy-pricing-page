@@ -8,6 +8,9 @@ section{
             // @include displayElementsflex(center);
             display: flex;
             align-items: center;
+            .section-five_mobile-img{
+                display: none;
+            }
             .right-block{
                 margin:20px 0px 0px 60px;
                 .section-five-heading{

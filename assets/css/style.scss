@@ -11,8 +11,8 @@
 @import './desktop/section/section6';
 @import './desktop/footer/footer';
 
-@media (max-width: 576px){
+@media (max-width: 700px){
     @import './mobile/header';
-    @import './mobile/footer';
     @import './mobile/section';
+    @import './mobile/footer';
 }
