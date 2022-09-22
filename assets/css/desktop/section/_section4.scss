@@ -9,30 +9,31 @@ section {
             padding-top: 90px;
             padding-bottom:70px;
         }
-        .section-four-relative{
+        .section-four-relative, #section-four-relative{
             border-radius: 5px;
             padding:40px 0px 30px 30px;
-            box-shadow: 0px 6px 5px $hero_background;
+            box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.103);
             h1{
                 font-size:22px;
                 font-weight:600;
                 color:$footer_background;
                 cursor: pointer;
             }
-            .scetion-four-absolute{
+            .scetion-four-absolute, #scetion-four-absolute{
                 padding: 10px 0px 20px 0px;
+                display: block;
                 .heading-description{
                     font-size:16px;
                     font-weight:400;
                     color:$footer_background;
                     line-height: 1.2;
-                    margin:0px 0px 0px 40px;
+                    padding:0px 0px 0px 30px;
                 }
                 .domain_names{
                     font-size:16px;
                     font-weight:400;
                     color:$footer_background;
-                    padding-top: 15px;
+                    padding:15px 0px 0px 30px;
                 }
             }
         }
@@ -41,7 +42,7 @@ section {
 
 .scetion-four-absolute{
     .section-four-absolute-ul{
-        margin:0px 0px 0px 40px;
+        padding:0px 0px 0px 30px;
         .list-item{
             list-style-type: disc;
             font-size:14px;

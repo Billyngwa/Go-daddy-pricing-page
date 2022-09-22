@@ -18,7 +18,10 @@ section{
 
         .right-div_before{
             display:block;
-            padding:30px 0px 60px 90px;
+            width:50%;
+            margin-left:25%;
+            padding:60px 0px 50px 0px;
+            // padding:30px 0px 60px 90px;
             justify-content: center;
          }
 
@@ -95,11 +98,14 @@ section{
         }
     }
     .section-five{
+        margin-top: 89px;
         .section5_flexbox{
             display: block;
             .section-five_mobile-img{
                 display: block;
-                padding:30px 0px 60px 90px;
+                width:50%;
+                margin-left:25%;
+                padding:70px 0px 30px 0px;
             }
             .section-five-img{
                 display:none;

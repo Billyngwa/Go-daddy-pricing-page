@@ -432,7 +432,8 @@ header .header_section .hero .banner_section .form_and_headings form {
 
 header .header_section .hero .banner_section .form_and_headings form input {
   color: #666666;
-  font-size: 20px;
+  font-size: 26px;
+  font-weight: 300;
   font-family: "Lato", sans-serif;
   text-transform: lowercase;
   width: 85%;
@@ -693,41 +694,42 @@ section .section-four .section-four-header {
   padding-bottom: 70px;
 }
 
-section .section-four .section-four-relative {
+section .section-four .section-four-relative, section .section-four #section-four-relative {
   border-radius: 5px;
   padding: 40px 0px 30px 30px;
-  -webkit-box-shadow: 0px 6px 5px #f4f4f4;
-          box-shadow: 0px 6px 5px #f4f4f4;
+  -webkit-box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.103);
+          box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.103);
 }
 
-section .section-four .section-four-relative h1 {
+section .section-four .section-four-relative h1, section .section-four #section-four-relative h1 {
   font-size: 22px;
   font-weight: 600;
   color: #333333;
   cursor: pointer;
 }
 
-section .section-four .section-four-relative .scetion-four-absolute {
+section .section-four .section-four-relative .scetion-four-absolute, section .section-four .section-four-relative #scetion-four-absolute, section .section-four #section-four-relative .scetion-four-absolute, section .section-four #section-four-relative #scetion-four-absolute {
   padding: 10px 0px 20px 0px;
+  display: block;
 }
 
-section .section-four .section-four-relative .scetion-four-absolute .heading-description {
+section .section-four .section-four-relative .scetion-four-absolute .heading-description, section .section-four .section-four-relative #scetion-four-absolute .heading-description, section .section-four #section-four-relative .scetion-four-absolute .heading-description, section .section-four #section-four-relative #scetion-four-absolute .heading-description {
   font-size: 16px;
   font-weight: 400;
   color: #333333;
   line-height: 1.2;
-  margin: 0px 0px 0px 40px;
+  padding: 0px 0px 0px 30px;
 }
 
-section .section-four .section-four-relative .scetion-four-absolute .domain_names {
+section .section-four .section-four-relative .scetion-four-absolute .domain_names, section .section-four .section-four-relative #scetion-four-absolute .domain_names, section .section-four #section-four-relative .scetion-four-absolute .domain_names, section .section-four #section-four-relative #scetion-four-absolute .domain_names {
   font-size: 16px;
   font-weight: 400;
   color: #333333;
-  padding-top: 15px;
+  padding: 15px 0px 0px 30px;
 }
 
 .scetion-four-absolute .section-four-absolute-ul {
-  margin: 0px 0px 0px 40px;
+  padding: 0px 0px 0px 30px;
 }
 
 .scetion-four-absolute .section-four-absolute-ul .list-item {
@@ -924,34 +926,41 @@ footer div.footer_section div.footer_right--blog div.footer_container div.form_l
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0px 0px 65px 0px;
+  margin: -20px 0px 65px 0px;
+}
+
+footer div.footer_section div.footer_right--blog div.footer_container div.form_line p {
+  color: #ffff;
+  font-size: 26px;
+  font-weight: 300;
 }
 
 footer div.footer_section div.footer_right--blog div.footer_container div.form_line form {
   width: 43%;
-}
-
-footer div.footer_section div.footer_right--blog div.footer_container div.form_line form p {
-  color: #ffff;
-  font-size: 35px;
+  background-color: #ffff;
+  border-radius: 5px;
 }
 
 footer div.footer_section div.footer_right--blog div.footer_container div.form_line form input {
   border: none;
   outline: none;
-  border-bottom: 3px solid #ffff;
-  background: none;
+  border-bottom: 3px solid transparent;
+  background: #ffff;
   color: #ffff;
   font-size: 22px;
   width: 90%;
   height: 60px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 400;
+  padding-left: 20px;
 }
 
 footer div.footer_section div.footer_right--blog div.footer_container div.form_line form button {
   border: none;
   background: transparent;
   color: #e24747;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 footer div.footer_section div.footer_right--blog div.footer_container .footer_links {
@@ -961,18 +970,24 @@ footer div.footer_section div.footer_right--blog div.footer_container .footer_li
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0px 0px 100px 0px;
+  margin: -20px 0px 100px 0px;
 }
 
 footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--item .footer_heading {
   color: #666666;
   line-height: 50px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--item .list--footer {
+  margin: -18px 0px 0px 0px;
 }
 
 footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--item .list--footer .list_item--footer {
   color: #ffff;
-  margin: 20px 0px 0px 0px;
-  font-size: 20px;
+  margin: 10px 0px 0px 0px;
+  font-size: 14px;
   list-style: none;
   text-decoration: none;
 }
@@ -986,40 +1001,42 @@ footer div.footer_section div.footer_right--blog div.footer_container .footer_li
   text-decoration: underline;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--login_col {
+footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col {
   color: #ffff;
   text-decoration: none;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--login_col h4 a {
-  color: inherit;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 50px;
-  text-decoration: none;
+footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -70px 0px 0px 300px;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--login_col h4 a:hover {
-  color: inherit;
-  text-decoration: underline;
-}
-
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--login_col ul li {
+footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li {
   list-style: none;
   text-decoration: none;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--login_col ul li a {
+footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li a {
   color: inherit;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 50px;
   text-decoration: none;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--login_col ul li a:hover {
+footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li a:hover {
   color: inherit;
   text-decoration: underline;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li a:hover i {
+  margin-left: 14px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media {
@@ -1029,11 +1046,15 @@ footer div.footer_section div.footer_right--blog div.footer_container .copyright
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0px 0px 100px 0px;
 }
 
 footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .copyright {
-  font-size: 20px;
+  font-size: 14px;
+  font-weight: 400;
   color: #666666;
 }
 
@@ -1049,19 +1070,29 @@ footer div.footer_section div.footer_right--blog div.footer_container .copyright
 footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .socialmedia li a {
   margin: 0px 35px 0px 0px;
   color: #666666;
-  font-size: 30px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 footer {
   color: white !important;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 770px) {
   header .header_section .container {
     width: 95%;
     margin-left: 2.5%;
   }
   header .header_section .container #nav_panel, header .header_section .container .help_cart_login {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+  }
+  header .header_section .container #nav_panel ul, header .header_section .container .help_cart_login ul {
+    display: block;
+  }
+  header .header_section .container #nav_panel ul li i, header .header_section .container .help_cart_login ul li i {
     display: none;
   }
   header .header_section .container .hamburger_cart {
@@ -1070,6 +1101,7 @@ footer {
     display: flex;
   }
   header .header_section .hero {
+    width: 100%;
     height: 12cm;
   }
   header .header_section .hero .banner_section .form_and_headings {
@@ -1129,7 +1161,9 @@ footer {
   }
   section .section-two .right-div_before {
     display: block;
-    padding: 30px 0px 60px 90px;
+    width: 50%;
+    margin-left: 25%;
+    padding: 60px 0px 50px 0px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1191,12 +1225,17 @@ footer {
   section .section-four .section-four-relative h1 {
     font-size: 16px;
   }
+  section .section-five {
+    margin-top: 89px;
+  }
   section .section-five .section5_flexbox {
     display: block;
   }
   section .section-five .section5_flexbox .section-five_mobile-img {
     display: block;
-    padding: 30px 0px 60px 90px;
+    width: 50%;
+    margin-left: 25%;
+    padding: 70px 0px 30px 0px;
   }
   section .section-five .section5_flexbox .section-five-img {
     display: none;
@@ -1237,6 +1276,114 @@ footer {
   }
   footer div.footer_section div.footer_right--blog {
     width: 100%;
+  }
+  footer div.footer_section div.footer_right--blog div.footer_container {
+    width: 100%;
+  }
+  footer div.footer_section div.footer_right--blog div.footer_container div.form_line {
+    display: block;
+  }
+  footer div.footer_section div.footer_right--blog div.footer_container div.form_line p {
+    text-align: center;
+  }
+  footer div.footer_section div.footer_right--blog div.footer_container div.form_line form {
+    width: 90%;
+    margin-right: 5%;
+    height: 41px;
+  }
+  footer div.footer_section div.footer_right--blog div.footer_container div.form_line form input {
+    height: 41px;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  footer div.footer_section div.footer_right--blog div.footer_container .footer_links {
+    display: block;
+    margin: 0px;
+    width: 100%;
+  }
+  footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul {
+    display: block;
+    margin: 0px;
+    text-align: center;
+  }
+  footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li a {
+    text-align: center;
+  }
+  footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media {
+    display: block;
+    padding: 50px 0px 0px 0px;
+    position: relative;
+  }
+  footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .socialmedia {
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 990px) {
+  header .header_section .container {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  header .header_section .container #nav_panel, header .header_section .container .help_cart_login {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+  }
+  header .header_section .container #nav_panel ul, header .header_section .container .help_cart_login ul {
+    display: block;
+  }
+  header .header_section .container #nav_panel ul li i, header .header_section .container .help_cart_login ul li i {
+    display: none;
+  }
+  header .header_section .container .hamburger_cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header_section .hero {
+    width: 100%;
+    height: 12cm;
+  }
+  header .header_section .hero .banner_section .form_and_headings {
+    padding: 40px 0px 0px 0px;
+    width: 90%;
+    margin-left: 5%;
+  }
+  header .header_section .hero .banner_section .form_and_headings h1 {
+    font-size: 35px;
+  }
+  header .header_section .hero .banner_section .form_and_headings form {
+    width: 100%;
+    display: block;
+    margin: 35px 0px 0px 0px;
+  }
+  header .header_section .hero .banner_section .form_and_headings form input {
+    width: 77%;
+    border-radius: 5px;
+  }
+  header .header_section .hero .banner_section .form_and_headings form button {
+    width: 20%;
+    border-radius: 5px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0;
+  }
+  header .header_section .hero .banner_section .form_and_headings .transfer_domain {
+    padding-top: 10px;
+  }
+  header .header_section .hero .banner_section .form_and_headings .transfer_domain a {
+    font-size: 16px;
+  }
+  header .header_section .hero .banner_section .form_and_headings .domain_consideration {
+    margin: 18px 20px 0px 0px;
+    font-size: 18px;
+    font-weight: 700;
   }
 }
 /*# sourceMappingURL=style.css.map */

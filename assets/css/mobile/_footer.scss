@@ -4,7 +4,62 @@ footer{
             display: none;
         }
         div.footer_right--blog{
-            width: 100%;
+            width:100%;
+        //   @include container(98%, 1%);
+            div.footer_container{
+                width: 100%;
+
+                div.form_line{
+                    display: block;
+
+                    p{
+                       text-align: center;
+                    }
+                    form{
+                        width: 90%;
+                        margin-right: 5%;
+                        height: 41px;
+                        input{
+                           height: 41px;
+                           font-size:24px;
+                           font-weight: 300;
+                        }
+                    }
+
+                }
+                .footer_links{
+                    display: block;
+                    margin:0px;
+                    width: 100%;
+                    // .footer_links--item{
+
+                    // }
+                }
+                 
+                .footer_links--login_col{
+                    ul{
+                        display: block;
+                        margin: 0px;
+                        text-align: center;
+                        li{
+                            a{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .copyright-social_media{
+                    display: block;
+                    padding:50px 0px 0px 0px;
+                    position: relative;
+
+                    .socialmedia{
+                        position: absolute;
+                        top: 0;
+                        display: flex;
+                    }
+                }    
+            }
         }   
     }
 }
