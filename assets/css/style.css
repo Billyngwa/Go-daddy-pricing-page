@@ -427,21 +427,42 @@ header .header_section .hero .banner_section .form_and_headings h1 {
 }
 
 header .header_section .hero .banner_section .form_and_headings form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 40px 0px 0px 0px;
 }
 
-header .header_section .hero .banner_section .form_and_headings form input {
+header .header_section .hero .banner_section .form_and_headings form .icon_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffff;
+  border: none;
+  border-radius: 5px;
+  height: 60px;
+  width: 85%;
+  font-size: 26px;
+  font-weight: 400;
+  color: #cdcdcd;
+  font-family: "Lato", sans-serif;
+}
+
+header .header_section .hero .banner_section .form_and_headings form .icon_input i {
+  padding: 15px 0px 0px 15px;
+}
+
+header .header_section .hero .banner_section .form_and_headings form .icon_input input {
   color: #666666;
   font-size: 26px;
   font-weight: 300;
   font-family: "Lato", sans-serif;
-  text-transform: lowercase;
-  width: 85%;
+  width: 80%;
   height: 60px;
   outline: none;
   border: none;
   border-radius: 10px;
-  padding: 0px 0px 0px 10px;
+  padding: 0px 0px 0px 20px;
 }
 
 header .header_section .hero .banner_section .form_and_headings form button {
@@ -500,12 +521,14 @@ section .section_one .section-one {
   display: grid;
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 85%;
   margin-left: 7.5%;
 }
 
 section .section_one .section-one .list-items {
-  width: 95%;
   background-color: #ffff;
   border-radius: 5px;
   margin: 20px 0px 0px 0px;
@@ -536,6 +559,7 @@ section .section_one .section-one .list-items .pricePer-year {
   font-size: 20px;
   font-weight: 300;
   color: #666666;
+  padding-bottom: 20px;
   letter-spacing: 1px;
 }
 
@@ -694,26 +718,26 @@ section .section-four .section-four-header {
   padding-bottom: 70px;
 }
 
-section .section-four .section-four-relative, section .section-four #section-four-relative {
+section .section-four #what_is, section .section-four #how_do, section .section-four #i_have, section .section-four #domain_privacy, section .section-four #how_many, section .section-four #can_i, section .section-four #how_much, section .section-four #best_domain, section .section-four #already_taken, section .section-four #register_more {
   border-radius: 5px;
   padding: 40px 0px 30px 30px;
   -webkit-box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.103);
           box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.103);
 }
 
-section .section-four .section-four-relative h1, section .section-four #section-four-relative h1 {
+section .section-four #what_is h1, section .section-four #how_do h1, section .section-four #i_have h1, section .section-four #domain_privacy h1, section .section-four #how_many h1, section .section-four #can_i h1, section .section-four #how_much h1, section .section-four #best_domain h1, section .section-four #already_taken h1, section .section-four #register_more h1 {
   font-size: 22px;
   font-weight: 600;
   color: #333333;
   cursor: pointer;
 }
 
-section .section-four .section-four-relative .scetion-four-absolute, section .section-four .section-four-relative #scetion-four-absolute, section .section-four #section-four-relative .scetion-four-absolute, section .section-four #section-four-relative #scetion-four-absolute {
+section .section-four #what_is #what_is_absolute, section .section-four #what_is #how_do_absolute, section .section-four #what_is #i_have_absolute, section .section-four #what_is #domain_privacy_absolute, section .section-four #what_is #how_many_absolute, section .section-four #what_is #can_i_absolute, section .section-four #what_is #how_much_absolute, section .section-four #what_is #best_domain_absolute, section .section-four #what_is #already_taken_absolute, section .section-four #what_is #register_more_absolute, section .section-four #how_do #what_is_absolute, section .section-four #how_do #how_do_absolute, section .section-four #how_do #i_have_absolute, section .section-four #how_do #domain_privacy_absolute, section .section-four #how_do #how_many_absolute, section .section-four #how_do #can_i_absolute, section .section-four #how_do #how_much_absolute, section .section-four #how_do #best_domain_absolute, section .section-four #how_do #already_taken_absolute, section .section-four #how_do #register_more_absolute, section .section-four #i_have #what_is_absolute, section .section-four #i_have #how_do_absolute, section .section-four #i_have #i_have_absolute, section .section-four #i_have #domain_privacy_absolute, section .section-four #i_have #how_many_absolute, section .section-four #i_have #can_i_absolute, section .section-four #i_have #how_much_absolute, section .section-four #i_have #best_domain_absolute, section .section-four #i_have #already_taken_absolute, section .section-four #i_have #register_more_absolute, section .section-four #domain_privacy #what_is_absolute, section .section-four #domain_privacy #how_do_absolute, section .section-four #domain_privacy #i_have_absolute, section .section-four #domain_privacy #domain_privacy_absolute, section .section-four #domain_privacy #how_many_absolute, section .section-four #domain_privacy #can_i_absolute, section .section-four #domain_privacy #how_much_absolute, section .section-four #domain_privacy #best_domain_absolute, section .section-four #domain_privacy #already_taken_absolute, section .section-four #domain_privacy #register_more_absolute, section .section-four #how_many #what_is_absolute, section .section-four #how_many #how_do_absolute, section .section-four #how_many #i_have_absolute, section .section-four #how_many #domain_privacy_absolute, section .section-four #how_many #how_many_absolute, section .section-four #how_many #can_i_absolute, section .section-four #how_many #how_much_absolute, section .section-four #how_many #best_domain_absolute, section .section-four #how_many #already_taken_absolute, section .section-four #how_many #register_more_absolute, section .section-four #can_i #what_is_absolute, section .section-four #can_i #how_do_absolute, section .section-four #can_i #i_have_absolute, section .section-four #can_i #domain_privacy_absolute, section .section-four #can_i #how_many_absolute, section .section-four #can_i #can_i_absolute, section .section-four #can_i #how_much_absolute, section .section-four #can_i #best_domain_absolute, section .section-four #can_i #already_taken_absolute, section .section-four #can_i #register_more_absolute, section .section-four #how_much #what_is_absolute, section .section-four #how_much #how_do_absolute, section .section-four #how_much #i_have_absolute, section .section-four #how_much #domain_privacy_absolute, section .section-four #how_much #how_many_absolute, section .section-four #how_much #can_i_absolute, section .section-four #how_much #how_much_absolute, section .section-four #how_much #best_domain_absolute, section .section-four #how_much #already_taken_absolute, section .section-four #how_much #register_more_absolute, section .section-four #best_domain #what_is_absolute, section .section-four #best_domain #how_do_absolute, section .section-four #best_domain #i_have_absolute, section .section-four #best_domain #domain_privacy_absolute, section .section-four #best_domain #how_many_absolute, section .section-four #best_domain #can_i_absolute, section .section-four #best_domain #how_much_absolute, section .section-four #best_domain #best_domain_absolute, section .section-four #best_domain #already_taken_absolute, section .section-four #best_domain #register_more_absolute, section .section-four #already_taken #what_is_absolute, section .section-four #already_taken #how_do_absolute, section .section-four #already_taken #i_have_absolute, section .section-four #already_taken #domain_privacy_absolute, section .section-four #already_taken #how_many_absolute, section .section-four #already_taken #can_i_absolute, section .section-four #already_taken #how_much_absolute, section .section-four #already_taken #best_domain_absolute, section .section-four #already_taken #already_taken_absolute, section .section-four #already_taken #register_more_absolute, section .section-four #register_more #what_is_absolute, section .section-four #register_more #how_do_absolute, section .section-four #register_more #i_have_absolute, section .section-four #register_more #domain_privacy_absolute, section .section-four #register_more #how_many_absolute, section .section-four #register_more #can_i_absolute, section .section-four #register_more #how_much_absolute, section .section-four #register_more #best_domain_absolute, section .section-four #register_more #already_taken_absolute, section .section-four #register_more #register_more_absolute {
   padding: 10px 0px 20px 0px;
   display: block;
 }
 
-section .section-four .section-four-relative .scetion-four-absolute .heading-description, section .section-four .section-four-relative #scetion-four-absolute .heading-description, section .section-four #section-four-relative .scetion-four-absolute .heading-description, section .section-four #section-four-relative #scetion-four-absolute .heading-description {
+section .section-four #what_is #what_is_absolute .heading-description, section .section-four #what_is #how_do_absolute .heading-description, section .section-four #what_is #i_have_absolute .heading-description, section .section-four #what_is #domain_privacy_absolute .heading-description, section .section-four #what_is #how_many_absolute .heading-description, section .section-four #what_is #can_i_absolute .heading-description, section .section-four #what_is #how_much_absolute .heading-description, section .section-four #what_is #best_domain_absolute .heading-description, section .section-four #what_is #already_taken_absolute .heading-description, section .section-four #what_is #register_more_absolute .heading-description, section .section-four #how_do #what_is_absolute .heading-description, section .section-four #how_do #how_do_absolute .heading-description, section .section-four #how_do #i_have_absolute .heading-description, section .section-four #how_do #domain_privacy_absolute .heading-description, section .section-four #how_do #how_many_absolute .heading-description, section .section-four #how_do #can_i_absolute .heading-description, section .section-four #how_do #how_much_absolute .heading-description, section .section-four #how_do #best_domain_absolute .heading-description, section .section-four #how_do #already_taken_absolute .heading-description, section .section-four #how_do #register_more_absolute .heading-description, section .section-four #i_have #what_is_absolute .heading-description, section .section-four #i_have #how_do_absolute .heading-description, section .section-four #i_have #i_have_absolute .heading-description, section .section-four #i_have #domain_privacy_absolute .heading-description, section .section-four #i_have #how_many_absolute .heading-description, section .section-four #i_have #can_i_absolute .heading-description, section .section-four #i_have #how_much_absolute .heading-description, section .section-four #i_have #best_domain_absolute .heading-description, section .section-four #i_have #already_taken_absolute .heading-description, section .section-four #i_have #register_more_absolute .heading-description, section .section-four #domain_privacy #what_is_absolute .heading-description, section .section-four #domain_privacy #how_do_absolute .heading-description, section .section-four #domain_privacy #i_have_absolute .heading-description, section .section-four #domain_privacy #domain_privacy_absolute .heading-description, section .section-four #domain_privacy #how_many_absolute .heading-description, section .section-four #domain_privacy #can_i_absolute .heading-description, section .section-four #domain_privacy #how_much_absolute .heading-description, section .section-four #domain_privacy #best_domain_absolute .heading-description, section .section-four #domain_privacy #already_taken_absolute .heading-description, section .section-four #domain_privacy #register_more_absolute .heading-description, section .section-four #how_many #what_is_absolute .heading-description, section .section-four #how_many #how_do_absolute .heading-description, section .section-four #how_many #i_have_absolute .heading-description, section .section-four #how_many #domain_privacy_absolute .heading-description, section .section-four #how_many #how_many_absolute .heading-description, section .section-four #how_many #can_i_absolute .heading-description, section .section-four #how_many #how_much_absolute .heading-description, section .section-four #how_many #best_domain_absolute .heading-description, section .section-four #how_many #already_taken_absolute .heading-description, section .section-four #how_many #register_more_absolute .heading-description, section .section-four #can_i #what_is_absolute .heading-description, section .section-four #can_i #how_do_absolute .heading-description, section .section-four #can_i #i_have_absolute .heading-description, section .section-four #can_i #domain_privacy_absolute .heading-description, section .section-four #can_i #how_many_absolute .heading-description, section .section-four #can_i #can_i_absolute .heading-description, section .section-four #can_i #how_much_absolute .heading-description, section .section-four #can_i #best_domain_absolute .heading-description, section .section-four #can_i #already_taken_absolute .heading-description, section .section-four #can_i #register_more_absolute .heading-description, section .section-four #how_much #what_is_absolute .heading-description, section .section-four #how_much #how_do_absolute .heading-description, section .section-four #how_much #i_have_absolute .heading-description, section .section-four #how_much #domain_privacy_absolute .heading-description, section .section-four #how_much #how_many_absolute .heading-description, section .section-four #how_much #can_i_absolute .heading-description, section .section-four #how_much #how_much_absolute .heading-description, section .section-four #how_much #best_domain_absolute .heading-description, section .section-four #how_much #already_taken_absolute .heading-description, section .section-four #how_much #register_more_absolute .heading-description, section .section-four #best_domain #what_is_absolute .heading-description, section .section-four #best_domain #how_do_absolute .heading-description, section .section-four #best_domain #i_have_absolute .heading-description, section .section-four #best_domain #domain_privacy_absolute .heading-description, section .section-four #best_domain #how_many_absolute .heading-description, section .section-four #best_domain #can_i_absolute .heading-description, section .section-four #best_domain #how_much_absolute .heading-description, section .section-four #best_domain #best_domain_absolute .heading-description, section .section-four #best_domain #already_taken_absolute .heading-description, section .section-four #best_domain #register_more_absolute .heading-description, section .section-four #already_taken #what_is_absolute .heading-description, section .section-four #already_taken #how_do_absolute .heading-description, section .section-four #already_taken #i_have_absolute .heading-description, section .section-four #already_taken #domain_privacy_absolute .heading-description, section .section-four #already_taken #how_many_absolute .heading-description, section .section-four #already_taken #can_i_absolute .heading-description, section .section-four #already_taken #how_much_absolute .heading-description, section .section-four #already_taken #best_domain_absolute .heading-description, section .section-four #already_taken #already_taken_absolute .heading-description, section .section-four #already_taken #register_more_absolute .heading-description, section .section-four #register_more #what_is_absolute .heading-description, section .section-four #register_more #how_do_absolute .heading-description, section .section-four #register_more #i_have_absolute .heading-description, section .section-four #register_more #domain_privacy_absolute .heading-description, section .section-four #register_more #how_many_absolute .heading-description, section .section-four #register_more #can_i_absolute .heading-description, section .section-four #register_more #how_much_absolute .heading-description, section .section-four #register_more #best_domain_absolute .heading-description, section .section-four #register_more #already_taken_absolute .heading-description, section .section-four #register_more #register_more_absolute .heading-description {
   font-size: 16px;
   font-weight: 400;
   color: #333333;
@@ -721,7 +745,7 @@ section .section-four .section-four-relative .scetion-four-absolute .heading-des
   padding: 0px 0px 0px 30px;
 }
 
-section .section-four .section-four-relative .scetion-four-absolute .domain_names, section .section-four .section-four-relative #scetion-four-absolute .domain_names, section .section-four #section-four-relative .scetion-four-absolute .domain_names, section .section-four #section-four-relative #scetion-four-absolute .domain_names {
+section .section-four #what_is #what_is_absolute .domain_names, section .section-four #what_is #how_do_absolute .domain_names, section .section-four #what_is #i_have_absolute .domain_names, section .section-four #what_is #domain_privacy_absolute .domain_names, section .section-four #what_is #how_many_absolute .domain_names, section .section-four #what_is #can_i_absolute .domain_names, section .section-four #what_is #how_much_absolute .domain_names, section .section-four #what_is #best_domain_absolute .domain_names, section .section-four #what_is #already_taken_absolute .domain_names, section .section-four #what_is #register_more_absolute .domain_names, section .section-four #how_do #what_is_absolute .domain_names, section .section-four #how_do #how_do_absolute .domain_names, section .section-four #how_do #i_have_absolute .domain_names, section .section-four #how_do #domain_privacy_absolute .domain_names, section .section-four #how_do #how_many_absolute .domain_names, section .section-four #how_do #can_i_absolute .domain_names, section .section-four #how_do #how_much_absolute .domain_names, section .section-four #how_do #best_domain_absolute .domain_names, section .section-four #how_do #already_taken_absolute .domain_names, section .section-four #how_do #register_more_absolute .domain_names, section .section-four #i_have #what_is_absolute .domain_names, section .section-four #i_have #how_do_absolute .domain_names, section .section-four #i_have #i_have_absolute .domain_names, section .section-four #i_have #domain_privacy_absolute .domain_names, section .section-four #i_have #how_many_absolute .domain_names, section .section-four #i_have #can_i_absolute .domain_names, section .section-four #i_have #how_much_absolute .domain_names, section .section-four #i_have #best_domain_absolute .domain_names, section .section-four #i_have #already_taken_absolute .domain_names, section .section-four #i_have #register_more_absolute .domain_names, section .section-four #domain_privacy #what_is_absolute .domain_names, section .section-four #domain_privacy #how_do_absolute .domain_names, section .section-four #domain_privacy #i_have_absolute .domain_names, section .section-four #domain_privacy #domain_privacy_absolute .domain_names, section .section-four #domain_privacy #how_many_absolute .domain_names, section .section-four #domain_privacy #can_i_absolute .domain_names, section .section-four #domain_privacy #how_much_absolute .domain_names, section .section-four #domain_privacy #best_domain_absolute .domain_names, section .section-four #domain_privacy #already_taken_absolute .domain_names, section .section-four #domain_privacy #register_more_absolute .domain_names, section .section-four #how_many #what_is_absolute .domain_names, section .section-four #how_many #how_do_absolute .domain_names, section .section-four #how_many #i_have_absolute .domain_names, section .section-four #how_many #domain_privacy_absolute .domain_names, section .section-four #how_many #how_many_absolute .domain_names, section .section-four #how_many #can_i_absolute .domain_names, section .section-four #how_many #how_much_absolute .domain_names, section .section-four #how_many #best_domain_absolute .domain_names, section .section-four #how_many #already_taken_absolute .domain_names, section .section-four #how_many #register_more_absolute .domain_names, section .section-four #can_i #what_is_absolute .domain_names, section .section-four #can_i #how_do_absolute .domain_names, section .section-four #can_i #i_have_absolute .domain_names, section .section-four #can_i #domain_privacy_absolute .domain_names, section .section-four #can_i #how_many_absolute .domain_names, section .section-four #can_i #can_i_absolute .domain_names, section .section-four #can_i #how_much_absolute .domain_names, section .section-four #can_i #best_domain_absolute .domain_names, section .section-four #can_i #already_taken_absolute .domain_names, section .section-four #can_i #register_more_absolute .domain_names, section .section-four #how_much #what_is_absolute .domain_names, section .section-four #how_much #how_do_absolute .domain_names, section .section-four #how_much #i_have_absolute .domain_names, section .section-four #how_much #domain_privacy_absolute .domain_names, section .section-four #how_much #how_many_absolute .domain_names, section .section-four #how_much #can_i_absolute .domain_names, section .section-four #how_much #how_much_absolute .domain_names, section .section-four #how_much #best_domain_absolute .domain_names, section .section-four #how_much #already_taken_absolute .domain_names, section .section-four #how_much #register_more_absolute .domain_names, section .section-four #best_domain #what_is_absolute .domain_names, section .section-four #best_domain #how_do_absolute .domain_names, section .section-four #best_domain #i_have_absolute .domain_names, section .section-four #best_domain #domain_privacy_absolute .domain_names, section .section-four #best_domain #how_many_absolute .domain_names, section .section-four #best_domain #can_i_absolute .domain_names, section .section-four #best_domain #how_much_absolute .domain_names, section .section-four #best_domain #best_domain_absolute .domain_names, section .section-four #best_domain #already_taken_absolute .domain_names, section .section-four #best_domain #register_more_absolute .domain_names, section .section-four #already_taken #what_is_absolute .domain_names, section .section-four #already_taken #how_do_absolute .domain_names, section .section-four #already_taken #i_have_absolute .domain_names, section .section-four #already_taken #domain_privacy_absolute .domain_names, section .section-four #already_taken #how_many_absolute .domain_names, section .section-four #already_taken #can_i_absolute .domain_names, section .section-four #already_taken #how_much_absolute .domain_names, section .section-four #already_taken #best_domain_absolute .domain_names, section .section-four #already_taken #already_taken_absolute .domain_names, section .section-four #already_taken #register_more_absolute .domain_names, section .section-four #register_more #what_is_absolute .domain_names, section .section-four #register_more #how_do_absolute .domain_names, section .section-four #register_more #i_have_absolute .domain_names, section .section-four #register_more #domain_privacy_absolute .domain_names, section .section-four #register_more #how_many_absolute .domain_names, section .section-four #register_more #can_i_absolute .domain_names, section .section-four #register_more #how_much_absolute .domain_names, section .section-four #register_more #best_domain_absolute .domain_names, section .section-four #register_more #already_taken_absolute .domain_names, section .section-four #register_more #register_more_absolute .domain_names {
   font-size: 16px;
   font-weight: 400;
   color: #333333;
@@ -813,6 +837,7 @@ section .section-five .section5_flexbox .right-block .how-to-choose-domain a:hov
 }
 
 section .section-five .section5_flexbox .right-block hr {
+  border: 1px solid #f4f4f4;
   margin: 10px 0px 40px 0px;
 }
 
@@ -1078,7 +1103,210 @@ footer {
   color: white !important;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 990px) {
+  header .header_section .container {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  header .header_section .container #nav_panel, header .header_section .container .help_cart_login {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+  }
+  header .header_section .container #nav_panel ul, header .header_section .container .help_cart_login ul {
+    display: block;
+  }
+  header .header_section .container #nav_panel ul li i, header .header_section .container .help_cart_login ul li i {
+    display: none;
+  }
+  header .header_section .container .hamburger_cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header_section .hero {
+    width: 100%;
+    height: 12cm;
+  }
+  header .header_section .hero .banner_section .form_and_headings {
+    padding: 50px 0px 0px 0px;
+    width: 90%;
+    margin-left: 5%;
+  }
+  header .header_section .hero .banner_section .form_and_headings h1 {
+    font-size: 35px;
+  }
+  header .header_section .hero .banner_section .form_and_headings form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 35px 0px 0px 0px;
+  }
+  header .header_section .hero .banner_section .form_and_headings form .icon_input {
+    width: 79%;
+    border-radius: 5px;
+  }
+  header .header_section .hero .banner_section .form_and_headings form button {
+    width: 20%;
+    border-radius: 5px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0;
+  }
+  header .header_section .hero .banner_section .form_and_headings .transfer_domain {
+    padding-top: 10px;
+  }
+  header .header_section .hero .banner_section .form_and_headings .transfer_domain a {
+    font-size: 16px;
+  }
+  header .header_section .hero .banner_section .form_and_headings .domain_consideration {
+    margin: 18px 20px 0px 0px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  section .section_one {
+    top: -50px;
+  }
+  section .section_one .section-one {
+    width: 96%;
+    margin-left: 2%;
+  }
+  section .section_one .section-one .list-items {
+    width: 95%;
+    margin: 20px 10px 0px 0px;
+    -webkit-box-shadow: 2px 3px 6px #33333346;
+            box-shadow: 2px 3px 6px #33333346;
+  }
+  section .section_one .section-one .list-items h1 {
+    font-size: 40px;
+  }
+  section .section_one .section-one .list-items h1 span {
+    font-size: 40px;
+  }
+  section .section_one .section-one .list-items .headingDescription {
+    font: size 17px;
+  }
+  section .section_one .section-one .list-items .pricePer-year {
+    font-size: 20px;
+  }
+  section .section-two {
+    width: 99%;
+    margin-left: 0.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section .section-two .left-div h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-right: 60px;
+  }
+  section .section-two .left-div p {
+    font-size: 23px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0px;
+    padding: 30px 0px 10px 0px;
+  }
+  section .section-two .left-div ul li {
+    line-height: 1.8;
+  }
+  section .section-two .left-div button {
+    width: 90%;
+    margin-right: 30px;
+    padding: 14px;
+  }
+  section .section-two .right-div {
+    display: none;
+  }
+  section .section-three h1 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  section .section-three p {
+    font-size: 22px;
+  }
+  section .section-three .reasons-to-choose-Domain {
+    display: block;
+    margin: -50px 0px 10px 0px;
+  }
+  section .section-three .reasons-to-choose-Domain .reason {
+    width: 100%;
+    margin: 15px 0px 10px 0px;
+  }
+  section .section-three .reasons-to-choose-Domain .reason .trusted_source {
+    padding-top: 40px;
+  }
+  section .section-three .reasons-to-choose-Domain .reason .trusted_source h2 {
+    font-size: 16px;
+    font-weight: 300px;
+    color: #333333;
+  }
+  section .section-four .section-four-header {
+    padding-bottom: 15px;
+    padding-top: 80px;
+    font-size: 20px;
+  }
+  section .section-four .section-four-relative h1 {
+    font-size: 16px;
+  }
+  section .section-five {
+    margin-top: 89px;
+  }
+  section .section-five .section5_flexbox {
+    display: block;
+  }
+  section .section-five .section5_flexbox .section-five_mobile-img {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    padding: 70px 0px 30px 0px;
+  }
+  section .section-five .section5_flexbox .section-five-img {
+    display: none;
+  }
+  section .section-five .section5_flexbox .right-block {
+    margin: 10px 0px 0px 0px;
+  }
+  section .section-five .section5_flexbox .right-block .heading-description {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  section .section-five .section5_flexbox .right-block .how-to-choose-domain a {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .regular_rate p a {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  section .section-six {
+    display: block;
+  }
+  section .section-six h1 {
+    text-align: center;
+  }
+  section .section-six ul {
+    text-align: center;
+    display: block;
+  }
+  section .section-six ul li {
+    padding: 15px 0px 5px 0px;
+  }
+  section .section-six ul li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
   header .header_section .container {
     width: 95%;
     margin-left: 2.5%;
@@ -1120,9 +1348,8 @@ footer {
     display: block;
     margin: 35px 0px 0px 0px;
   }
-  header .header_section .hero .banner_section .form_and_headings form input {
+  header .header_section .hero .banner_section .form_and_headings form .icon_input {
     width: 100%;
-    border-radius: 5px;
   }
   header .header_section .hero .banner_section .form_and_headings form button {
     width: 100%;
@@ -1148,9 +1375,17 @@ footer {
   }
   section .section_one .section-one {
     display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
   }
   section .section_one .section-one .list-items {
-    width: 95%;
     -webkit-box-shadow: 2px 3px 6px #33333346;
             box-shadow: 2px 3px 6px #33333346;
   }
@@ -1189,7 +1424,7 @@ footer {
   section .section-two .left-div button {
     width: 90%;
     margin-right: 30px;
-    padding: 14px;
+    padding: 14px 14px 14px 14px;
   }
   section .section-two .right-div {
     display: none;
@@ -1197,6 +1432,7 @@ footer {
   section .section-three h1 {
     font-size: 28px;
     font-weight: 700;
+    margin: -50px 0px 0px 0px;
   }
   section .section-three p {
     font-size: 22px;
@@ -1320,70 +1556,6 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-
-@media (max-width: 990px) {
-  header .header_section .container {
-    width: 95%;
-    margin-left: 2.5%;
-  }
-  header .header_section .container #nav_panel, header .header_section .container .help_cart_login {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 0px;
-  }
-  header .header_section .container #nav_panel ul, header .header_section .container .help_cart_login ul {
-    display: block;
-  }
-  header .header_section .container #nav_panel ul li i, header .header_section .container .help_cart_login ul li i {
-    display: none;
-  }
-  header .header_section .container .hamburger_cart {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  header .header_section .hero {
-    width: 100%;
-    height: 12cm;
-  }
-  header .header_section .hero .banner_section .form_and_headings {
-    padding: 40px 0px 0px 0px;
-    width: 90%;
-    margin-left: 5%;
-  }
-  header .header_section .hero .banner_section .form_and_headings h1 {
-    font-size: 35px;
-  }
-  header .header_section .hero .banner_section .form_and_headings form {
-    width: 100%;
-    display: block;
-    margin: 35px 0px 0px 0px;
-  }
-  header .header_section .hero .banner_section .form_and_headings form input {
-    width: 77%;
-    border-radius: 5px;
-  }
-  header .header_section .hero .banner_section .form_and_headings form button {
-    width: 20%;
-    border-radius: 5px;
-    height: 60px;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 0;
-  }
-  header .header_section .hero .banner_section .form_and_headings .transfer_domain {
-    padding-top: 10px;
-  }
-  header .header_section .hero .banner_section .form_and_headings .transfer_domain a {
-    font-size: 16px;
-  }
-  header .header_section .hero .banner_section .form_and_headings .domain_consideration {
-    margin: 18px 20px 0px 0px;
-    font-size: 18px;
-    font-weight: 700;
   }
 }
 /*# sourceMappingURL=style.css.map */

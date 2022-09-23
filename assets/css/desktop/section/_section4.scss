@@ -9,17 +9,17 @@ section {
             padding-top: 90px;
             padding-bottom:70px;
         }
-        .section-four-relative, #section-four-relative{
+        #what_is, #how_do, #i_have, #domain_privacy, #how_many, #can_i, #how_much, #best_domain, #already_taken, #register_more{
             border-radius: 5px;
             padding:40px 0px 30px 30px;
             box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.103);
             h1{
                 font-size:22px;
                 font-weight:600;
-                color:$footer_background;
+                color:$footer_background; 
                 cursor: pointer;
             }
-            .scetion-four-absolute, #scetion-four-absolute{
+            #what_is_absolute, #how_do_absolute, #i_have_absolute, #domain_privacy_absolute, #how_many_absolute, #can_i_absolute, #how_much_absolute, #best_domain_absolute, #already_taken_absolute, #register_more_absolute{
                 padding: 10px 0px 20px 0px;
                 display: block;
                 .heading-description{

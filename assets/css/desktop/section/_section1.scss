@@ -4,12 +4,17 @@ section{
         position:relative ;
         top:-80px;
         .section-one{
+            // display: flex;
+            // align-self: center;
+            // flex-wrap: wrap;
+            // gap:2%;
           display:grid;
           grid-template-columns:auto auto auto;
-        //   justify-content: space-between;
+          justify-content: space-between;
             @include container(85%,7.5%);
             .list-items{ 
-                width:95%;
+                // width:32%;
+                
                 // height:200px;
                 background-color: $global;
                 border-radius: 5px;
@@ -37,7 +42,7 @@ section{
                     font-size:20px;
                     font-weight:300;
                     color:$copyright_color;
-                    // padding-bottom:20px;
+                    padding-bottom:20px;
                     letter-spacing: 1px;
                 }
                 button{

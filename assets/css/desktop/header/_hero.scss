@@ -28,19 +28,39 @@ header{
                     }
                     form{
                         // @include displayElementsflex(center);
+                        display:flex;
                         margin: 40px 0px 0px 0px;
-                         input{
-                            color:$copyright_color;
-                            font-size: 26px;
-                            font-weight:300;
-                            font-family: $font_family;
-                            text-transform: lowercase;
-                            width:85%;
+                        .icon_input{
+                            display: flex;
+                            background-color: $global;
+                            border: none;
+                            // padding:0px 0px 0px 10px;
+                            border-radius: 5px;
                             height:60px;
-                            outline: none;
-                            border:none;
-                            border-radius: 10px;
-                            padding:0px 0px 0px 10px;
+                            width:85%;
+                            font-size: 26px;
+                            font-weight:400;
+                            color:#cdcdcd;
+                            font-family: $font_family;
+
+                            i{
+                                padding:15px 0px 0px 15px;
+                              
+                            }
+
+                            input{
+                                color:$copyright_color;
+                                font-size: 26px;
+                                font-weight:300;
+                                font-family: $font_family;
+                                width:80%;
+                                height:60px;
+                                outline: none;
+                                border:none;
+                                border-radius: 10px;
+                                padding:0px 0px 0px 20px;
+                            }
+                        
                          }
                          button{
                             border:none;

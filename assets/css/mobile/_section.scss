@@ -2,13 +2,19 @@ section{
     .section_one{
         top: -50px;
         .section-one{
-            display:block;
+            display: block;
+            display:flex;
+            align-self: center;
+            flex-wrap: wrap;
+            @include container(80%, 10%);
 
             .list-items{
-                width:95%;
-                // padding:27px 0px 30px 0px;
-                // margin:20px 0px 0px 50px; 
-                box-shadow: 2px 3px 6px #33333346; 
+            //  width: 95%;
+                // width: 100%;
+                // margin:0px 0px 0px 90px;
+                // margin:20px 0px 0px 50px;
+                box-shadow: 2px 3px 6px #33333346;
+                // align-self: center
             }
         }
     }
@@ -49,7 +55,7 @@ section{
             button{
                 width:90%;
                 margin-right:30px;
-                padding:14px;
+                padding:14px 14px 14px 14px;
             }
         }
         .right-div{
@@ -60,6 +66,7 @@ section{
         h1{
             font-size: 28px;
             font-weight: 700;
+            margin:-50px 0px 0px 0px;
             // width:100%;
             // text-align: left;
         }
