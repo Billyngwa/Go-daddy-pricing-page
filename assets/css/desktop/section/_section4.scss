@@ -1,6 +1,6 @@
 section {
     .section-four{
-        @include container(85%,7.5%);
+        @include container(80%,10%);
         .section-four-header{
             font-size:26px;
             font-weight:300;
@@ -9,19 +9,40 @@ section {
             padding-top: 90px;
             padding-bottom:70px;
         }
-        #what_is, #how_do, #i_have, #domain_privacy, #how_many, #can_i, #how_much, #best_domain, #already_taken, #register_more{
+        // #what_is, #how_do, #i_have, #domain_privacy, #how_many, #can_i, #how_much, #best_domain, #already_taken, #register_more
+       .section_four_relative{
             border-radius: 5px;
             padding:40px 0px 30px 30px;
-            box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.103);
+            box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.103);
+            .heading_icon{
+                display: flex;
+                i{
+                    font-size:22px; 
+                    font-weight:600;
+                    color:$footer_background; 
+                    cursor: pointer;
+                }
+                h1{
+                    font-size:22px;
+                    font-weight:600;
+                    color:$footer_background; 
+                    cursor: pointer;
+                    padding:0px 0px 0px 4px
+                }
+            }
             h1{
                 font-size:22px;
                 font-weight:600;
                 color:$footer_background; 
                 cursor: pointer;
             }
-            #what_is_absolute, #how_do_absolute, #i_have_absolute, #domain_privacy_absolute, #how_many_absolute, #can_i_absolute, #how_much_absolute, #best_domain_absolute, #already_taken_absolute, #register_more_absolute{
-                padding: 10px 0px 20px 0px;
-                display: block;
+            // #what_is_absolute, #how_do_absolute, #i_have_absolute, #domain_privacy_absolute, #how_many_absolute, #can_i_absolute, #how_much_absolute, #best_domain_absolute, #already_taken_absolute, #register_more
+            .section_four_absolute{
+                margin: 10px 0px 20px 0px;
+                // display: none;
+                overflow: hidden;
+                max-height: 0;
+                transition: max-height 0.4s ease-out;
                 .heading-description{
                     font-size:16px;
                     font-weight:400;
@@ -36,15 +57,22 @@ section {
                     padding:15px 0px 0px 30px;
                 }
             }
+
+            .section_four_absolute.active {
+                // max-height: 0px;
+                display: block;
+
+                // display: none;
+            }
         }
     }
 }
 
 .scetion-four-absolute{
-    .section-four-absolute-ul{
+    .section_four_absolute_ul{
         padding:0px 0px 0px 30px;
+        list-style-type: disc;
         .list-item{
-            list-style-type: disc;
             font-size:14px;
             font-weight:400;
             color:$footer_background;
