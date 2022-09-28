@@ -1,27 +1,95 @@
+// section{
+//     .section_one{
+        
+//         position:relative ;
+//         top:-80px;
+//         .section-one{
+//             // display: flex;
+//             // align-self: center;
+//             // flex-wrap: wrap;
+//             // row-gap:2%;
+//           display:grid;
+//           grid-template-columns:auto auto auto;
+//           justify-content: space-between;
+//             @include container(85%,7.5%);
+//             .list-items{ 
+//                 width:90%;
+//                 background-color: $global;
+//                 border-radius: 5px;
+                // margin:20px 0px 0px 0px;
+                // padding:27px 20px 30px 30px; 
+//                 box-shadow: 2px 4px 6px #33333346; 
+//                 h1{
+//                     font-size: 45px;
+//                     color:$footer_background;
+//                     span{
+//                         color:$red_background;
+//                         font-size: 50px;
+//                         // padding-bottom: 40px;
+//                     }
+//                 }
+//                 .headingDescription{
+                    // font-size:17px;
+                    // font-weight:400;
+                    // color:$footer_background;
+                    // padding:25px 0px 20px 0px;
+                    // line-height: 1.4;
+//                 }
+//                 .pricePer-year{
+                    // font-size:20px;
+                    // font-weight:300;
+                    // color:$copyright_color;
+                    // padding-bottom:20px;
+                    // letter-spacing: 1px;
+//                 }
+//                 button{
+                    // width:100%;
+                    // border-radius:5px;
+                    // background-color: transparent;
+                    // border:3px solid $black_color;
+                    // padding:16px;
+
+                    // a{
+                    //     color:black;
+                    //     font-size: 15px;
+                    // }
+
+                    // &:hover{
+                    //     background-color: $black_color;
+                    //     a{
+                    //         color:$global;
+                    //     }
+                    // }
+//                 }
+//             }
+            
+//         }
+//     }
+// }
+
+
+
 section{
     .section_one{
-        
-        position:relative ;
+        position: relative;
         top:-80px;
+        // right: -30px;
         .section-one{
-            // display: flex;
-            // align-self: center;
-            // flex-wrap: wrap;
-            // gap:2%;
-          display:grid;
-          grid-template-columns:auto auto auto;
-          justify-content: space-between;
-            @include container(85%,7.5%);
-            .list-items{ 
-                // width:32%;
-                
-                // height:200px;
-                background-color: $global;
+            display: flex;
+            flex-wrap:wrap;
+            align-self: center;
+            gap: 2%;
+            @include container(96%,2%);
+         
+
+            .list-items{
+                width:32%;
                 border-radius: 5px;
                 margin:20px 0px 0px 0px;
-                padding:27px 20px 30px 30px; 
-                // box-shadow: 0px 5px 4px $hero_background ;
-                box-shadow: 2px 4px 6px #33333346; 
+                padding:25px 0px 30px 0px;
+                // margin-left: 25px;
+                box-shadow: 2px 4px 6px #33333346;
+                background-color: $global;
                 h1{
                     font-size: 45px;
                     color:$footer_background;
@@ -32,18 +100,18 @@ section{
                     }
                 }
                 .headingDescription{
-                    font-size:17px;
+                    font-size:16px;
                     font-weight:400;
                     color:$footer_background;
-                    padding:25px 0px 20px 0px;
                     line-height: 1.4;
                 }
                 .pricePer-year{
-                    font-size:20px;
+                    font-size:18px;
                     font-weight:300;
                     color:$copyright_color;
                     padding-bottom:20px;
                     letter-spacing: 1px;
+                    padding:25px 10px 20px 10px;
                 }
                 button{
                     width:100%;
@@ -51,12 +119,10 @@ section{
                     background-color: transparent;
                     border:3px solid $black_color;
                     padding:16px;
-
                     a{
                         color:black;
                         font-size: 15px;
                     }
-
                     &:hover{
                         background-color: $black_color;
                         a{
@@ -65,7 +131,7 @@ section{
                     }
                 }
             }
-            
         }
     }
 }
+

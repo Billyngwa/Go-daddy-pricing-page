@@ -12,6 +12,11 @@
 @import './desktop/footer/footer';
 
 
+@media(max-width:1200px){
+    @import './screens/header';
+    @import './screens/section';
+    @import './screens/footer';
+}
 @media(max-width:990px){
     @import './tablet/header';
     @import './tablet/section';
@@ -22,5 +27,3 @@
     @import './mobile/section';
     @import './mobile/footer';
 }
-
-

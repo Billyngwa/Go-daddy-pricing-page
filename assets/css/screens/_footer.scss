@@ -1,0 +1,136 @@
+footer{
+    div.footer_section{
+        @include displayElementsflex (0px 0px 0px 0px);
+        div.footer_logo{
+            @include sectionWidth-backgroudColor($red_backgroundhover,25%);
+            svg{
+                margin:250px 0px 0px 30px;
+                width:200px;
+                height:194px;
+            }
+        }
+        div.footer_right--blog{
+            @include sectionWidth-backgroudColor($footer_background,75%);
+            div.footer_container{
+                @include footerContainer (block,90%,5%);
+                div.form_line{
+                    @include displayElementsflex (center);
+                    margin:-20px 0px 65px 0px;
+                    
+                    p{
+                        color: $global;
+                        font-size: 26px;
+                        font-weight: 300;
+                    }
+                    form{
+                        width: 43%;
+                        background-color: $global;
+                        border-radius: 5px;
+                        height:40px;
+                        input{
+                            @include inputSearch( 3px solid transparent,$global,$global,22px,90%,60px);
+                            border-radius: 5px;
+                            font-size:24px;
+                            font-weight: 300;
+                            height: 100%;
+                            color: $copyright_color;
+                        }
+                        button{
+                            border: none;
+                            background: transparent;
+                            color: $red_background;
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .footer_links{
+                    display: grid;
+                    grid-template-columns: auto auto auto auto;
+                    margin:-20px 0px 90px 0px;
+                    .footer_links--item{
+                        width: 97%;
+                        .footer_heading{
+                            color: #999696f6;
+                            line-height: 50px;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                        .list--footer{
+                            margin:-18px 0px 0px 0px;
+                            .list_item--footer{
+                                color: $global;
+                                margin:10px 0px 0px 0px; 
+                                font-size: 13px;
+                                @include styleType;
+                                a{
+                                    color: inherit;
+                                    text-decoration : none;
+                                    &:hover{
+                                        text-decoration:underline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer_links--login_col{
+                    color: $global;
+                    text-decoration: none;
+                    ul{
+                        display: flex;
+                        margin: -70px 0px 0px 220px;
+                        li{
+                            @include styleType;
+                            margin-left: 12px;
+                            a{
+                                color: inherit;
+                                font-size:14px;
+                                font-weight: 600;
+                                line-height: 50px;
+                                text-decoration: none;
+                                &:hover{
+                                    color: inherit;
+                                    text-decoration: underline;
+                                    transition: 1s;
+
+                                    i{
+                                        margin-left: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .copyright-social_media{
+               display:flex;
+                   
+               padding:20px 0px 0px 30px;
+               margin:0px 0px 30px 0px;
+
+                    .copyright{
+                        font-size: 14px;
+                        font-weight:400;
+                        color:#9999;
+                    }
+
+                    .socialmedia{
+                        display:inherit;
+                        li{
+                            @include styleType;
+                            margin: -20px 0x 0px 0px; 
+                            font-size: 14px;
+                            font-weight:400;
+                            a{
+                         
+                                color:$copyright_color;
+                              
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

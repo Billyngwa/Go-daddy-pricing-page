@@ -30,9 +30,16 @@ header{
                         font-size:14px;
                         font-weight:500;
                         color:$footer_background;
+                        &:hover  .i{
+                            color:$red_background;
+                        }
 
                         &:hover  .nav_list_absolute{
                             display: block;
+                        }
+                        i{
+                            font-size: 14px;
+                            //
                         }
 
                         .nav_list_absolute{
@@ -52,6 +59,7 @@ header{
                                 width:100%;
                                 height:43px;
                                 overflow: hidden;
+
                                 .type-search{
                                     color: $footer_background;
                                     background: transparent;
@@ -253,7 +261,8 @@ header{
                     border:none;
                     border-top: 1px solid $black_color;
                     border-bottom: 1px solid $black_color;
-                    font-size:20px; 
+                    font-size:14px; 
+                    font-weight:700;
                     font-family: $font_family;
                     color:$black_color;
                     margin:20px 0px 15px 0px;
@@ -264,16 +273,16 @@ header{
                 .cart_search{
                     padding:10px;
                     border:none;
-                    border-radius:15px;
-                    font-size:20px; 
-                    font-weight:bold;
+                    border-radius:5px;
+                    font-size:14px; 
+                    font-weight:700;
                     font-family: $font_family;
                     color:$global;
                     margin:20px 0px 15px 0px;
                     background-color: $black_color;
                     text-align: center;
                     width:100%;
-                    height:70px;
+                    height:50px;
                 }
             }
         }
@@ -324,4 +333,8 @@ header{
             }
         }
     }
+}
+
+.nav_list--relative:hover i{
+    color: $red_background;
 }

@@ -2,10 +2,16 @@ section{
     .section_one{
         top: -50px;
         .section-one{
-            @include container(96%, 2%);
+            display:flex;
+            align-self: center;
+            flex-wrap: wrap;
+            row-gap:2%;
+            @include container(80%, 10%);
+            margin-right: auto;
             .list-items{
-                width:95%;
-                margin:20px 10px 0px 0px; 
+                width:31%;
+                padding:27px 20px 30px 30px; 
+                // margin:20px 10px 0px 0px; 
                 box-shadow: 2px 3px 6px #33333346; 
                 h1{
                     font-size: 40px;
@@ -20,26 +26,35 @@ section{
                     font-size:20px;
 
                 }
+                button{
+                    margin:auto;
+                }
             }
         }
     }
     .section-two{
-        @include container(99%, 0.5%);
+        // width: auto;
+        // margin: auto;
+        @include container(80%,10%);
+        margin-right: auto;
+        // padding-left: 7%;
         @include displayElementsflex(center);
     
         .left-div{
-
+            // width: 40%;
             h1{
-                font-size: 30px;
-                text-align: center;
+                font-size: 40px;
+                // white-space: nowrap;
                 margin-right:60px;
+                font-weight: 900;
+                width: 340px;
             }
             p{
-                font-size: 23px;
+                font-size: 24px;
                 font-weight: 300;
-                text-align: center;
                 letter-spacing: 0px;
                 padding:30px 0px 10px 0px;
+                width: 390px;
             }
 
             ul{
@@ -48,28 +63,39 @@ section{
                 }
             }
             button{
-                width:90%;
+                width:60%;
                 margin-right:30px;
                 padding:14px;
             }
         }
         .right-div{
-            display:none;
+            display:block;
+            width: 48%;
+            margin-left: 2%;
+            // margin:auto;
+        //    height:300px; 
+            // margin-left:70px;
+            // width: 50%;
+            img{
+                width: 98%;
+            margin-left: 2%;
+                vertical-align: middle;
+                // height: 50%;
+            }
          }
     }
     .section-three{
         h1{
-            font-size: 28px;
-            font-weight: 700;
-            // width:100%;
+            font-size: 30px;
+            font-weight: 900;
+            width:100%;
             // text-align: left;
         }
         p{
-            font-size: 22px;
-
+            font-size: 22px; 
         }
         .reasons-to-choose-Domain{
-            display:block;
+            // display:block;
             margin: -50px 0px 10px 0px;
             .reason{
                 width:100%;
@@ -87,6 +113,7 @@ section{
         }
     }
     .section-four{
+        @include container(93%, 3.5%);
         .section-four-header{
             padding-bottom:15px;
             padding-top: 80px;
@@ -101,23 +128,28 @@ section{
     .section-five{
         margin-top: 89px;
         .section5_flexbox{
-            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             .section-five_mobile-img{
-                display: block;
-                width:50%;
-                margin-left:25%;
-                padding:70px 0px 30px 0px;
+                display: none;
             }
             .section-five-img{
-                display:none;
+                width:80%;
+                img{
+                    width: 100%;
+                    // height: 100%;
+                }
             }
             .right-block{
-                margin:10px 0px 0px 0px;
+                margin:40px 0px 80px 20px;
                 .heading-description{
                     font-size: 16px;
                     font-weight: 300;
+                    line-height: 1.5;
+                    width:340px;
                     // color: $footer_background;
-                    // padding: 0px 0px 30px 0px;
+                    padding: 0px 0px 30px 0px;
                 }
                 .how-to-choose-domain{
                     a{

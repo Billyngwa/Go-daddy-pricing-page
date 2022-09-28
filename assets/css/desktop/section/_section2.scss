@@ -3,21 +3,19 @@
     @include container(85%, 7.5%);
 
     .right-div_before{
-       display:none;
+       display:none; 
     }
     .left-div{
-        width: 50%;
-        margin-left: 25px;
+        width:50%;
+        margin-left:25px;
         h1{
-            font-size: 45px;
-            text-shadow: 5px;
-            // margin-left: 30px;
+            font-size:45px;
             text-shadow: 1px 1px 2px $footer_background;
         }
         p{
             padding:50px 0px 10px 0px;
             font-size:30px;
-            font-weight: 300;
+            font-weight:300;
             color:$footer_background;
         }
         ul{
@@ -43,8 +41,6 @@
             &:hover{
                 background-color:$footer_background;
             }
-
-
 
             a{
                 color: $global;

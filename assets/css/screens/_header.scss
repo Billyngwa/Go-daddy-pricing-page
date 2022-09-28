@@ -1,0 +1,38 @@
+header{
+    .header_section{
+        .container{
+            .logo{
+                width:160px;
+            }
+            @include container(98%,1%);
+            #nav_panel{
+                margin: 0px 0px 0px 10px;
+                padding-right: 25px;
+            }
+        }
+        .hero{
+            .banner_section{
+                .form_and_headings{
+                    @include container(98%,1%);
+                }
+            }
+        }
+    }
+}
+.help_cart_login{
+    .nav_list_relative_help{
+        padding: 0px 15px 0px 0px;
+        .nav_list_absolute_help{
+            right:-75px;
+        }
+
+    }
+    .nav_list_relative_cart{
+        padding: 0px 15px 0px 0px;
+        .nav_list_absolute_cart{
+            right:-43px;
+            padding-top:45px;
+            width:34vw;
+        }
+    }
+}
