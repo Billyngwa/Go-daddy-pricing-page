@@ -4,7 +4,7 @@ footer{
         div.footer_logo{
             display: none;
         }
-        div.footer_right--blog{
+        div.footer_right_blog{
             width:100%;
         //   @include container(98%, 1%);
             div.footer_container{
@@ -37,7 +37,7 @@ footer{
                     // }
                 }
                  
-                .footer_links--login_col{
+                .footer_links_login_col{
                     ul{
                         display: flex;
                         margin: 20px 0px 0px 5px;
@@ -57,7 +57,7 @@ footer{
                     }
                 }
                 
-                // .copyright-social_media{
+                // .copyright_social_media{
                 //     @include displayElementsflex(center);
                 //     margin:0px 0px 100px 0px;
 
@@ -83,7 +83,7 @@ footer{
 
                 //     }
                 // }
-                .copyright-social_media{
+                .copyright_social_media{
                     display: flex;
                     padding:20px 0px 0px 30px;
                     margin:0px 0px 30px 0px;

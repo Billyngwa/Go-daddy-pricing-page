@@ -7,7 +7,7 @@ footer{
                 margin:190px 0px 0px 70px;
             }
         }
-        div.footer_right--blog{
+        div.footer_right_blog{
             @include sectionWidth-backgroudColor($footer_background,65%);
             div.footer_container{
                 @include footerContainer (block,85%,7.5%);
@@ -42,16 +42,16 @@ footer{
                 .footer_links{
                     @include displayElementsflex(null);
                     margin:-20px 0px 100px 0px;
-                    .footer_links--item{
+                    .footer_links_item{
                         .footer_heading{
                             color: $copyright_color;
                             line-height: 50px;
                             font-size: 14px;
                             font-weight: 400;
                         }
-                        .list--footer{
+                        .list_footer{
                             margin:-18px 0px 0px 0px;
-                            .list_item--footer{
+                            .list_item_footer{
                                 color: $global;
                                 margin:10px 0px 0px 0px; 
                                 font-size: 14px;
@@ -69,7 +69,7 @@ footer{
                 }
 
                 
-                .footer_links--login_col{
+                .footer_links_login_col{
                     color: $global;
                     text-decoration: none;
                     // h4{
@@ -114,7 +114,7 @@ footer{
                     }
                 }
 
-                .copyright-social_media{
+                .copyright_social_media{
                     @include displayElementsflex(center);
                     margin:0px 0px 100px 0px;
 

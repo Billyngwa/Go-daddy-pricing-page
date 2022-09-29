@@ -1,9 +1,9 @@
 section{
-    .section_one{
+    .section_one_main{
         
         position:relative ;
         top:-80px;
-        .section-one{
+        .section_one{
             // display: flex;
             // align-self: center;
             // flex-wrap: wrap;
@@ -12,7 +12,7 @@ section{
           grid-template-columns:auto auto auto;
           justify-content: space-between;
             @include container(85%,7.5%);
-            .list-items{ 
+            .list_items{ 
                 width:90%;
                 background-color: $global;
                 border-radius: 5px;
@@ -28,14 +28,14 @@ section{
                         // padding-bottom: 40px;
                     }
                 }
-                .headingDescription{
+                .heading_description{
                     font-size:15px;
                     font-weight:400;
                     color:$footer_background;
                     padding:25px 0px 20px 0px;
                     line-height: 1.4;
                 }
-                .pricePer-year{
+                .price_per_year{
                     font-size:20px;
                     font-weight:300;
                     color:$copyright_color;
@@ -74,7 +74,7 @@ section{
 //         position: relative;
 //         top:-80px;
 //         // right: -30px;
-//         .section-one{
+//         .section_one{
 //             display: flex;
 //             flex-wrap:wrap;
 //             align-self: center;
@@ -82,7 +82,7 @@ section{
 //             @include container(96%,2%);
          
 
-//             .list-items{
+//             .list_items{
 //                 width:32%;
 //                 border-radius: 5px;
 //                 margin:20px 0px 0px 0px;
@@ -99,13 +99,13 @@ section{
 //                         // padding-bottom: 40px;
 //                     }
 //                 }
-//                 .headingDescription{
+//                 .heading_description{
 //                     font-size:16px;
 //                     font-weight:400;
 //                     color:$footer_background;
 //                     line-height: 1.4;
 //                 }
-//                 .pricePer-year{
+//                 .price_per_year{
 //                     font-size:18px;
 //                     font-weight:300;
 //                     color:$copyright_color;

@@ -1,5 +1,5 @@
 section{
-    .section-three {
+    .section_three {
         @include container(85%,7.5%);
         margin-top: 90px;
 
@@ -17,7 +17,7 @@ section{
             padding:0px 0px 100px 0px;
             color: $copyright_color;
         }
-        .reasons-to-choose-Domain{
+        .reasons_to_choose_Domain{
             @include displayElementsflex(null);
 
             .reason{

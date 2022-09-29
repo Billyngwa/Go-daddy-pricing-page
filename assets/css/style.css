@@ -59,14 +59,14 @@ header .header_section .container #nav_panel {
   margin: 0px 158px 0px 0px;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements {
+header .header_section .container #nav_panel .nav_panel_elements {
   display: inherit;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative {
   position: relative;
   cursor: default;
   margin: 0px 0px 0px 10px;
@@ -76,19 +76,19 @@ header .header_section .container #nav_panel .nav_panel--elements .nav_list--rel
   color: #333333;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative:hover .i {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative:hover .i {
   color: #e24747;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative:hover .nav_list_absolute {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative:hover .nav_list_absolute {
   display: block;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative i {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative i {
   font-size: 14px;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative .nav_list_absolute {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute {
   position: absolute;
   z-index: 1;
   display: none;
@@ -97,7 +97,7 @@ header .header_section .container #nav_panel .nav_panel--elements .nav_list--rel
   padding-top: 20px;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative .nav_list_absolute .search_input {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .search_input {
   border-radius: 5px;
   border: 1px solid #dfdddd;
   margin: 68px 90px 20px 10px;
@@ -116,7 +116,7 @@ header .header_section .container #nav_panel .nav_panel--elements .nav_list--rel
   overflow: hidden;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative .nav_list_absolute .search_input .type-search {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .search_input .type_search {
   color: #333333;
   background: transparent;
   border: none;
@@ -125,28 +125,28 @@ header .header_section .container #nav_panel .nav_panel--elements .nav_list--rel
   outline: none;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative .nav_list_absolute .search_input .search_button {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .search_input .search_button {
   border: none;
   background-color: transparent;
   color: #b63838;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative .nav_list_absolute .search_input .search_button i {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .search_input .search_button i {
   color: #b63838;
   font-size: 30px;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative .nav_list_absolute .list_items {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items {
   width: 100%;
   height: 45px;
   padding: 10px 0px 0px 0px;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative .nav_list_absolute .list_items:hover {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items:hover {
   background-color: #e7e7e7;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative .nav_list_absolute .list_items a {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items a {
   color: #333333;
   font-weight: 500;
   font-size: 16px;
@@ -154,18 +154,18 @@ header .header_section .container #nav_panel .nav_panel--elements .nav_list--rel
   margin: 0px 0px 0px 10px;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative .nav_list_absolute .list_items a:hover {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items a:hover {
   color: #333333;
   font-size: 16px;
   text-decoration: underline;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative .nav_list_absolute .list_items .security {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items .security {
   color: #24819a;
   text-decoration: underline;
 }
 
-header .header_section .container #nav_panel .nav_panel--elements .nav_list--relative .nav_list_absolute .list_items .security:hover {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items .security:hover {
   color: #24819a;
 }
 
@@ -402,7 +402,7 @@ header .header_section .container #nav_panel .nav_panel--elements .nav_list--rel
   margin: 4px 0px 3px 4px;
 }
 
-.nav_list--relative:hover i {
+.nav_list_relative:hover i {
   color: #e24747;
 }
 
@@ -524,12 +524,12 @@ header .header_section .hero .banner_section .form_and_headings .domain_consider
   margin: 70px 20px 0px 0px;
 }
 
-section .section_one {
+section .section_one_main {
   position: relative;
   top: -80px;
 }
 
-section .section_one .section-one {
+section .section_one_main .section_one {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto;
@@ -541,7 +541,7 @@ section .section_one .section-one {
   margin-left: 7.5%;
 }
 
-section .section_one .section-one .list-items {
+section .section_one_main .section_one .list_items {
   width: 90%;
   background-color: #ffff;
   border-radius: 5px;
@@ -551,17 +551,17 @@ section .section_one .section-one .list-items {
           box-shadow: 2px 4px 6px #33333346;
 }
 
-section .section_one .section-one .list-items h1 {
+section .section_one_main .section_one .list_items h1 {
   font-size: 45px;
   color: #333333;
 }
 
-section .section_one .section-one .list-items h1 span {
+section .section_one_main .section_one .list_items h1 span {
   color: #e24747;
   font-size: 50px;
 }
 
-section .section_one .section-one .list-items .headingDescription {
+section .section_one_main .section_one .list_items .heading_description {
   font-size: 15px;
   font-weight: 400;
   color: #333333;
@@ -569,7 +569,7 @@ section .section_one .section-one .list-items .headingDescription {
   line-height: 1.4;
 }
 
-section .section_one .section-one .list-items .pricePer-year {
+section .section_one_main .section_one .list_items .price_per_year {
   font-size: 20px;
   font-weight: 300;
   color: #666666;
@@ -577,7 +577,7 @@ section .section_one .section-one .list-items .pricePer-year {
   letter-spacing: 1px;
 }
 
-section .section_one .section-one .list-items button {
+section .section_one_main .section_one .list_items button {
   width: 100%;
   border-radius: 5px;
   background-color: transparent;
@@ -585,20 +585,20 @@ section .section_one .section-one .list-items button {
   padding: 16px;
 }
 
-section .section_one .section-one .list-items button a {
+section .section_one_main .section_one .list_items button a {
   color: black;
   font-size: 15px;
 }
 
-section .section_one .section-one .list-items button:hover {
+section .section_one_main .section_one .list_items button:hover {
   background-color: #000000;
 }
 
-section .section_one .section-one .list-items button:hover a {
+section .section_one_main .section_one .list_items button:hover a {
   color: #ffff;
 }
 
-.section-two {
+.section_two {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,28 +609,28 @@ section .section_one .section-one .list-items button:hover a {
   margin-left: 7.5%;
 }
 
-.section-two .right-div_before {
+.section_two .right_div_before {
   display: none;
 }
 
-.section-two .left-div {
+.section_two .left_div {
   width: 50%;
   margin-left: 25px;
 }
 
-.section-two .left-div h1 {
+.section_two .left_div h1 {
   font-size: 45px;
   text-shadow: 1px 1px 2px #333333;
 }
 
-.section-two .left-div p {
+.section_two .left_div p {
   padding: 50px 0px 10px 0px;
   font-size: 30px;
   font-weight: 300;
   color: #333333;
 }
 
-.section-two .left-div ul li {
+.section_two .left_div ul li {
   list-style-type: disc;
   font-size: 15px;
   padding-top: 5px;
@@ -639,7 +639,7 @@ section .section_one .section-one .list-items button:hover a {
   margin-left: 20px;
 }
 
-.section-two .left-div button {
+.section_two .left_div button {
   width: 40%;
   border-radius: 5px;
   background-color: #000000;
@@ -647,21 +647,21 @@ section .section_one .section-one .list-items button:hover a {
   margin-top: 25px;
 }
 
-.section-two .left-div button:hover {
+.section_two .left_div button:hover {
   background-color: #333333;
 }
 
-.section-two .left-div button a {
+.section_two .left_div button a {
   color: #ffff;
 }
 
-section .section-three {
+section .section_three {
   width: 85%;
   margin-left: 7.5%;
   margin-top: 90px;
 }
 
-section .section-three h1 {
+section .section_three h1 {
   text-align: center;
   font-size: 40px;
   font-weight: 700;
@@ -669,7 +669,7 @@ section .section-three h1 {
   text-shadow: 1px 1px 3px #333333;
 }
 
-section .section-three p {
+section .section_three p {
   text-align: center;
   font-size: 26px;
   font-weight: 300;
@@ -677,7 +677,7 @@ section .section-three p {
   color: #666666;
 }
 
-section .section-three .reasons-to-choose-Domain {
+section .section_three .reasons_to_choose_Domain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -686,7 +686,7 @@ section .section-three .reasons-to-choose-Domain {
           justify-content: space-between;
 }
 
-section .section-three .reasons-to-choose-Domain .reason {
+section .section_three .reasons_to_choose_Domain .reason {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -696,33 +696,33 @@ section .section-three .reasons-to-choose-Domain .reason {
   width: 32%;
 }
 
-section .section-three .reasons-to-choose-Domain .reason .section4_image {
+section .section_three .reasons_to_choose_Domain .reason .section4_image {
   margin: 0px 0px 0px 0px;
 }
 
-section .section-three .reasons-to-choose-Domain .reason .trusted_source {
+section .section_three .reasons_to_choose_Domain .reason .trusted_source {
   margin: 0px 0px 0px 15px;
 }
 
-section .section-three .reasons-to-choose-Domain .reason .trusted_source h2 {
+section .section_three .reasons_to_choose_Domain .reason .trusted_source h2 {
   font-size: 18px;
   font-weight: 700;
   padding: 0px 0px 20px 0px;
 }
 
-section .section-three .reasons-to-choose-Domain .reason .trusted_source p {
+section .section_three .reasons_to_choose_Domain .reason .trusted_source p {
   font-size: 16px;
   font-weight: 300;
   display: inline;
   line-height: 1.5;
 }
 
-section .section-four {
+section .section_four {
   width: 80%;
   margin-left: 10%;
 }
 
-section .section-four .section-four-header {
+section .section_four .section_four_header {
   font-size: 26px;
   font-weight: 300;
   color: #666666;
@@ -731,20 +731,20 @@ section .section-four .section-four-header {
   padding-bottom: 70px;
 }
 
-section .section-four .section_four_relative {
+section .section_four .section_four_relative {
   border-radius: 5px;
   padding: 40px 0px 30px 30px;
   -webkit-box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.103);
           box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.103);
 }
 
-section .section-four .section_four_relative .heading_icon {
+section .section_four .section_four_relative .heading_icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-section .section-four .section_four_relative .heading_icon i {
+section .section_four .section_four_relative .heading_icon i {
   font-size: 22px;
   font-weight: 600;
   color: #333333;
@@ -752,7 +752,7 @@ section .section-four .section_four_relative .heading_icon i {
   font-size: 14px;
 }
 
-section .section-four .section_four_relative .heading_icon h1 {
+section .section_four .section_four_relative .heading_icon h1 {
   font-size: 22px;
   font-weight: 600;
   color: #333333;
@@ -760,14 +760,14 @@ section .section-four .section_four_relative .heading_icon h1 {
   padding: 0px 0px 0px 4px;
 }
 
-section .section-four .section_four_relative h1 {
+section .section_four .section_four_relative h1 {
   font-size: 22px;
   font-weight: 600;
   color: #333333;
   cursor: pointer;
 }
 
-section .section-four .section_four_relative .section_four_absolute {
+section .section_four .section_four_relative .section_four_absolute {
   margin: 5px 0px 0px 0px;
   overflow: hidden;
   max-height: 0;
@@ -775,7 +775,7 @@ section .section-four .section_four_relative .section_four_absolute {
   transition: max-height 0.7s ease-out;
 }
 
-section .section-four .section_four_relative .section_four_absolute .heading-description {
+section .section_four .section_four_relative .section_four_absolute .heading_description {
   font-size: 16px;
   font-weight: 400;
   color: #333333;
@@ -783,41 +783,41 @@ section .section-four .section_four_relative .section_four_absolute .heading-des
   padding: 0px 0px 0px 30px;
 }
 
-section .section-four .section_four_relative .section_four_absolute ul.section_four_absolute_ul li.list-item {
+section .section_four .section_four_relative .section_four_absolute ul.section_four_absolute_ul li.list_item {
   list-style-type: disc;
 }
 
-section .section-four .section_four_relative .section_four_absolute .domain_names {
+section .section_four .section_four_relative .section_four_absolute .domain_names {
   font-size: 16px;
   font-weight: 400;
   color: #333333;
   padding: 15px 0px 0px 30px;
 }
 
-.scetion-four-absolute .section_four_absolute_ul {
+.scetion_four_absolute .section_four_absolute_ul {
   padding: 0px 0px 0px 30px;
   list-style-type: disc;
 }
 
-.scetion-four-absolute .section_four_absolute_ul .list-item {
+.scetion_four_absolute .section_four_absolute_ul .list_item {
   font-size: 14px;
   font-weight: 400;
   color: #333333;
   padding: 20px 0px 0px 0px;
 }
 
-.heading-description span a, .domain_names span a {
+.heading_description span a, .domain_names span a {
   font-size: 16px;
   font-weight: 700;
   color: #2a9dbc;
 }
 
-.heading-description span a:hover, .domain_names span a:hover {
+.heading_description span a:hover, .domain_names span a:hover {
   color: #24819a;
   text-decoration: underline;
 }
 
-section .section-five {
+section .section_five {
   margin: 20px 0px 60px 0px;
   width: 85%;
   margin-left: 7.5%;
@@ -826,7 +826,7 @@ section .section-five {
           box-shadow: 9px 9px 8px #f4f4f4;
 }
 
-section .section-five .section5_flexbox {
+section .section_five .section5_flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -835,54 +835,54 @@ section .section-five .section5_flexbox {
           align-items: center;
 }
 
-section .section-five .section5_flexbox .section-five_mobile-img {
+section .section_five .section5_flexbox .section-five_mobile_img {
   display: none;
 }
 
-section .section-five .section5_flexbox .right-block {
+section .section_five .section5_flexbox .right_block {
   margin: 20px 0px 0px 60px;
 }
 
-section .section-five .section5_flexbox .right-block .section-five-heading {
+section .section_five .section5_flexbox .right_block .section_five_heading {
   font-size: 22px;
   font-weight: 300;
   color: #333333;
   padding: 0px 0px 15px 0px;
 }
 
-section .section-five .section5_flexbox .right-block .heading-description {
+section .section_five .section5_flexbox .right_block .heading_description {
   font-size: 16px;
   font-weight: 300;
   color: #333333;
   padding: 0px 0px 30px 0px;
 }
 
-section .section-five .section5_flexbox .right-block .how-to-choose-domain {
+section .section_five .section5_flexbox .right_block .how_to_choose_domain {
   padding: 0px 0px 20px 0px;
 }
 
-section .section-five .section5_flexbox .right-block .how-to-choose-domain a {
+section .section_five .section5_flexbox .right_block .how_to_choose_domain a {
   font-size: 16px;
   font-weight: 700;
   color: #2a9dbc;
 }
 
-section .section-five .section5_flexbox .right-block .how-to-choose-domain a i {
+section .section_five .section5_flexbox .right_block .how_to_choose_domain a i {
   padding-left: 6px;
 }
 
-section .section-five .section5_flexbox .right-block .how-to-choose-domain a:hover {
+section .section_five .section5_flexbox .right_block .how_to_choose_domain a:hover {
   color: #24819a;
   text-decoration: underline;
 }
 
-section .section-five .section5_flexbox .right-block .how-to-choose-domain a:hover i {
+section .section_five .section5_flexbox .right_block .how_to_choose_domain a:hover i {
   margin-left: 14px;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-section .section-five .section5_flexbox .right-block hr {
+section .section_five .section5_flexbox .right_block hr {
   border: 1px solid #f4f4f4;
   margin: 10px 0px 40px 0px;
 }
@@ -910,7 +910,7 @@ section .section-five .section5_flexbox .right-block hr {
   text-decoration: underline;
 }
 
-section .section-six {
+section .section_six {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -922,38 +922,38 @@ section .section-six {
   margin-left: 7.5%;
 }
 
-section .section-six h1 {
+section .section_six h1 {
   font-size: 16px;
   font-weight: 700px;
   color: #333333;
 }
 
-section .section-six .section-five-ul {
+section .section_six .section_five_ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-section .section-six .section-five-ul .list-items {
+section .section_six .section_five_ul .list_items {
   margin-left: 30px;
 }
 
-section .section-six .section-five-ul .list-items a {
+section .section_six .section_five_ul .list_items a {
   font-size: 16px;
   font-weight: 700;
   color: #2a9dbc;
 }
 
-section .section-six .section-five-ul .list-items a i {
+section .section_six .section_five_ul .list_items a i {
   padding-left: 6px;
 }
 
-section .section-six .section-five-ul .list-items a:hover {
+section .section_six .section_five_ul .list_items a:hover {
   color: #24819a;
 }
 
-section .section-six .section-five-ul .list-items a:hover i {
-  margin-left: 14px;
+section .section_six .section_five_ul .list_items a:hover i {
+  padding-left: 6px;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -979,19 +979,19 @@ footer div.footer_section div.footer_logo svg {
   margin: 190px 0px 0px 70px;
 }
 
-footer div.footer_section div.footer_right--blog {
+footer div.footer_section div.footer_right_blog {
   background-color: #333333;
   width: 65%;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container {
+footer div.footer_section div.footer_right_blog div.footer_container {
   display: block;
   width: 85%;
   margin: 80px 0px 0px 0px;
   margin-left: 7.5%;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container div.form_line {
+footer div.footer_section div.footer_right_blog div.footer_container div.form_line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1004,19 +1004,19 @@ footer div.footer_section div.footer_right--blog div.footer_container div.form_l
   margin: -20px 0px 65px 0px;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container div.form_line p {
+footer div.footer_section div.footer_right_blog div.footer_container div.form_line p {
   color: #ffff;
   font-size: 26px;
   font-weight: 300;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container div.form_line form {
+footer div.footer_section div.footer_right_blog div.footer_container div.form_line form {
   width: 43%;
   background-color: #ffff;
   border-radius: 5px;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container div.form_line form input {
+footer div.footer_section div.footer_right_blog div.footer_container div.form_line form input {
   border: none;
   outline: none;
   border-bottom: 3px solid transparent;
@@ -1031,14 +1031,14 @@ footer div.footer_section div.footer_right--blog div.footer_container div.form_l
   padding-left: 20px;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container div.form_line form button {
+footer div.footer_section div.footer_right_blog div.footer_container div.form_line form button {
   border: none;
   background: transparent;
   color: #e24747;
   font-size: 20px;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links {
+footer div.footer_section div.footer_right_blog div.footer_container .footer_links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1048,18 +1048,18 @@ footer div.footer_section div.footer_right--blog div.footer_container .footer_li
   margin: -20px 0px 100px 0px;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--item .footer_heading {
+footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .footer_heading {
   color: #666666;
   line-height: 50px;
   font-size: 14px;
   font-weight: 400;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--item .list--footer {
+footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .list_footer {
   margin: -18px 0px 0px 0px;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--item .list--footer .list_item--footer {
+footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .list_footer .list_item_footer {
   color: #ffff;
   margin: 10px 0px 0px 0px;
   font-size: 14px;
@@ -1067,33 +1067,33 @@ footer div.footer_section div.footer_right--blog div.footer_container .footer_li
   text-decoration: none;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--item .list--footer .list_item--footer a {
+footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .list_footer .list_item_footer a {
   color: inherit;
   text-decoration: none;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--item .list--footer .list_item--footer a:hover {
+footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .list_footer .list_item_footer a:hover {
   text-decoration: underline;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col {
+footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col {
   color: #ffff;
   text-decoration: none;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul {
+footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: -70px 0px 0px 300px;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li {
+footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul li {
   list-style: none;
   text-decoration: none;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li a {
+footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul li a {
   color: inherit;
   font-size: 14px;
   font-weight: 600;
@@ -1101,20 +1101,20 @@ footer div.footer_section div.footer_right--blog div.footer_container .footer_li
   text-decoration: none;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li a:hover {
+footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul li a:hover {
   color: inherit;
   text-decoration: underline;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li a:hover i {
+footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul li a:hover i {
   margin-left: 14px;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media {
+footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1127,22 +1127,22 @@ footer div.footer_section div.footer_right--blog div.footer_container .copyright
   margin: 0px 0px 100px 0px;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .copyright {
+footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .copyright {
   font-size: 14px;
   font-weight: 400;
   color: #666666;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .socialmedia {
+footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .socialmedia {
   display: inherit;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .socialmedia li {
+footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .socialmedia li {
   list-style: none;
   text-decoration: none;
 }
 
-footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .socialmedia li a {
+footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .socialmedia li a {
   margin: 0px 35px 0px 0px;
   color: #666666;
   font-size: 14px;
@@ -1183,11 +1183,11 @@ footer {
     padding-top: 45px;
     width: 34vw;
   }
-  section .section_one {
+  section .section_one_main {
     position: relative;
     top: -80px;
   }
-  section .section_one .section-one {
+  section .section_one_main .section_one {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto auto;
@@ -1198,7 +1198,7 @@ footer {
     width: 95%;
     margin-left: 2.5%;
   }
-  section .section_one .section-one .list-items {
+  section .section_one_main .section_one .list_items {
     width: 95%;
     background-color: #ffff;
     border-radius: 5px;
@@ -1206,46 +1206,46 @@ footer {
     -webkit-box-shadow: 2px 4px 6px #33333346;
             box-shadow: 2px 4px 6px #33333346;
   }
-  section .section_one .section-one .list-items h1 {
+  section .section_one_main .section_one .list_items h1 {
     font-size: 45px;
     color: #333333;
   }
-  section .section_one .section-one .list-items h1 span {
+  section .section_one_main .section_one .list_items h1 span {
     color: #e24747;
     font-size: 50px;
   }
-  section .section_one .section-one .list-items .headingDescription {
+  section .section_one_main .section_one .list_items .heading_description {
     font-size: 16px;
     font-weight: 400;
     color: #333333;
     padding: 25px 0px 0px 0px;
     line-height: 1.4;
   }
-  section .section_one .section-one .list-items .pricePer-year {
+  section .section_one_main .section_one .list_items .price_per_year {
     font-size: 18px;
     font-weight: 300;
     color: #666666;
     padding-bottom: 20px;
     letter-spacing: 1px;
   }
-  section .section_one .section-one .list-items button {
+  section .section_one_main .section_one .list_items button {
     width: 100%;
     border-radius: 5px;
     background-color: transparent;
     border: 3px solid #000000;
     padding: 16px;
   }
-  section .section_one .section-one .list-items button a {
+  section .section_one_main .section_one .list_items button a {
     color: black;
     font-size: 15px;
   }
-  section .section_one .section-one .list-items button:hover {
+  section .section_one_main .section_one .list_items button:hover {
     background-color: #000000;
   }
-  section .section_one .section-one .list-items button:hover a {
+  section .section_one_main .section_one .list_items button:hover a {
     color: #ffff;
   }
-  section .section-two {
+  section .section_two {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1255,24 +1255,24 @@ footer {
     width: 95%;
     margin-left: 2.5%;
   }
-  section .section-two .right-div_before {
+  section .section_two .right_div_before {
     display: none;
   }
-  section .section-two .left-div {
+  section .section_two .left_div {
     width: 50%;
     margin-left: 0px;
   }
-  section .section-two .left-div h1 {
+  section .section_two .left_div h1 {
     font-size: 40px;
     text-shadow: 1px 1px 2px #333333;
   }
-  section .section-two .left-div p {
+  section .section_two .left_div p {
     padding: 50px 0px 10px 0px;
     font-size: 30px;
     font-weight: 300;
     color: #333333;
   }
-  section .section-two .left-div ul li {
+  section .section_two .left_div ul li {
     list-style-type: disc;
     font-size: 15px;
     padding-top: 5px;
@@ -1280,7 +1280,7 @@ footer {
     color: #333333;
     margin-left: 20px;
   }
-  section .section-two .left-div button {
+  section .section_two .left_div button {
     width: 50%;
     border-radius: 5px;
     border: none;
@@ -1288,32 +1288,32 @@ footer {
     padding: 18px;
     margin-top: 25px;
   }
-  section .section-two .left-div button:hover {
+  section .section_two .left_div button:hover {
     background-color: #333333;
   }
-  section .section-two .left-div button a {
+  section .section_two .left_div button a {
     color: #ffff;
   }
-  section .section-three {
+  section .section_three {
     width: 95%;
     margin-left: 2.5%;
     margin-top: 90px;
   }
-  section .section-three h1 {
+  section .section_three h1 {
     text-align: center;
     font-size: 40px;
     font-weight: 700;
     padding: 0px 0px 20px 0px;
     text-shadow: 1px 1px 3px #333333;
   }
-  section .section-three p {
+  section .section_three p {
     text-align: center;
     font-size: 26px;
     font-weight: 300;
     padding: 0px 0px 100px 0px;
     color: #666666;
   }
-  section .section-three .reasons-to-choose-Domain {
+  section .section_three .reasons_to_choose_Domain {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1321,7 +1321,7 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  section .section-three .reasons-to-choose-Domain .reason {
+  section .section_three .reasons_to_choose_Domain .reason {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1330,28 +1330,28 @@ footer {
             justify-content: space-between;
     width: 32%;
   }
-  section .section-three .reasons-to-choose-Domain .reason .section4_image {
+  section .section_three .reasons_to_choose_Domain .reason .section4_image {
     margin: 0px 0px 0px 0px;
   }
-  section .section-three .reasons-to-choose-Domain .reason .trusted_source {
+  section .section_three .reasons_to_choose_Domain .reason .trusted_source {
     margin: 0px 0px 0px 15px;
   }
-  section .section-three .reasons-to-choose-Domain .reason .trusted_source h2 {
+  section .section_three .reasons_to_choose_Domain .reason .trusted_source h2 {
     font-size: 18px;
     font-weight: 700;
     padding: 0px 0px 20px 0px;
   }
-  section .section-three .reasons-to-choose-Domain .reason .trusted_source p {
+  section .section_three .reasons_to_choose_Domain .reason .trusted_source p {
     font-size: 16px;
     font-weight: 300;
     display: inline;
     line-height: 1.5;
   }
-  section .section-four {
+  section .section_four {
     width: 95%;
     margin-left: 2.5%;
   }
-  section .section-four .section-four-header {
+  section .section_four .section_four_header {
     font-size: 26px;
     font-weight: 300;
     color: #666666;
@@ -1359,13 +1359,13 @@ footer {
     padding-top: 90px;
     padding-bottom: 70px;
   }
-  section .section-four .section_four_relative {
+  section .section_four .section_four_relative {
     border-radius: 5px;
     padding: 40px 0px 30px 30px;
     -webkit-box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.103);
             box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.103);
   }
-  section .section-four .section_four_relative .heading_icon {
+  section .section_four .section_four_relative .heading_icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1374,42 +1374,42 @@ footer {
             align-items: center;
     cursor: pointer;
   }
-  section .section-four .section_four_relative .heading_icon i {
+  section .section_four .section_four_relative .heading_icon i {
     font-size: 90px;
     font-weight: 900;
     color: #e24747;
     font-size: 14px;
   }
-  section .section-four .section_four_relative .heading_icon h1 {
+  section .section_four .section_four_relative .heading_icon h1 {
     font-size: 22px;
     font-weight: 600;
     color: #333333;
     padding: 0px 0px 0px 10px;
   }
-  section .section-four .section_four_relative .section_four_absolute {
+  section .section_four .section_four_relative .section_four_absolute {
     margin: 5px 0px 0px 0px;
     overflow: hidden;
     max-height: 0;
     -webkit-transition: max-height 0.7s ease-out;
     transition: max-height 0.7s ease-out;
   }
-  section .section-four .section_four_relative .section_four_absolute .heading-description {
+  section .section_four .section_four_relative .section_four_absolute .heading_description {
     font-size: 16px;
     font-weight: 400;
     color: #333333;
     line-height: 1.2;
     padding: 0px 0px 0px 30px;
   }
-  section .section-four .section_four_relative .section_four_absolute ul.section_four_absolute_ul li.list-item {
+  section .section_four .section_four_relative .section_four_absolute ul.section_four_absolute_ul li.list-item {
     list-style-type: disc;
   }
-  section .section-four .section_four_relative .section_four_absolute .domain_names {
+  section .section_four .section_four_relative .section_four_absolute .domain_names {
     font-size: 16px;
     font-weight: 400;
     color: #333333;
     padding: 15px 0px 0px 30px;
   }
-  section .section-five {
+  section .section_five {
     margin: 20px 0px 60px 0px;
     width: 95%;
     margin-left: 2.5%;
@@ -1417,7 +1417,7 @@ footer {
     -webkit-box-shadow: 9px 9px 8px #f4f4f4;
             box-shadow: 9px 9px 8px #f4f4f4;
   }
-  section .section-five .section5_flexbox {
+  section .section_five .section5_flexbox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1425,42 +1425,42 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  section .section-five .section5_flexbox .section-five_mobile-img {
+  section .section_five .section5_flexbox .section_five_mobile_img {
     display: none;
   }
-  section .section-five .section5_flexbox .right-block {
+  section .section_five .section5_flexbox .right_block {
     margin: 20px 0px 0px 60px;
   }
-  section .section-five .section5_flexbox .right-block .section-five-heading {
+  section .section_five .section5_flexbox .right_block .section_five_heading {
     font-size: 22px;
     font-weight: 300;
     color: #333333;
     padding: 0px 0px 15px 0px;
   }
-  section .section-five .section5_flexbox .right-block .heading-description {
+  section .section_five .section5_flexbox .right_block .heading_description {
     font-size: 16px;
     font-weight: 300;
     color: #333333;
     padding: 0px 0px 30px 0px;
   }
-  section .section-five .section5_flexbox .right-block .how-to-choose-domain {
+  section .section_five .section5_flexbox .right_block .how_to_choose_domain {
     padding: 0px 0px 20px 0px;
   }
-  section .section-five .section5_flexbox .right-block .how-to-choose-domain a {
+  section .section_five .section5_flexbox .right_block .how_to_choose_domain a {
     font-size: 16px;
     font-weight: 600;
     color: #2a9dbc;
   }
-  section .section-five .section5_flexbox .right-block .how-to-choose-domain a:hover {
+  section .section_five .section5_flexbox .right_block .how_to_choose_domain a:hover {
     color: #24819a;
     text-decoration: underline;
   }
-  section .section-five .section5_flexbox .right-block .how-to-choose-domain a:hover i {
+  section .section_five .section5_flexbox .right_block .how_to_choose_domain a:hover i {
     margin-left: 6px;
     -webkit-transition: 0.7s;
     transition: 0.7s;
   }
-  section .section-five .section5_flexbox .right-block hr {
+  section .section_five .section5_flexbox .right_block hr {
     border: 1px solid #f4f4f4;
     margin: 10px 0px 40px 0px;
   }
@@ -1483,7 +1483,7 @@ footer {
     color: #24819a;
     text-decoration: underline;
   }
-  section .section-six {
+  section .section_six {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1494,28 +1494,28 @@ footer {
     width: 90%;
     margin-left: 5%;
   }
-  section .section-six h1 {
+  section .section_six h1 {
     font-size: 16px;
     font-weight: 700px;
     color: #333333;
   }
-  section .section-six .section-five-ul {
+  section .section_six .section_five_ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  section .section-six .section-five-ul .list-items {
+  section .section_six .section_five_ul .list_items {
     margin-left: 25px;
   }
-  section .section-six .section-five-ul .list-items a {
+  section .section_six .section_five_ul .list_items a {
     font-size: 14px;
     font-weight: 700;
     color: #2a9dbc;
   }
-  section .section-six .section-five-ul .list-items a:hover {
+  section .section_six .section_five_ul .list_items a:hover {
     color: #24819a;
   }
-  section .section-six .section-five-ul .list-items a:hover i {
+  section .section_six .section_five_ul .list_items a:hover i {
     margin-left: 10px;
     -webkit-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
@@ -1540,17 +1540,17 @@ footer {
     width: 200px;
     height: 194px;
   }
-  footer div.footer_section div.footer_right--blog {
+  footer div.footer_section div.footer_right_blog {
     background-color: #333333;
     width: 75%;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container {
+  footer div.footer_section div.footer_right_blog div.footer_container {
     display: block;
     width: 90%;
     margin: 80px 0px 0px 0px;
     margin-left: 5%;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container div.form_line {
+  footer div.footer_section div.footer_right_blog div.footer_container div.form_line {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1562,18 +1562,18 @@ footer {
             align-items: center;
     margin: -20px 0px 65px 0px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container div.form_line p {
+  footer div.footer_section div.footer_right_blog div.footer_container div.form_line p {
     color: #ffff;
     font-size: 26px;
     font-weight: 300;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container div.form_line form {
+  footer div.footer_section div.footer_right_blog div.footer_container div.form_line form {
     width: 43%;
     background-color: #ffff;
     border-radius: 5px;
     height: 40px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container div.form_line form input {
+  footer div.footer_section div.footer_right_blog div.footer_container div.form_line form input {
     border: none;
     outline: none;
     border-bottom: 3px solid transparent;
@@ -1588,99 +1588,99 @@ footer {
     height: 100%;
     color: #666666;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container div.form_line form button {
+  footer div.footer_section div.footer_right_blog div.footer_container div.form_line form button {
     border: none;
     background: transparent;
     color: #e24747;
     font-size: 20px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto auto auto;
         grid-template-columns: auto auto auto auto;
     margin: -20px 0px 90px 0px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--item {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item {
     width: 97%;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--item .footer_heading {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .footer_heading {
     color: #999696f6;
     line-height: 50px;
     font-size: 14px;
     font-weight: 400;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--item .list--footer {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .list_footer {
     margin: -18px 0px 0px 0px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--item .list--footer .list_item--footer {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .list_footer .list_item_footer {
     color: #ffff;
     margin: 10px 0px 0px 0px;
     font-size: 13px;
     list-style: none;
     text-decoration: none;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--item .list--footer .list_item--footer a {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .list_footer .list_item_footer a {
     color: inherit;
     text-decoration: none;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links .footer_links--item .list--footer .list_item--footer a:hover {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .list_footer .list_item_footer a:hover {
     text-decoration: underline;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col {
     color: #ffff;
     text-decoration: none;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: -70px 0px 0px 220px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul li {
     list-style: none;
     text-decoration: none;
     margin-left: 12px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li a {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul li a {
     color: inherit;
     font-size: 14px;
     font-weight: 600;
     line-height: 50px;
     text-decoration: none;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li a:hover {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul li a:hover {
     color: inherit;
     text-decoration: underline;
     -webkit-transition: 1s;
     transition: 1s;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li a:hover i {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul li a:hover i {
     margin-left: 14px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media {
+  footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 20px 0px 0px 30px;
     margin: 0px 0px 30px 0px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .copyright {
+  footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .copyright {
     font-size: 14px;
     font-weight: 400;
     color: #9999;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .socialmedia {
+  footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .socialmedia {
     display: inherit;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .socialmedia li {
+  footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .socialmedia li {
     list-style: none;
     text-decoration: none;
     margin: -20px 0x 0px 0px;
     font-size: 14px;
     font-weight: 400;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .socialmedia li a {
+  footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .socialmedia li a {
     color: #666666;
   }
 }
@@ -1748,10 +1748,10 @@ footer {
     font-size: 22px;
     font-weight: 700;
   }
-  section .section_one {
+  section .section_one_main {
     top: -50px;
   }
-  section .section_one .section-one {
+  section .section_one_main .section_one {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1764,28 +1764,28 @@ footer {
     margin-left: 10%;
     margin-right: auto;
   }
-  section .section_one .section-one .list-items {
+  section .section_one_main .section_one .list_items {
     width: 31%;
     padding: 27px 20px 30px 30px;
     -webkit-box-shadow: 2px 3px 6px #33333346;
             box-shadow: 2px 3px 6px #33333346;
   }
-  section .section_one .section-one .list-items h1 {
+  section .section_one_main .section_one .list_items h1 {
     font-size: 40px;
   }
-  section .section_one .section-one .list-items h1 span {
+  section .section_one_main .section_one .list_items h1 span {
     font-size: 40px;
   }
-  section .section_one .section-one .list-items .headingDescription {
+  section .section_one_main .section_one .list_items .heading_description {
     font: size 17px;
   }
-  section .section_one .section-one .list-items .pricePer-year {
+  section .section_one_main .section_one .list_items .price_per_year {
     font-size: 20px;
   }
-  section .section_one .section-one .list-items button {
+  section .section_one_main .section_one .list_items button {
     margin: auto;
   }
-  section .section-two {
+  section .section_two {
     width: 80%;
     margin-left: 10%;
     margin-right: auto;
@@ -1799,76 +1799,76 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  section .section-two .left-div h1 {
+  section .section_two .left_div h1 {
     font-size: 40px;
     margin-right: 60px;
     font-weight: 900;
     width: 340px;
   }
-  section .section-two .left-div p {
+  section .section_two .left_div p {
     font-size: 24px;
     font-weight: 300;
     letter-spacing: 0px;
     padding: 30px 0px 10px 0px;
     width: 390px;
   }
-  section .section-two .left-div ul li {
+  section .section_two .left_div ul li {
     line-height: 1.8;
   }
-  section .section-two .left-div button {
+  section .section_two .left_div button {
     width: 60%;
     margin-right: 30px;
     padding: 14px;
   }
-  section .section-two .right-div {
+  section .section_two .right_div {
     display: block;
     width: 48%;
     margin-left: 2%;
   }
-  section .section-two .right-div img {
+  section .section_two .right_div img {
     width: 98%;
     margin-left: 2%;
     vertical-align: middle;
   }
-  section .section-three h1 {
+  section .section_three h1 {
     font-size: 30px;
     font-weight: 900;
     width: 100%;
   }
-  section .section-three p {
+  section .section_three p {
     font-size: 22px;
   }
-  section .section-three .reasons-to-choose-Domain {
+  section .section_three .reasons_to_choose_Domain {
     margin: -50px 0px 10px 0px;
   }
-  section .section-three .reasons-to-choose-Domain .reason {
+  section .section_three .reasons_to_choose_Domain .reason {
     width: 100%;
     margin: 15px 0px 10px 0px;
   }
-  section .section-three .reasons-to-choose-Domain .reason .trusted_source {
+  section .section_three .reasons_to_choose_Domain .reason .trusted_source {
     padding-top: 40px;
   }
-  section .section-three .reasons-to-choose-Domain .reason .trusted_source h2 {
+  section .section_three .reasons_to_choose_Domain .reason .trusted_source h2 {
     font-size: 16px;
     font-weight: 300px;
     color: #333333;
   }
-  section .section-four {
+  section .section_four {
     width: 93%;
     margin-left: 3.5%;
   }
-  section .section-four .section-four-header {
+  section .section_four .section_four_header {
     padding-bottom: 15px;
     padding-top: 80px;
     font-size: 20px;
   }
-  section .section-four .section-four-relative h1 {
+  section .section_four .section_four_relative h1 {
     font-size: 16px;
   }
-  section .section-five {
+  section .section_five {
     margin-top: 89px;
   }
-  section .section-five .section5_flexbox {
+  section .section_five .section5_flexbox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1879,26 +1879,26 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  section .section-five .section5_flexbox .section-five_mobile-img {
+  section .section_five .section5_flexbox .section_five_mobile_img {
     display: none;
   }
-  section .section-five .section5_flexbox .section-five-img {
+  section .section_five .section5_flexbox .section_five_img {
     width: 80%;
   }
-  section .section-five .section5_flexbox .section-five-img img {
+  section .section_five .section5_flexbox .section_five_img img {
     width: 100%;
   }
-  section .section-five .section5_flexbox .right-block {
+  section .section_five .section5_flexbox .right_block {
     margin: 40px 0px 80px 20px;
   }
-  section .section-five .section5_flexbox .right-block .heading-description {
+  section .section_five .section5_flexbox .right_block .heading_description {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
     width: 340px;
     padding: 0px 0px 30px 0px;
   }
-  section .section-five .section5_flexbox .right-block .how-to-choose-domain a {
+  section .section_five .section5_flexbox .right_block .how_to_choose_domain a {
     font-size: 14px;
     font-weight: 400;
   }
@@ -1906,82 +1906,82 @@ footer {
     font-size: 14px;
     font-weight: 500;
   }
-  section .section-six {
+  section .section_six {
     display: block;
   }
-  section .section-six h1 {
+  section .section_six h1 {
     text-align: center;
   }
-  section .section-six ul {
+  section .section_six ul {
     text-align: center;
     display: block;
   }
-  section .section-six ul li {
+  section .section_six ul li {
     padding: 15px 0px 5px 0px;
   }
-  section .section-six ul li a {
+  section .section_six ul li a {
     font-size: 14px;
   }
   footer div.footer_section div.footer_logo {
     display: none;
   }
-  footer div.footer_section div.footer_right--blog {
+  footer div.footer_section div.footer_right_blog {
     width: 100%;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container div.form_line {
+  footer div.footer_section div.footer_right_blog div.footer_container div.form_line {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container div.form_line p {
+  footer div.footer_section div.footer_right_blog div.footer_container div.form_line p {
     text-align: center;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container div.form_line form {
+  footer div.footer_section div.footer_right_blog div.footer_container div.form_line form {
     width: 45%;
     height: 41px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container div.form_line form input {
+  footer div.footer_section div.footer_right_blog div.footer_container div.form_line form input {
     height: 41px;
     font-size: 24px;
     font-weight: 300;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links {
     display: block;
     margin: 0px;
     width: 100%;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 20px 0px 0px 5px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li a {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul li a {
     font-size: 14px;
     text-align: center;
     margin: 00px 0px 0px 30px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li a:hover i {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul li a:hover i {
     margin-left: 0px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media {
+  footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 20px 0px 0px 30px;
     margin: 0px 0px 30px 0px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .socialmedia {
+  footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .socialmedia {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 0px 0x 0px 50px;
     width: 40%;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .socialmedia li {
+  footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .socialmedia li {
     margin: -20px 10x 0px 0px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .socialmedia li a {
+  footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .socialmedia li a {
     color: #666666;
     font-size: 22px;
     font-weight: 400;
@@ -2052,10 +2052,10 @@ footer {
     font-size: 18px;
     font-weight: 700;
   }
-  section .section_one {
+  section .section_one_main {
     top: -50px;
   }
-  section .section_one .section-one {
+  section .section_one_main .section_one {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2066,32 +2066,32 @@ footer {
     width: 80%;
     margin-left: 10%;
   }
-  section .section_one .section-one .list-items {
+  section .section_one_main .section_one .list_items {
     width: 100%;
     -webkit-box-shadow: 2px 3px 6px #33333346;
             box-shadow: 2px 3px 6px #33333346;
   }
-  section .section-two {
+  section .section_two {
     display: block;
     width: 100%;
   }
-  section .section-two .right-div_before {
+  section .section_two .right_div_before {
     display: block;
     width: 80%;
     margin-left: 10%;
     padding: 60px 0px 50px 0px;
   }
-  section .section-two .left-div {
+  section .section_two .left_div {
     width: 100%;
     margin: 0px;
   }
-  section .section-two .left-div h1 {
+  section .section_two .left_div h1 {
     font-size: 27px;
     text-align: center;
     font-weight: 900;
     width: 85%;
   }
-  section .section-two .left-div p {
+  section .section_two .left_div p {
     width: 85%;
     font-size: 20px;
     font-weight: 300;
@@ -2099,82 +2099,82 @@ footer {
     letter-spacing: 0px;
     padding: 30px 0px 10px 0px;
   }
-  section .section-two .left-div ul li {
+  section .section_two .left_div ul li {
     line-height: 1.8;
   }
-  section .section-two .left-div button {
+  section .section_two .left_div button {
     width: 85%;
     padding: 14px 14px 14px 14px;
   }
-  section .section-two .right-div {
+  section .section_two .right_div {
     display: none;
   }
-  section .section-three h1 {
+  section .section_three h1 {
     font-size: 28px;
     font-weight: 700;
     margin: -50px 0px 0px 0px;
   }
-  section .section-three p {
+  section .section_three p {
     font-size: 22px;
   }
-  section .section-three .reasons-to-choose-Domain {
+  section .section_three .reasons_to_choose_Domain {
     display: block;
     margin: -50px 0px 10px 0px;
   }
-  section .section-three .reasons-to-choose-Domain .reason {
+  section .section_three .reasons_to_choose_Domain .reason {
     width: 100%;
     margin: 15px 0px 10px 0px;
   }
-  section .section-three .reasons-to-choose-Domain .reason .trusted_source {
+  section .section_three .reasons_to_choose_Domain .reason .trusted_source {
     padding-top: 40px;
   }
-  section .section-three .reasons-to-choose-Domain .reason .trusted_source h2 {
+  section .section_three .reasons_to_choose_Domain .reason .trusted_source h2 {
     font-size: 16px;
     font-weight: 300px;
     color: #333333;
   }
-  section .section-three .reasons-to-choose-Domain .reason .trusted_source p {
+  section .section_three .reasons_to_choose_Domain .reason .trusted_source p {
     font-size: 16px;
     font-weight: 300;
     display: inline;
     line-height: 1.5;
   }
-  section .section-four .section-four-header {
+  section .section_four .section_four_header {
     padding-bottom: 15px;
     padding-top: 80px;
     font-size: 20px;
   }
-  section .section-four .section-four-relative .heading_icon h1 {
+  section .section_four .section_four_relative .heading_icon h1 {
     font-size: 10px !important;
     width: 100%;
   }
-  section .section-five {
+  section .section_five {
     margin-top: 89px;
     width: 95%;
     margin-left: 2.5%;
   }
-  section .section-five .section5_flexbox {
+  section .section_five .section5_flexbox {
     display: block;
   }
-  section .section-five .section5_flexbox .section-five_mobile-img {
+  section .section_five .section5_flexbox .section_five_mobile_img {
     display: block;
     width: 50%;
     margin-left: 25%;
     padding: 70px 0px 30px 0px;
   }
-  section .section-five .section5_flexbox .section-five-img {
+  section .section_five .section5_flexbox .section_five_img {
     display: none;
   }
-  section .section-five .section5_flexbox .right-block {
+  section .section_five .section5_flexbox .right_block {
     width: 100%;
     margin: 10px 0px 0px 0px;
   }
-  section .section-five .section5_flexbox .right-block .heading-description {
+  section .section_five .section5_flexbox .right_block .heading_description {
     font-size: 16px;
     font-weight: 300;
     width: auto;
   }
-  section .section-five .section5_flexbox .right-block .how-to-choose-domain a {
+  section .section_five .section5_flexbox .right_block .how_to_choose_domain a {
     font-size: 14px;
     font-weight: 400;
   }
@@ -2182,68 +2182,68 @@ footer {
     font-size: 14px;
     font-weight: 500;
   }
-  section .section-six {
+  section .section_six {
     display: block;
   }
-  section .section-six h1 {
+  section .section_six h1 {
     text-align: center;
   }
-  section .section-six ul {
+  section .section_six ul {
     text-align: center;
     display: block;
   }
-  section .section-six ul li {
+  section .section_six ul li {
     padding: 15px 0px 5px 0px;
   }
-  section .section-six ul li a {
+  section .section_six ul li a {
     font-size: 14px;
   }
   footer div.footer_section div.footer_logo {
     display: none;
   }
-  footer div.footer_section div.footer_right--blog {
+  footer div.footer_section div.footer_right_blog {
     width: 100%;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container {
+  footer div.footer_section div.footer_right_blog div.footer_container {
     width: 100%;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container div.form_line {
+  footer div.footer_section div.footer_right_blog div.footer_container div.form_line {
     display: block;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container div.form_line p {
+  footer div.footer_section div.footer_right_blog div.footer_container div.form_line p {
     text-align: center;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container div.form_line form {
+  footer div.footer_section div.footer_right_blog div.footer_container div.form_line form {
     width: 90%;
     margin-right: 5%;
     height: 41px;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container div.form_line form input {
+  footer div.footer_section div.footer_right_blog div.footer_container div.form_line form input {
     height: 41px;
     font-size: 24px;
     font-weight: 300;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links {
     display: block;
     margin: 0px;
     width: 100%;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul {
     width: 100%;
     display: block;
     margin: 0px 0px 0px 0px;
     text-align: center;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .footer_links--login_col ul li a {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links_login_col ul li a {
     text-align: center;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media {
+  footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media {
     width: 100%;
     display: block;
     padding: 50px 0px 0px 0px;
     position: relative;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media .socialmedia {
+  footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .socialmedia {
     position: absolute;
     top: 0;
     display: -webkit-box;
@@ -2253,7 +2253,7 @@ footer {
     padding: 0px 15px;
     margin-left: 23%;
   }
-  footer div.footer_section div.footer_right--blog div.footer_container .copyright-social_media p {
+  footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media p {
     text-align: center;
   }
 }

@@ -1,7 +1,7 @@
 section {
-    .section-four{
+    .section_four{
         @include container(80%,10%);
-        .section-four-header{
+        .section_four_header{
             font-size:26px;
             font-weight:300;
             color:$copyright_color;
@@ -44,7 +44,7 @@ section {
                 overflow: hidden;
                 max-height: 0;
                 transition: max-height 0.7s ease-out;
-                .heading-description{
+                .heading_description{
                     font-size:16px;
                     font-weight:400;
                     color:$footer_background;
@@ -53,7 +53,7 @@ section {
                   
                 }
                 ul.section_four_absolute_ul{
-                    li.list-item{
+                    li.list_item{
                         
                         list-style-type: disc;
                     }
@@ -69,11 +69,11 @@ section {
     }
 }
 
-.scetion-four-absolute{
+.scetion_four_absolute{
     .section_four_absolute_ul{
         padding:0px 0px 0px 30px;
         list-style-type: disc;
-        .list-item{
+        .list_item{
             font-size:14px;
             font-weight:400;
             color:$footer_background;
@@ -83,7 +83,7 @@ section {
 }
 
 
-.heading-description, .domain_names{
+.heading_description, .domain_names{
     span{
         a{
             font-size:16px;

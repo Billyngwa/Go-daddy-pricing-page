@@ -18,11 +18,11 @@ header{
             #nav_panel{
                 @include displayElementsflex(center);
                 margin: 0px 158px 0px 0px;
-                .nav_panel--elements{
+                .nav_panel_elements{
                     display: inherit;
                     justify-content: space-between;
 
-                    .nav_list--relative{
+                    .nav_list_relative{
                         position: relative;
                         cursor: default;
                         margin: 0px 0px 0px 10px;
@@ -60,7 +60,7 @@ header{
                                 height:43px;
                                 overflow: hidden;
 
-                                .type-search{
+                                .type_search{
                                     color: $footer_background;
                                     background: transparent;
                                     border:none;
@@ -335,6 +335,6 @@ header{
     }
 }
 
-.nav_list--relative:hover i{
+.nav_list_relative:hover i{
     color: $red_background;
 }

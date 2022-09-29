@@ -3,7 +3,7 @@ footer{
         div.footer_logo{
             display: none;
         }
-        div.footer_right--blog{
+        div.footer_right_blog{
             width:100%;
         //   @include container(98%, 1%);
             div.footer_container{
@@ -36,7 +36,7 @@ footer{
                     // }
                 }
                  
-                .footer_links--login_col{
+                .footer_links_login_col{
                     ul{
                         width: 100%;
                         display: block;
@@ -49,7 +49,7 @@ footer{
                         }
                     }
                 }
-                .copyright-social_media{
+                .copyright_social_media{
                     width: 100%;
                     display: block;
                     padding:50px 0px 0px 0px;

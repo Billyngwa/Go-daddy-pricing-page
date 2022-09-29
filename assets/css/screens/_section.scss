@@ -1,9 +1,9 @@
 section{
-    .section_one{
+    .section_one_main{
         
         position:relative ;
         top:-80px;
-        .section-one{
+        .section_one{
             // display: flex;
             // align-self: center;
             // flex-wrap: wrap;
@@ -12,7 +12,7 @@ section{
           grid-template-columns:auto auto auto;
           justify-content: space-between;
             @include container(95%,2.5%);
-            .list-items{ 
+            .list_items{ 
                 width:95%;
                 background-color: $global;
                 border-radius: 5px;
@@ -28,14 +28,14 @@ section{
                         // padding-bottom: 40px;
                     }
                 }
-                .headingDescription{
+                .heading_description{
                     font-size:16px;
                     font-weight:400;
                     color:$footer_background;
                     padding:25px 0px 0px 0px;
                     line-height: 1.4;
                 }
-                .pricePer-year{
+                .price_per_year{
                     font-size:18px;
                     font-weight:300;
                     color:$copyright_color;
@@ -68,14 +68,14 @@ section{
     
 
     // section two 
-    .section-two{
+    .section_two{
         @include displayElementsflex(null);
         @include container(95%,2.5%);
     
-        .right-div_before{
+        .right_div_before{
             display:none; 
         }
-        .left-div{
+        .left_div{
             width:50%;
             margin-left:0px;
             h1{
@@ -122,7 +122,7 @@ section{
     }
 
     // section three
-    .section-three {
+    .section_three {
         @include container(95%,2.5%);
         margin-top: 90px;
 
@@ -140,7 +140,7 @@ section{
             padding:0px 0px 100px 0px;
             color: $copyright_color;
         }
-        .reasons-to-choose-Domain{
+        .reasons_to_choose_Domain{
             @include displayElementsflex(null);
 
             .reason{
@@ -169,9 +169,9 @@ section{
     }
     
     // section four
-    .section-four{
+    .section_four{
         @include container(95%,2.5%);
-        .section-four-header{
+        .section_four_header{
             font-size:26px;
             font-weight:300;
             color:$copyright_color;
@@ -208,7 +208,7 @@ section{
                 overflow: hidden;
                 max-height: 0;
                 transition: max-height 0.7s ease-out;
-                .heading-description{
+                .heading_description{
                     font-size:16px;
                     font-weight:400;
                     color:$footer_background;
@@ -232,7 +232,7 @@ section{
         }
     }
     
-    // .scetion-four-absolute{
+    // .scetion_four_absolute{
     //     .section_four_absolute_ul{
     //         padding:0px 0px 0px 30px;
     //         .list-item{
@@ -246,7 +246,7 @@ section{
     // }
     
     
-    // .heading-description, .domain_names{
+    // .heading_description, .domain_names{
     //     span{
     //         a{
     //             font-size:16px;
@@ -262,7 +262,7 @@ section{
     // }
 
     // section five
-    .section-five{
+    .section_five{
         margin:20px 0px 60px 0px;
         @include container(95%,2.5%);
         border-radius: 5px;
@@ -271,25 +271,25 @@ section{
             // @include displayElementsflex(center);
             display: flex;
             align-items: center;
-            .section-five_mobile-img{
+            .section_five_mobile_img{
                 display: none;
             }
-            .right-block{
+            .right_block{
                 margin:20px 0px 0px 60px;
-                .section-five-heading{
+                .section_five_heading{
                     font-size: 22px;
                     font-weight: 300;
                     color: $footer_background;
                     padding: 0px 0px 15px 0px;
                     
                 }
-                .heading-description{
+                .heading_description{
                     font-size: 16px;
                     font-weight: 300;
                     color: $footer_background;
                     padding: 0px 0px 30px 0px;
                 }
-                .how-to-choose-domain{
+                .how_to_choose_domain{
                     padding: 0px 0px 20px 0px;
 
                     a{
@@ -340,7 +340,7 @@ section{
     }
 
     // section six
-    .section-six{
+    .section_six{
         display: flex;
         align-items: center;
         padding: 30px 0px 30px 20px;
@@ -352,9 +352,9 @@ section{
             color:$footer_background;
         }
 
-        .section-five-ul{
+        .section_five_ul{
             display: flex;
-            .list-items{
+            .list_items{
                 margin-left: 25px;
                 a{
                     font-size: 14px;

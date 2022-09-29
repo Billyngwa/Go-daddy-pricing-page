@@ -1,11 +1,11 @@
-.section-two{
+.section_two{
     @include displayElementsflex(null);
     @include container(85%, 7.5%);
 
-    .right-div_before{
+    .right_div_before{
        display:none; 
     }
-    .left-div{
+    .left_div{
         width:50%;
         margin-left:25px;
         h1{
