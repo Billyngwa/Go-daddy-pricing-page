@@ -43,7 +43,7 @@ section {
                 // display: none;
                 overflow: hidden;
                 max-height: 0;
-                transition: max-height 1.2s ease-out;
+                transition: max-height 0.7s ease-out;
                 .heading-description{
                     font-size:16px;
                     font-weight:400;
@@ -52,10 +52,10 @@ section {
                     padding:0px 0px 0px 30px;
                   
                 }
-                ul{
-                    li{
+                ul.section_four_absolute_ul{
+                    li.list-item{
                         
-                    list-style-type: disc;
+                        list-style-type: disc;
                     }
                 }
                 .domain_names{

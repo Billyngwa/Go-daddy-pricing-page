@@ -11,14 +11,17 @@ section{
             color:$footer_background;
         }
 
-        ul{
+        .section-five-ul{
             display: flex;
-            li{
+            .list-items{
                 margin-left: 30px;
                 a{
                     font-size: 16px;
                     font-weight: 700;
                     color:$blue_background;
+                    i{
+                        padding-left: 6px;
+                    }
 
                     &:hover{
                         color:$blue_backgroundhover;

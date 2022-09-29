@@ -34,6 +34,10 @@ section{
                         font-weight: 700;
                         color:$blue_background;
 
+                        i{
+                            padding-left: 6px;
+                        }
+
                         &:hover{
                             color: $blue_backgroundhover;
                             text-decoration: underline;
