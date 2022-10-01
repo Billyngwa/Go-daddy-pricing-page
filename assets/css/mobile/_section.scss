@@ -107,8 +107,25 @@ section{
         .section_four_relative{
             .heading_icon{
                 h1{
-                    font-size:10px !important;
+                    font-size:18px !important;
+                    font-weight: 600;
                     width:100%;
+                }
+            }
+            
+            .section_four_absolute{
+                .heading_description{
+                    font-size:14px;
+                    font-weight:400;
+                }
+              
+            }
+            .heading_description, .domain_names{
+                span{
+                    a{
+                        font-size:14px;
+                        font-weight:400;
+                    }
                 }
             }
         }
@@ -165,10 +182,10 @@ section{
         h1{
             text-align: center;
         }
-        ul{
+        .section_five_ul{
             text-align: center;
             display: block;
-            li{
+            .list_items{
                 padding:15px 0px 5px 0px;
                a{
                     font-size: 14px;

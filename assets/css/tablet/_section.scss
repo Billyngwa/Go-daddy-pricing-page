@@ -121,7 +121,22 @@ section{
         }
         .section_four_relative{
             h1{
-                font-size:16px;
+                font-size:22px;
+            }
+            .section_four_absolute{
+                .heading_description{
+                    font-size:16px;
+                    font-weight:400;
+                }
+              
+            }
+            .heading_description, .domain_names{
+                span{
+                    a{
+                        font-size:16px;
+                        font-weight:400;
+                    }
+                }
             }
         }
     }
