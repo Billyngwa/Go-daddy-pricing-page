@@ -2341,7 +2341,6 @@ footer {
     font-weight: 300;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .footer_links {
-    display: block;
     margin: 0px;
     width: 100%;
   }
@@ -2356,10 +2355,11 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
-  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .heading_icon i {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .heading_icon.active i {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
     color: #e24747;
     display: block;
   }
@@ -2367,7 +2367,13 @@ footer {
     padding-left: 20px;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .list_footer {
+    margin-top: 5px;
+    max-height: 0px;
+    overflow: hidden;
     padding-left: 37px;
+    width: 100%;
+    -webkit-transition: max-height 1s ease-out;
+    transition: max-height 1s ease-out;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .list_footer .list_item_footer {
     padding-bottom: 10px;
@@ -2399,11 +2405,13 @@ footer {
   }
   footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item_mobile .list_footer {
     margin-top: 5px;
+    padding-left: 37px;
+    max-height: 0px;
     overflow: hidden;
     padding-left: 37px;
-    max-height: 0;
-    -webkit-transition: max-height 0.7s ease-out;
-    transition: max-height 0.7s ease-out;
+    width: 100%;
+    -webkit-transition: max-height 1s ease-out;
+    transition: max-height 1s ease-out;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item_mobile .list_footer .list_item_footer {
     padding-bottom: 10px;

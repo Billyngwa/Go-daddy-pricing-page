@@ -58,7 +58,7 @@ footer{
                         }
                     }
                     .footer_links_item_mobile{
-                        border-top:1px solid rgb(99, 96, 96);;
+                        border-top:1px solid rgb(99, 96, 96);
                         border-bottom:1px solid rgb(99, 96, 96);
                         display: block;
                         .heading_icon{
@@ -76,7 +76,7 @@ footer{
                         .list_footer{
                             padding-left: 37px;
                             .list_item_footer{
-                                padding-bottom: 10px;
+                                padding-bottom:10px;
                             }
                         }
                     }
@@ -130,6 +130,7 @@ footer{
                 // }
                 .copyright_social_media{
                     display: flex;
+
                     padding:20px 0px 0px 30px;
                     margin:0px 0px 30px 0px;
                     .socialmedia{

@@ -28,7 +28,6 @@ footer{
 
                 }
                 .footer_links{
-                    display: block;
                     margin:0px;
                     width: 100%;
                     .footer_links_item{
@@ -37,8 +36,20 @@ footer{
                         .heading_icon{
                             display: flex;
                             align-items: center;
-                            i{
-                               transform: rotate(270deg); 
+                            position: relative;
+                           
+                            // &::before{
+                            //     content: ">";
+                            //     color: red;
+                            //     position: absolute;
+                            //     left:1px ;
+                            //     z-index: 4;
+                            //     font-size:20px;
+                                
+                            //    transform: rotate(90deg); 
+                            // }
+                            &.active i{
+                               transform: rotate(360deg); 
                                 color:$red_background;
                                 display:block;
                             }
@@ -47,7 +58,12 @@ footer{
                             }
                         }
                         .list_footer{
+                            margin-top: 5px;
+                            max-height: 0px;
+                            overflow: hidden;
                             padding-left: 37px;
+                            width: 100%;
+                            transition: max-height 1s ease-out;
                             .list_item_footer{
                                 padding-bottom: 10px;
                             }
@@ -74,10 +90,12 @@ footer{
                         }
                         .list_footer{
                             margin-top: 5px;
+                            padding-left: 37px;
+                            max-height: 0px;
                             overflow: hidden;
                             padding-left: 37px;
-                            max-height: 0;
-                            transition: max-height 0.7s ease-out;
+                            width: 100%;
+                            transition: max-height 1s ease-out;
                             .list_item_footer{
                                 padding-bottom: 10px;
                             }
