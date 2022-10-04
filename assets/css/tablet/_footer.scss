@@ -41,17 +41,40 @@ footer{
                         .heading_icon{
                             display: flex;
                             align-items: center;
-                            i{
-                               transform: rotate(270deg); 
+                            position: relative;
+                            &::before{
+                                content: "\f078";
+                                color: $red_background;;
+                                position: absolute;
+                                left:-4px ;
+                                z-index: 4;
+                                font-size:20px;
+                                font-weight:900;
+                                font-family: "Font Awesome 5 Free";
+                                transform: rotate(270deg);
+                            }
+                            // i{
+                            //     // transform: rotate(270deg); 
+                            //     color:$red_background;
+                            //     display:none;
+                            // }
+                            &.active::before{
+                               transform: rotate(360deg); 
                                 color:$red_background;
                                 display:block;
+                                z-index: 4;
                             }
                             h4{
                                 padding-left: 20px;
                             }
                         }
                         .list_footer{
+                            margin-top: 5px;
+                            max-height: 0px;
+                            overflow: hidden;
                             padding-left: 37px;
+                            width: 100%;
+                            transition: max-height 1s ease-out;
                             .list_item_footer{
                                 padding-bottom: 10px;
                             }
@@ -64,17 +87,40 @@ footer{
                         .heading_icon{
                             display: flex;
                             align-items: center;
-                            i{
-                               transform: rotate(270deg); 
+                            position: relative;
+                            &::before{
+                                content: "\f078";
+                                color: $red_background;;
+                                position: absolute;
+                                left:-4px ;
+                                z-index: 4;
+                                font-size:20px;
+                                font-weight:900;
+                                font-family: "Font Awesome 5 Free";
+                                transform: rotate(270deg);
+                            }
+                            // i{
+                            //     // transform: rotate(270deg); 
+                            //     color:$red_background;
+                            //     display:none;
+                            // }
+                            &.active::before{
+                               transform: rotate(360deg); 
                                 color:$red_background;
                                 display:block;
+                                z-index: 4;
                             }
                             h4{
                                 padding-left: 20px;
                             }
                         }
                         .list_footer{
+                            margin-top: 5px;
+                            max-height: 0px;
+                            overflow: hidden;
                             padding-left: 37px;
+                            width: 100%;
+                            transition: max-height 1s ease-out;
                             .list_item_footer{
                                 padding-bottom:10px;
                             }

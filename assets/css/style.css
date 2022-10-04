@@ -76,7 +76,7 @@ header .header_section .container #nav_panel .nav_panel_elements .nav_list_relat
   color: #333333;
 }
 
-header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative:hover .i {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative:hover i {
   color: #e24747;
 }
 
@@ -85,7 +85,7 @@ header .header_section .container #nav_panel .nav_panel_elements .nav_list_relat
 }
 
 header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative i {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute {
@@ -100,7 +100,7 @@ header .header_section .container #nav_panel .nav_panel_elements .nav_list_relat
 header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .search_input {
   border-radius: 5px;
   border: 1px solid #dfdddd;
-  margin: 68px 90px 20px 10px;
+  padding: 10px 0px 10px 0px;
   color: #333333;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,17 +111,17 @@ header .header_section .container #nav_panel .nav_panel_elements .nav_list_relat
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   height: 43px;
-  overflow: hidden;
+  margin: 68px 10px 20px 10px;
+  display: flex;
 }
 
 header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .search_input .type_search {
   color: #333333;
   background: transparent;
   border: none;
-  font-size: 20px;
-  padding-left: 15px;
+  font-size: 16px;
+  padding-left: 10px;
   outline: none;
 }
 
@@ -129,44 +129,58 @@ header .header_section .container #nav_panel .nav_panel_elements .nav_list_relat
   border: none;
   background-color: transparent;
   color: #b63838;
+  margin: 0px 10px 0px 0px;
 }
 
 header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .search_input .search_button i {
   color: #b63838;
-  font-size: 30px;
+  font-size: 14px;
 }
 
-header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items, header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .new {
   width: 100%;
   height: 45px;
   padding: 10px 0px 0px 0px;
 }
 
-header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items:hover {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items:hover, header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .new:hover {
   background-color: #e7e7e7;
 }
 
-header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items a {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items a, header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .new a {
   color: #333333;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   margin: 0px 0px 0px 10px;
 }
 
-header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items a:hover {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items a:hover, header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .new a:hover {
   color: #333333;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: underline;
 }
 
-header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items .security {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items .security, header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .new .security {
   color: #24819a;
   text-decoration: underline;
 }
 
-header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items .security:hover {
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .list_items .security:hover, header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .new .security:hover {
   color: #24819a;
+}
+
+header .header_section .container #nav_panel .nav_panel_elements .nav_list_relative .nav_list_absolute .new::after {
+  content: "new";
+  text-transform: uppercase;
+  background-color: #e24747;
+  border-radius: 6px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px;
+  margin-left: 7px;
 }
 
 .help_cart_login {
@@ -179,6 +193,20 @@ header .header_section .container #nav_panel .nav_panel_elements .nav_list_relat
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.help_cart_login b {
+  text-transform: uppercase;
+  background-color: #e24747;
+  border-radius: 6px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px;
+  position: relative;
+  top: -20px;
+  right: 395px;
 }
 
 .help_cart_login .nav_list_relative_help {
@@ -738,26 +766,46 @@ section .section_four .section_four_relative {
           box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.103);
 }
 
-section .section_four .section_four_relative .heading_icon {
+section .section_four .section_four_relative .section_four_heading_icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
 }
 
-section .section_four .section_four_relative .heading_icon i {
+section .section_four .section_four_relative .section_four_heading_icon::before {
+  content: "\f078";
+  color: black;
+  position: absolute;
+  left: -4px;
+  z-index: 4;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+section .section_four .section_four_relative .section_four_heading_icon.active::before {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: #e24747;
+  display: block;
+  z-index: 4;
+}
+
+section .section_four .section_four_relative .section_four_heading_icon h1 {
   font-size: 22px;
   font-weight: 600;
   color: #333333;
   cursor: pointer;
-  font-size: 14px;
-}
-
-section .section_four .section_four_relative .heading_icon h1 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #333333;
-  cursor: pointer;
-  padding: 0px 0px 0px 4px;
+  padding: 0px 0px 0px 30px;
 }
 
 section .section_four .section_four_relative h1 {
@@ -2014,18 +2062,38 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
-  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .heading_icon i {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .heading_icon::before {
+    content: "\f078";
+    color: #e24747;
+    position: absolute;
+    left: -4px;
+    z-index: 4;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg);
+  }
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .heading_icon.active::before {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
     color: #e24747;
     display: block;
+    z-index: 4;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .heading_icon h4 {
     padding-left: 20px;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .list_footer {
+    margin-top: 5px;
+    max-height: 0px;
+    overflow: hidden;
     padding-left: 37px;
+    width: 100%;
+    -webkit-transition: max-height 1s ease-out;
+    transition: max-height 1s ease-out;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .list_footer .list_item_footer {
     padding-bottom: 10px;
@@ -2042,18 +2110,38 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
-  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item_mobile .heading_icon i {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item_mobile .heading_icon::before {
+    content: "\f078";
+    color: #e24747;
+    position: absolute;
+    left: -4px;
+    z-index: 4;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg);
+  }
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item_mobile .heading_icon.active::before {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
     color: #e24747;
     display: block;
+    z-index: 4;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item_mobile .heading_icon h4 {
     padding-left: 20px;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item_mobile .list_footer {
+    margin-top: 5px;
+    max-height: 0px;
+    overflow: hidden;
     padding-left: 37px;
+    width: 100%;
+    -webkit-transition: max-height 1s ease-out;
+    transition: max-height 1s ease-out;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item_mobile .list_footer .list_item_footer {
     padding-bottom: 10px;
@@ -2357,11 +2445,24 @@ footer {
             align-items: center;
     position: relative;
   }
-  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .heading_icon.active i {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .heading_icon::before {
+    content: "\f078";
+    color: #e24747;
+    position: absolute;
+    left: -4px;
+    z-index: 4;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .heading_icon.active::before {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
     color: #e24747;
     display: block;
+    z-index: 4;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item .heading_icon h4 {
     padding-left: 20px;
@@ -2394,11 +2495,24 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item_mobile .heading_icon i {
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item_mobile .heading_icon::before {
+    content: "\f078";
+    color: #e24747;
+    position: absolute;
+    left: -4px;
+    z-index: 4;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg);
+  }
+  footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item_mobile .heading_icon.active::before {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
     color: #e24747;
     display: block;
+    z-index: 4;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .footer_links .footer_links_item_mobile .heading_icon h4 {
     padding-left: 20px;

@@ -30,7 +30,7 @@ header{
                         font-size:14px;
                         font-weight:500;
                         color:$footer_background;
-                        &:hover  .i{
+                        &:hover  i{
                             color:$red_background;
                         }
 
@@ -38,8 +38,10 @@ header{
                             display: block;
                         }
                         i{
-                            font-size: 14px;
-                            //
+                            font-size: 13px;
+                            // position: absolute;
+                            // top: 10px;
+                           
                         }
 
                         .nav_list_absolute{
@@ -53,37 +55,36 @@ header{
                             .search_input{
                                 border-radius: 5px;
                                 border: 1px solid rgb(223, 221, 221);
-                                margin: 68px 90px 20px 10px;
+                                padding: 10px 0px 10px 0px;
                                 color: $footer_background;
                                 @include displayElementsflex(center);
-                                width:100%;
                                 height:43px;
-                                overflow: hidden;
+                                margin: 68px 10px 20px 10px;
+                                display: flex;
 
                                 .type_search{
                                     color: $footer_background;
                                     background: transparent;
                                     border:none;
-                                    font-size: 20px;
-                                    padding-left:15px;
+                                    font-size: 16px;
+                                    padding-left:10px;
                                     outline:none;
-
                                 }
                                 .search_button{
                                     border: none;
                                     background-color:transparent;
                                     color:$red_backgroundhover;
-                                    // margin: 0px 60px 0px 0px;
+                                    margin: 0px 10px 0px 0px;
 
                                     i{
                                         color:$red_backgroundhover;
-                                        font-size: 30px;
+                                        font-size: 14px;
                                         // padding: 0px 80px 0px 0px;
                                     }
                                 }
                             }
 
-                            .list_items{
+                            .list_items, .new{
                                 width: 100%;
                                 height:45px;
                                 padding: 10px 0px 0px 0px;
@@ -94,13 +95,13 @@ header{
                                 a{
                                     color:$footer_background;
                                     font-weight:500;
-                                    font-size:16px;
+                                    font-size:14px;
                                     text-align: center;
                                     margin: 0px 0px 0px 10px; 
 
                                     &:hover{
                                         color: $footer_background;
-                                        font-size:16px;
+                                        font-size:14px;
                                         text-decoration: underline;
                                     }
                                 }
@@ -111,6 +112,18 @@ header{
                                         color:$blue_backgroundhover;
                                     }
                                 }
+                            }
+                            .new::after{
+                                content: "new";
+                                text-transform: uppercase;
+                                background-color: $red_background;
+                                border-radius: 6px;
+                                color: white;
+                                font-family: $font_family;
+                                font-size: 10px;
+                                font-weight: 700;
+                                padding: 2px;
+                                margin-left: 7px;
                             }
                         }
                     }
@@ -126,6 +139,21 @@ header{
     
     @include displayElementsflex(center);
      //style for the help
+     
+                    
+     b{
+        text-transform: uppercase;
+        background-color: $red_background;
+        border-radius: 6px;
+        color: white;
+        font-family: $font_family;
+        font-size: 10px;
+        font-weight: 700;
+        padding: 2px;
+        position: relative;
+        top: -20px;
+        right: 395px;
+    }
     .nav_list_relative_help{
         position: relative;
         padding: 0px 35px 0px 0px;
