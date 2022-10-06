@@ -39,7 +39,7 @@ header .header_section .container {
 }
 
 header .header_section .container .logo {
-  width: 150px;
+  max-width: 150px;
 }
 
 header .header_section .container .logo a img {
@@ -56,7 +56,7 @@ header .header_section .container #nav_panel {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0px 158px 0px 0px;
+  padding: 0px 158px 0px 0px;
 }
 
 header .header_section .container #nav_panel .nav_panel_elements {
@@ -1013,9 +1013,6 @@ footer div.footer_section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: 0px 0px 0px 0px;
-      -ms-flex-align: 0px 0px 0px 0px;
-          align-items: 0px 0px 0px 0px;
 }
 
 footer div.footer_section div.footer_logo {
@@ -1237,10 +1234,6 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
   color: #666666;
   font-size: 14px;
   font-weight: 400;
-}
-
-footer {
-  color: white !important;
 }
 
 @media (max-width: 1200px) {
@@ -2207,8 +2200,9 @@ footer {
     display: flex;
   }
   header .header_section .hero {
+    background-size: cover;
     width: 100%;
-    height: 12cm;
+    max-height: 12cm;
   }
   header .header_section .hero .banner_section .form_and_headings {
     padding: 40px 0px 0px 0px;
@@ -2233,7 +2227,7 @@ footer {
     width: 100%;
     margin: 20px 0px 0px 0px;
     border-radius: 5px;
-    height: 50px;
+    max-height: 50px;
     font-size: 15px;
     font-weight: 600;
   }
@@ -2244,7 +2238,7 @@ footer {
     font-size: 16px;
   }
   header .header_section .hero .banner_section .form_and_headings .domain_consideration {
-    margin: 18px 20px 0px 0px;
+    padding: 0px 0px 0px 0px;
     font-size: 18px;
     font-weight: 700;
   }
@@ -2269,7 +2263,8 @@ footer {
   }
   section .section_two {
     display: block;
-    width: 100%;
+    width: 85%;
+    margin-left: 7.5%;
   }
   section .section_two .right_div_before {
     display: block;
@@ -2285,10 +2280,10 @@ footer {
     font-size: 27px;
     text-align: center;
     font-weight: 900;
-    width: 85%;
+    width: 100%;
   }
   section .section_two .left_div p {
-    width: 85%;
+    width: 100%;
     font-size: 20px;
     font-weight: 300;
     text-align: center;
@@ -2299,7 +2294,7 @@ footer {
     line-height: 1.8;
   }
   section .section_two .left_div button {
-    width: 85%;
+    width: 100%;
     padding: 14px 14px 14px 14px;
   }
   section .section_two .right_div {
@@ -2405,12 +2400,6 @@ footer {
   }
   footer div.footer_section div.footer_logo {
     display: none;
-  }
-  footer div.footer_section div.footer_right_blog {
-    width: 100%;
-  }
-  footer div.footer_section div.footer_right_blog div.footer_container {
-    width: 100%;
   }
   footer div.footer_section div.footer_right_blog div.footer_container div.form_line {
     display: block;

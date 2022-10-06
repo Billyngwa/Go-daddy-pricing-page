@@ -1,6 +1,6 @@
 footer{
     div.footer_section{
-        @include displayElementsflex (0px 0px 0px 0px);
+        @include displayElementsflex (null);
         div.footer_logo{
             @include sectionWidth-backgroudColor($red_backgroundhover,35%);
             svg{
@@ -109,27 +109,12 @@ footer{
                 .footer_links_login_col{
                     color: $global;
                     text-decoration: none;
-                    // h4{
-                    //     a{
-                    //         color: inherit; 
-                    //         font-size: 20px;
-                    //         font-weight: bold;
-                    //         line-height: 50px;
-                    //         text-decoration: none;
-                    //         &:hover{
-                    //             color: inherit;
-                    //             text-decoration: underline;
-                    //         }
-                    //     }
-                    // }
+
                     ul{
                         display: flex;
-                        // padding-left: 300px;
-                        // padding-top: -400px;
                         margin: -70px 0px 0px 300px;
                         li{
                             @include styleType;
-                            // padding-left: 12px;
                             a{
                                 color: inherit;
                                 font-size:14px;
@@ -178,13 +163,6 @@ footer{
                     }
                 }
             }
-            // .copyright-social_media{
-
-            // }
         }
     }
-}
-
-footer{
-    color : white !important;
 }
