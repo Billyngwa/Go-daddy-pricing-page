@@ -3,19 +3,19 @@
 }
 section{
     .section_one_main{
-        top: -50px;
-        background-color: orangered;
+        top: -43px;
+        // background-color: orangered;
         @include container(90%,5%);
         .section_one{
             display:flex;
             align-self: center;
             flex-wrap: wrap;
             @include container(80%, 10%);
-            background-color: black;
+            // background-color: black;
 
             .list_items{
                 width: 100%;
-                background-color: blue;
+                // background-color: blue;
                 box-shadow: 2px 3px 6px #33333346;
       
             }

@@ -2178,14 +2178,8 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
 }
 
 @media (max-width: 767px) {
-  header {
-    width: 95%;
-    margin-left: 2.5%;
-  }
   header .header_section {
     background-color: greenyellow;
-    width: 95%;
-    margin-left: 2.5%;
   }
   header .header_section .container {
     width: 95%;
@@ -2210,8 +2204,6 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
   }
   header .header_section .hero {
     background-size: cover;
-    width: 95%;
-    margin-left: 2.5%;
     max-height: 12cm;
   }
   header .header_section .hero .banner_section .form_and_headings {
@@ -2248,7 +2240,7 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     font-size: 16px;
   }
   header .header_section .hero .banner_section .form_and_headings .domain_consideration {
-    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     font-size: 18px;
     font-weight: 700;
   }
@@ -2256,8 +2248,7 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     outline: 1px solid red;
   }
   section .section_one_main {
-    top: -50px;
-    background-color: orangered;
+    top: -43px;
     width: 90%;
     margin-left: 5%;
   }
@@ -2271,11 +2262,9 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
         flex-wrap: wrap;
     width: 80%;
     margin-left: 10%;
-    background-color: black;
   }
   section .section_one_main .section_one .list_items {
     width: 100%;
-    background-color: blue;
     -webkit-box-shadow: 2px 3px 6px #33333346;
             box-shadow: 2px 3px 6px #33333346;
   }
@@ -2568,12 +2557,15 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 54%;
+    width: 80%;
     padding: 0px 2px;
-    margin-left: 23%;
+    margin-left: 10%;
+  }
+  footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .socialmedia li {
+    width: 16%;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .socialmedia li a {
-    margin: 0px 30px 0px 0px;
+    margin: 0px 0px 0px 0px;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media p {
     text-align: center;
