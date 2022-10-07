@@ -2245,7 +2245,7 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     font-weight: 700;
   }
   * {
-    overflow: hidden;
+    overflow-x: hidden;
   }
   section .section_one_main {
     top: -43px;
