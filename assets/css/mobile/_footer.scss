@@ -4,6 +4,9 @@ footer{
             display: none;
         }
         div.footer_right_blog{
+            
+            @include sectionWidth-backgroudColor($footer_background,98%);
+            margin-left: 1%;
             div.footer_container{
                 div.form_line{
                     display: block;
@@ -13,7 +16,7 @@ footer{
                     }
                     form{
                         width: 90%;
-                        margin-right: 5%;
+                        margin-left: 5%;
                         height: 41px;
                         input{
                            height: 41px;
@@ -127,7 +130,8 @@ footer{
                     }
                 }
                 .copyright_social_media{
-                    width: 100%;
+                    width: 95%;
+                    margin-left:2.5%;
                     display: block;
                     padding:50px 0px 0px 0px;
                     position: relative;
@@ -136,9 +140,16 @@ footer{
                         position: absolute;
                         top: 0;
                         display: flex;
-                        width: 54%;
-                        padding: 0px 15px;
+                        width:54%;
+                        padding: 0px 2px;
                         margin-left:23%;
+
+                        li{
+
+                            a{
+                                margin: 0px 30px 0px 0px; 
+                            }
+                        }
                     }
                     p{
                        text-align: center;

@@ -2178,6 +2178,15 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
 }
 
 @media (max-width: 767px) {
+  header {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  header .header_section {
+    background-color: greenyellow;
+    width: 95%;
+    margin-left: 2.5%;
+  }
   header .header_section .container {
     width: 95%;
     margin-left: 2.5%;
@@ -2201,7 +2210,8 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
   }
   header .header_section .hero {
     background-size: cover;
-    width: 100%;
+    width: 95%;
+    margin-left: 2.5%;
     max-height: 12cm;
   }
   header .header_section .hero .banner_section .form_and_headings {
@@ -2242,8 +2252,14 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     font-size: 18px;
     font-weight: 700;
   }
+  * {
+    outline: 1px solid red;
+  }
   section .section_one_main {
     top: -50px;
+    background-color: orangered;
+    width: 90%;
+    margin-left: 5%;
   }
   section .section_one_main .section_one {
     display: -webkit-box;
@@ -2255,9 +2271,11 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
         flex-wrap: wrap;
     width: 80%;
     margin-left: 10%;
+    background-color: black;
   }
   section .section_one_main .section_one .list_items {
     width: 100%;
+    background-color: blue;
     -webkit-box-shadow: 2px 3px 6px #33333346;
             box-shadow: 2px 3px 6px #33333346;
   }
@@ -2271,6 +2289,10 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     width: 80%;
     margin-left: 10%;
     padding: 60px 0px 50px 0px;
+  }
+  section .section_two .right_div_before img {
+    width: 80%;
+    margin-left: 10%;
   }
   section .section_two .left_div {
     width: 100%;
@@ -2401,6 +2423,11 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
   footer div.footer_section div.footer_logo {
     display: none;
   }
+  footer div.footer_section div.footer_right_blog {
+    background-color: #333333;
+    width: 98%;
+    margin-left: 1%;
+  }
   footer div.footer_section div.footer_right_blog div.footer_container div.form_line {
     display: block;
   }
@@ -2409,7 +2436,7 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
   }
   footer div.footer_section div.footer_right_blog div.footer_container div.form_line form {
     width: 90%;
-    margin-right: 5%;
+    margin-left: 5%;
     height: 41px;
   }
   footer div.footer_section div.footer_right_blog div.footer_container div.form_line form input {
@@ -2529,7 +2556,8 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     text-align: center;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media {
-    width: 100%;
+    width: 95%;
+    margin-left: 2.5%;
     display: block;
     padding: 50px 0px 0px 0px;
     position: relative;
@@ -2541,8 +2569,11 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     display: -ms-flexbox;
     display: flex;
     width: 54%;
-    padding: 0px 15px;
+    padding: 0px 2px;
     margin-left: 23%;
+  }
+  footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media .socialmedia li a {
+    margin: 0px 30px 0px 0px;
   }
   footer div.footer_section div.footer_right_blog div.footer_container .copyright_social_media p {
     text-align: center;
