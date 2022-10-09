@@ -1,6 +1,6 @@
 header{
     .header_section{
-        background-color: greenyellow;
+        // background-color: greenyellow;
         .container{
            @include container(95%, 2.5%);
             #nav_panel, .help_cart_login{
@@ -73,4 +73,7 @@ header{
             }
         }
     }
+}
+.mobile_nav{
+    display:none;
 }

@@ -1,14 +1,6 @@
 
 
-var hamburger = document.getElementById('hamburger_btn');
-var navigation = document.getElementById('nav_panel');
-hamburger.addEventListener('click', function(){
-    if(navigation.style.display=='none'){
-        navigation.style.display = 'block';
-    }else{
-        navigation.style.display ='none';
-    }
-})
+
 var defaultActive = document.getElementsByClassName('section_four_absolute');
 for(i=0; i<defaultActive.length; i++){
     defaultActive[i].className += ' active';
@@ -294,13 +286,32 @@ headingIcons.forEach(headingIcon => {
     });
 });
 
+// style fo rthe accordion in the mobile navigation
+var mobileOperator = document.querySelectorAll('.mobile_heading');
+mobileOperator.forEach(mobileHeading => {
+    mobileHeading.addEventListener('click', event => {
+        var mobileDisplay = mobileHeading.nextElementSibling;
+        if(mobileHeading.classList.contains("active")){
+            mobileDisplay.style.maxHeight = mobileDisplay.scrollHeight + 'px';
+        }else{
+            mobileDisplay.style.maxHeight = 0;
+        }
+    });
+});
+
+// var hamburger = document.querySelector('.hamburger_btn');
+// var navigation = document.querySelector('.mobile_nav');
+// hamburger.addEventListener('click', function(){
+//   hamburger.classList.toggle("active");
+// });
+
 var docWidth = document.documentElement.offsetWidth;
 
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
+// [].forEach.call(
+//   document.querySelectorAll('*'),
+//   function(el) {
+//     if (el.offsetWidth > docWidth) {
+//       console.log(el);
+//     }
+//   }
+// );
