@@ -1,6 +1,5 @@
 header{
     .header_section{
-        // background-color: greenyellow;
         .container{
            @include container(95%, 2.5%);
             #nav_panel, .help_cart_login{
@@ -25,8 +24,6 @@ header{
         }
         .hero{
             background-size:cover;
-            // width:100%;
-            // @include container(95%,2.5%);
 
             max-height:12cm;
             .banner_section{
@@ -75,5 +72,5 @@ header{
     }
 }
 .mobile_nav{
-    display:none;
+    display:block;
 }

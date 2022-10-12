@@ -274,7 +274,7 @@ for(i=0; i<defaultActiveIcon.length; i++){
 var headingIcons = document.querySelectorAll('.heading_icon');
 
 headingIcons.forEach(headingIcon => {
-    headingIcon.addEventListener('click', event => {
+    headingIcon.addEventListener('click', state => {
         headingIcon.classList.toggle("active");
         var displaypanel = headingIcon.nextElementSibling;
         if(headingIcon.classList.contains("active")){
@@ -287,25 +287,35 @@ headingIcons.forEach(headingIcon => {
 });
 
 // style fo rthe accordion in the mobile navigation
-var mobileOperator = document.querySelectorAll('.mobile_heading');
-mobileOperator.forEach(mobileHeading => {
-    mobileHeading.addEventListener('click', event => {
-        var mobileDisplay = mobileHeading.nextElementSibling;
-        if(mobileHeading.classList.contains("active")){
-            mobileDisplay.style.maxHeight = mobileDisplay.scrollHeight + 'px';
-        }else{
-            mobileDisplay.style.maxHeight = 0;
-        }
-    });
-});
+// var mobileSpans = document.querySelectorAll('.mobile_heading');
+// mobileSpans.forEach(mobileSpan => {
+//     mobileSpan.addEventListener('click', state => {
+//         mobileSpan.classList.toggle("active");
+//         var mobileDisplay = mobileSpan.nextElementSibling;
+//         if(mobileSpan.classList.contains("active")){
+//             mobileDisplay.style.maxHeight = mobileDisplay.scrollHeight + 'px';
+//         }else{
+//             mobileDisplay.style.maxHeight = '0';
+//         }
+//     });
+// });
+
+ // code to toggle hamburger. From this hamburger menu clicking we can control alot.
+ var hamburgerButton = document.querySelector('.hamburger_btn');
+ var mobilePannel = document.querySelector('.mobile_nav');
+ hamburgerButton.addEventListener('click', function(){
+    hamburgerButton.classList.toggle("active");
+    mobilePannel.classList.toggle("active");
+ });
 
 // var hamburger = document.querySelector('.hamburger_btn');
 // var navigation = document.querySelector('.mobile_nav');
 // hamburger.addEventListener('click', function(){
 //   hamburger.classList.toggle("active");
+//   navigation.classlist.toggle("active");
 // });
 
-var docWidth = document.documentElement.offsetWidth;
+// var docWidth = document.documentElement.offsetWidth;
 
 // [].forEach.call(
 //   document.querySelectorAll('*'),

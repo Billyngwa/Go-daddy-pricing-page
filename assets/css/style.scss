@@ -18,6 +18,7 @@
     @import './screens/footer';
 }
 @media(max-width:990px){
+    @import './mobile/mobile_navbar';
     @import './tablet/header';
     @import './tablet/section';
     @import './tablet/footer';
@@ -26,5 +27,4 @@
     @import './mobile/header';
     @import './mobile/section';
     @import './mobile/footer';
-    @import './mobile/mobile_navbar';
 }

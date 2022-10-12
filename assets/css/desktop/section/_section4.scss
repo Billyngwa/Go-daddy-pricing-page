@@ -19,6 +19,9 @@ section {
                 align-items: center;
                 justify-content: space-between;
                 position: relative;
+                &:active h1{
+                    text-decoration: underline;
+                }
                 &::before{
                     content: "\f078";
                     color: black;;
