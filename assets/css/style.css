@@ -18,6 +18,10 @@ button {
   cursor: pointer;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header .header_section {
   background-color: #ffff;
 }
@@ -1828,7 +1832,7 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     transition: 0.7s;
   }
   .mobile_nav.active {
-    left: 20%;
+    left: 0%;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
@@ -1852,6 +1856,12 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
   }
   .mobile_nav .mobile_nav_panel_elements input[type="radio"]:checked + .box .mobile_heading {
     border-bottom: 1px solid black;
+  }
+  .mobile_nav .mobile_nav_panel_elements input[type="radio"]:checked + .box .mobile_heading::after {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transition: 1s;
+    transition: 1s;
   }
   .mobile_nav .mobile_nav_panel_elements .box {
     position: relative;

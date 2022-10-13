@@ -8,7 +8,7 @@
     z-index:98;
     transition: 0.7s;
     &.active{
-        left:20%;
+        left:0%;
         transition:0.3s;
     }
     
@@ -30,6 +30,10 @@
             &:checked  + .box .mobile_heading{
               border-bottom: 1px solid black;
 
+            }
+            &:checked + .box .mobile_heading::after{
+                transform: rotate(360deg);
+                transition: 1s;
             }
         }
         display: block;
@@ -77,13 +81,6 @@
                 padding: 2px;
                 margin-left: 150px;
             }
-            // input[type="radio"]{
-            //     display: none;
-
-            //     &:checked + .nav_list_absolute{
-            //         max-height:500px;
-            //     }
-            // }
             .mobile_heading{
                 font-family:$font_family;
                 font-size:14px;
