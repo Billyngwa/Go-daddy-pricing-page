@@ -1838,23 +1838,27 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .mobile_nav .mobile_nav_panel_elements input {
+  .mobile_nav .mobile_nav_panel_elements input[type="radio"] {
     display: none;
   }
-  .mobile_nav .mobile_nav_panel_elements input:checked + .nav_list_relative .nav_list_absolute {
+  .mobile_nav .mobile_nav_panel_elements input[type="radio"]:checked + .box .box-content {
     display: block;
   }
-  .mobile_nav .mobile_nav_panel_elements input:checked + .nav_list_relative .closed {
+  .mobile_nav .mobile_nav_panel_elements input[type="radio"]:checked + .box .closed {
     display: block;
   }
-  .mobile_nav .mobile_nav_panel_elements input:checked .nav_list_relative {
+  .mobile_nav .mobile_nav_panel_elements input[type="radio"]:checked + .box {
     height: auto;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative {
+  .mobile_nav .mobile_nav_panel_elements input[type="radio"]:checked + .box .mobile_heading {
+    border-bottom: 1px solid black;
+  }
+  .mobile_nav .mobile_nav_panel_elements .box {
+    position: relative;
     cursor: pointer;
     padding: 10px 0px 10px 30px;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative .closed {
+  .mobile_nav .mobile_nav_panel_elements .box .closed {
     width: 100%;
     position: absolute;
     top: 0;
@@ -1863,20 +1867,20 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     height: 30px;
     display: none;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative:hover {
+  .mobile_nav .mobile_nav_panel_elements .box:hover {
     background-color: #e7e7e7;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative a {
+  .mobile_nav .mobile_nav_panel_elements .box a {
     text-decoration: none;
     color: #333333;
     font-family: "Lato", sans-serif;
     font-size: 14px;
     font-weight: 500;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative a:hover {
+  .mobile_nav .mobile_nav_panel_elements .box a:hover {
     text-decoration: underline;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative .email::before {
+  .mobile_nav .mobile_nav_panel_elements .box .email::before {
     content: "new";
     position: absolute;
     text-transform: uppercase;
@@ -1889,7 +1893,7 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     padding: 2px;
     margin-left: 150px;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative label {
+  .mobile_nav .mobile_nav_panel_elements .box .mobile_heading {
     font-family: "Lato", sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -1906,10 +1910,10 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     padding: 0px 0px 10px 0px;
     cursor: pointer;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative label:hover::after {
+  .mobile_nav .mobile_nav_panel_elements .box .mobile_heading:hover::after {
     color: #e24747;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative label::after {
+  .mobile_nav .mobile_nav_panel_elements .box .mobile_heading::after {
     content: "\f078";
     position: absolute;
     right: 2px;
@@ -1922,11 +1926,13 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     -webkit-transition: 1s;
     transition: 1s;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute {
+  .mobile_nav .mobile_nav_panel_elements .box .box-content {
+    width: 90%;
+    margin-left: 5%;
     background-color: #e7e7e7;
     display: none;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .search_input {
+  .mobile_nav .mobile_nav_panel_elements .box .box-content .search_input {
     border-radius: 5px;
     border: 1px solid #dfdddd;
     padding: 10px 0px 10px 0px;
@@ -1945,7 +1951,7 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     display: flex;
     background-color: #ffff;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .search_input .type_search {
+  .mobile_nav .mobile_nav_panel_elements .box .box-content .search_input .type_search {
     color: #333333;
     background: transparent;
     border: none;
@@ -1953,40 +1959,40 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     padding-left: 10px;
     outline: none;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .search_input .search_button {
+  .mobile_nav .mobile_nav_panel_elements .box .box-content .search_input .search_button {
     border: none;
     background-color: transparent;
     color: #b63838;
     margin: 0px 10px 0px 0px;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .list_items, .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .new {
+  .mobile_nav .mobile_nav_panel_elements .box .box-content .list_items, .mobile_nav .mobile_nav_panel_elements .box .box-content .new {
     width: 100%;
     height: 45px;
     padding: 10px 0px 0px 30px;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .list_items:hover, .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .new:hover {
+  .mobile_nav .mobile_nav_panel_elements .box .box-content .list_items:hover, .mobile_nav .mobile_nav_panel_elements .box .box-content .new:hover {
     background-color: #e7e7e7;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .list_items a, .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .new a {
+  .mobile_nav .mobile_nav_panel_elements .box .box-content .list_items a, .mobile_nav .mobile_nav_panel_elements .box .box-content .new a {
     color: #333333;
     font-weight: 500;
     font-size: 14px;
     text-align: center;
     margin: 0px 0px 0px 10px;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .list_items a:hover, .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .new a:hover {
+  .mobile_nav .mobile_nav_panel_elements .box .box-content .list_items a:hover, .mobile_nav .mobile_nav_panel_elements .box .box-content .new a:hover {
     color: #333333;
     font-size: 14px;
     text-decoration: underline;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .list_items .security, .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .new .security {
+  .mobile_nav .mobile_nav_panel_elements .box .box-content .list_items .security, .mobile_nav .mobile_nav_panel_elements .box .box-content .new .security {
     color: #24819a;
     text-decoration: underline;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .list_items .security:hover, .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .new .security:hover {
+  .mobile_nav .mobile_nav_panel_elements .box .box-content .list_items .security:hover, .mobile_nav .mobile_nav_panel_elements .box .box-content .new .security:hover {
     color: #24819a;
   }
-  .mobile_nav .mobile_nav_panel_elements .nav_list_relative .nav_list_absolute .new::after {
+  .mobile_nav .mobile_nav_panel_elements .box .box-content .new::after {
     content: "new";
     text-transform: uppercase;
     background-color: #e24747;
