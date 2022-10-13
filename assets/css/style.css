@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
 }
 
 ul li {
@@ -2672,6 +2673,9 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     width: 50%;
     margin-left: 25%;
     padding: 70px 0px 30px 0px;
+  }
+  section .section_five .section5_flexbox .section_five_mobile_img img {
+    display: block;
   }
   section .section_five .section5_flexbox .section_five_img {
     display: none;
