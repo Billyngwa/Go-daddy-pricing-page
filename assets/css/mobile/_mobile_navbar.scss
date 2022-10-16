@@ -5,10 +5,18 @@
     }
     &.active .main_header{
         right:80%;
-        transition:0.7s;
+        transition: right 0.7s;
+    }
+    &.active .main_section{
+        right:80%;
+        transition: right 0.7s;
     }
 }
 .main_header{
+    position: relative;
+    transition:0.7s;
+}
+.main_section{
     position: relative;
     transition:0.7s;
 }

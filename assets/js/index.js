@@ -45,11 +45,13 @@ headingIcons.forEach(headingIcon => {
  var mobilePannel = document.querySelector('.mobile_nav');
  var slideNav = document.querySelector('.slide_nav');
  var mainHeader = document.querySelector('.main_header');
+ var mainSection = document.querySelector('.main_section');
  hamburgerButton.addEventListener('click', function(){
     hamburgerButton.classList.toggle("active");
     // mobilePannel.classList.toggle("active");
     slideNav.classList.toggle("active");
     mainHeader.classList.toggle("active");
+    mainSection.classList.toggle("active");
  });
  
  // code to toggle the cart button
