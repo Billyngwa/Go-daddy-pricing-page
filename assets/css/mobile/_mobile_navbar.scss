@@ -1,5 +1,18 @@
+.slide_nav{
+    &.active .mobile_nav{
+        left:20%;
+        transition:0.3s;
+    }
+    &.active .main_header{
+        right:80%;
+        transition:0.7s;
+    }
+}
+.main_header{
+    position: relative;
+    transition:0.7s;
+}
 .mobile_nav{
-    background-color: whitesmoke;
     display: block;
     position:fixed;
     top:0px;
@@ -7,12 +20,15 @@
     width:100%;
     z-index:98;
     transition: 0.7s;
-    &.active{
-        left:0%;
-        transition:0.3s;
-    }
+    
+    // &.active{
+        // left:20%;
+        // transition:0.3s;
+    // }
     
     .mobile_nav_panel_elements{
+        background-color: white;
+        width: 80%;
         input[type="radio"]{
             display: none;
             &:checked + .box .box-content{
@@ -28,7 +44,7 @@
 
             }
             &:checked  + .box .mobile_heading{
-              border-bottom: 1px solid black;
+            border-bottom: 1px solid black;
 
             }
             &:checked + .box .mobile_heading::after{
@@ -40,7 +56,7 @@
         justify-content: space-between;
         .box{
             position: relative;
-           .closed{
+        .closed{
                 width: 100%;
                 position: absolute;
                 top:0;
@@ -48,12 +64,12 @@
                 cursor: pointer;
                 height:30px;
                 display:none;
-           }
+        }
             cursor:pointer;
             padding: 10px 0px 10px 30px;
             &:hover{
                 background-color:$onhover_dropdownlist;
-             
+            
             }
 
             a{
@@ -106,25 +122,12 @@
                     transform: rotate(270deg);
                     transition: 1s;
                 }
-                // &.active::after{
-                //     transform: rotate(360deg);
-                //     transition: 1s;
-                // }
-                // &.active{
-                //     border-bottom: 1px solid rgb(99, 96, 96);
-                // }
             }
 
             .box-content{
-                
-                // padding-left: 5%;
                 @include container(90%, 5%);
                 background-color:$onhover_dropdownlist;
                 display: none;
-                // max-height: 0px;
-                // overflow: hidden;
-                // transition: max-height 0.2s ease-in-out;
-
                 .search_input{
                     border-radius: 5px;
                     border: 1px solid rgb(223, 221, 221);
@@ -200,7 +203,6 @@
             ul{
                 border-top:1px solid rgba(223, 215, 215, 0.37);
                 border-bottom:1px solid rgba(223, 215, 215, 0.37);
-                // margin: 0px 0px 0px 30px;
                 li{
                     &:hover{
                         background-color:$onhover_dropdownlist;
@@ -251,63 +253,3 @@
         }
     }
 }
-// .mobile_nav{
-//     background-color: whitesmoke;
-//     display: block;
-//     position:fixed;
-//     left:100%;
-//     width:100%;
-//     z-index:998;
-//     top: 0;
-//     transition: 0.7s;
-//     &.active{
-//         left:20%;
-//         transition:0.3s;
-//     }
-// }
-// .mobile_nav_panel_elements{
-//     display: block;
-// }
-// .box{
-//     padding: 10px 0px 10px 30px;
-//     position: relative;
-  
-
-// }
-
-// input[type="radio"]{
-//     display:none;
-// }
-// .mobile_heading{
-//     font-family:$font_family;
-//     font-size:14px;
-//     font-weight:500;
-//     color:$footer_background;
-//     display:flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 0px 0px 10px 0px;
-//     cursor:pointer;
-// }
-// .box-content{
-//     @include container(90%, 5%);
-//     background-color:$onhover_dropdownlist;
-//     display: none;
-// }
-// .closed{
-//     position:absolute;
-//     height: 74px;
-//     width: 100%;
-//     cursor: pointer;
-//     top: 0;
-//     left: 0;
-//     display: none;
-// }
-// input[type="radio"]:checked + .box{
-//     height: auto;
-//     margin: 16px 0;
-// }
-// input[type="radio"]:checked + .box .box-content,
-// input[type="radio"]:checked + .box .closed{
-//   display: inline-block;
-// }

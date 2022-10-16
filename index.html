@@ -11,8 +11,8 @@
    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title> Domain Name Search - Buy Domains - Domain.com</title>
 </head>
-<body>
-    <header>
+<body class="slide_nav">
+    <header class="main_header">
         <section class="header_section">
             <div class="container">
                 <div class="logo">
@@ -124,7 +124,9 @@
                     <b>new</b>
                 </div>
                 <div class="hamburger_cart">
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <button class="cart_button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
                     <button class="hamburger_btn ">
                         <p class="first_line"></p>
                         <p class="second_line"></p>
@@ -236,6 +238,20 @@
             </li>
         </ul>
     </nav>
+    <div class="mobile_shopping_cart">
+        <div class="black">
+            <div class="mobile_absolute_cart">
+                <p >
+                    Cart
+                    <button class="cart_cross">+</button>
+                </p>
+                <form action="#" class="shopping_cart_form">
+                    <input type="number" placeholder="Your cart is empty" />
+                    <button class="cart_search">SEARCH FOR A DOMAIN</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <section>
         <section class="section_one_main container">
             <div class="section_one">
