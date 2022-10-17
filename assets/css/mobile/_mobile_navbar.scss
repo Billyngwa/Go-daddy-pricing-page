@@ -11,6 +11,9 @@
         right:80%;
         transition: right 0.7s;
     }
+    &.active{
+        overflow-y: hidden;
+    }
 }
 .main_header{
     position: relative;
@@ -28,11 +31,6 @@
     width:100%;
     z-index:98;
     transition: 0.7s;
-    
-    // &.active{
-        // left:20%;
-        // transition:0.3s;
-    // }
     
     .mobile_nav_panel_elements{
         background-color: white;
@@ -77,7 +75,6 @@
             padding: 10px 0px 10px 30px;
             &:hover{
                 background-color:$onhover_dropdownlist;
-            
             }
 
             a{

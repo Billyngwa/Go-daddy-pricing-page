@@ -10,8 +10,8 @@
         
     }
     &.active{
-        body{
-            position: fixed;
+        .slide_nav{
+           position: absolute;
         }
     }
     .black{

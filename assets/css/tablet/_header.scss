@@ -65,6 +65,20 @@ header{
         }
     }
 }
+.slide_nav{
+    &.active .mobile_nav{
+        left:50%;
+        transition:0.3s;
+    }
+    &.active .main_header{
+        right:50%;
+        transition: right 0.7s;
+    }
+    &.active .main_section{
+        right:50%;
+        transition: right 0.7s;
+    }
+}
 .mobile_nav{
     display:block;
 }

@@ -201,3 +201,17 @@ section{
         }
     }
 }
+.slide_nav{
+    &.active .mobile_nav{
+        left:20%;
+        transition:0.3s;
+    }
+    &.active .main_header{
+        right:80%;
+        transition: right 0.7s;
+    }
+    &.active .main_section{
+        right:80%;
+        transition: right 0.7s;
+    }
+}
