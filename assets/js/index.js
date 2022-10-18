@@ -71,7 +71,7 @@ headingIcons.forEach(headingIcon => {
   });
 
   // code to toggle the black div the cross might be disabled by default once the black div is toggled
-  // in case this happens just swap code positions of th ecross and black div
+  // in case this happens just swap code positions of the cross and black div
 //  var blackDiv = document.querySelector('.black');
 //  blackDiv.addEventListener('click', function(){
 //     blackDiv.classList.toggle("active");
