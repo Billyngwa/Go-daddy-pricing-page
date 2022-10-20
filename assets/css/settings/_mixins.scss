@@ -7,8 +7,17 @@
     justify-content: space-between;
     align-items: $align;
 }
-@mixin new {
-
+@mixin new($margin_left){
+    content: "new";
+    text-transform: uppercase;
+    background-color: $red_background;
+    border-radius: 6px;
+    font-family: $font_family;         
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    padding: 2px;
+    margin-left:$margin_left;
 }
 @mixin container($width,$margin_left){
     width: $width;

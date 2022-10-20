@@ -90,26 +90,15 @@
             }
 
             .email::before{
-                content: "new";
+                @include new(150px);
                 position: absolute;
-                text-transform: uppercase;
-                background-color: $red_background;
-                border-radius: 6px;
-                color: white;
-                font-family: $font_family;
-                font-size: 10px;
-                font-weight: 700;
-                padding: 2px;
-                margin-left: 150px;
             }
             .mobile_heading{
+                @include displayElementsflex(center);
                 font-family:$font_family;
                 font-size:14px;
                 font-weight:500;
                 color:$footer_background;
-                display:flex;
-                justify-content: space-between;
-                align-items: center;
                 padding: 0px 0px 10px 0px;
                 cursor:pointer;
                 &:hover::after{
@@ -141,7 +130,6 @@
                     @include displayElementsflex(center);
                     height:43px;
                     margin: 68px 10px 20px 10px;
-                    display: flex;
                     background-color: $global;
 
                     .type_search{
@@ -190,16 +178,7 @@
                     }
                 }
                 .new::after{
-                    content: "new";
-                    text-transform: uppercase;
-                    background-color: $red_background;
-                    border-radius: 6px;
-                    color: white;
-                    font-family: $font_family;
-                    font-size: 10px;
-                    font-weight: 700;
-                    padding: 2px;
-                    margin-left: 7px;
+                    @include new(7px);
                 }
             }
             
@@ -230,23 +209,21 @@
         .mobile_form_line{
             @include container (97%, 1.5%);
             form{
-                width:100%;
+                @include container(98%, 1%);
+                @include displayElementsflex(center);
+                margin-top: 68px;
+                margin-bottom:20px;
                 border-radius: 5px;
-                border: 1px solid rgb(223, 221, 221);
+                border: 1px solid rgba(223, 221, 221, 0);
                 padding: 10px 0px 10px 0px;
                 color: $footer_background;
-                @include displayElementsflex(center);
                 height:43px;
-                margin: 68px 10px 20px 10px;
-                display: flex;
                 background-color: $global;
+                border-bottom: 4px solid rgb(0, 0, 0),;
                 input{
-                    color: $footer_background;
-                    background: transparent;
-                    border:none;
+                    @include inputSearch (1px solid rgba(0, 0, 0, 0), transparent, $footer_background, 12px, 80%, 30px );
                     font-size: 12px;
                     padding-left:30px;
-                    outline:none;
                 }
                 button{
                     border: none;

@@ -179,10 +179,10 @@ header .header_section .container #nav_panel .nav_panel_elements .nav_list_relat
   text-transform: uppercase;
   background-color: #e24747;
   border-radius: 6px;
-  color: white;
   font-family: "Lato", sans-serif;
   font-size: 10px;
   font-weight: 700;
+  color: white;
   padding: 2px;
   margin-left: 7px;
 }
@@ -357,18 +357,20 @@ header .header_section .container #nav_panel .nav_panel_elements .nav_list_relat
 }
 
 .help_cart_login .nav_list_relative_cart .nav_list_absolute_cart form.shopping_cart_form input {
-  padding: 10px;
   border: none;
-  border-top: 1px solid #000000;
+  outline: none;
   border-bottom: 1px solid #000000;
+  background: white;
+  color: #000000;
   font-size: 14px;
+  width: 100%;
+  height: 10px;
+  padding: 20px;
+  border-top: 1px solid #000000;
   font-weight: 700;
   font-family: "Lato", sans-serif;
-  color: #000000;
   margin: 20px 0px 15px 0px;
-  background-color: white;
   text-align: center;
-  width: 100%;
 }
 
 .help_cart_login .nav_list_relative_cart .nav_list_absolute_cart form.shopping_cart_form .cart_search {
@@ -1925,22 +1927,18 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
   }
   .mobile_nav .mobile_nav_panel_elements .box .email::before {
     content: "new";
-    position: absolute;
     text-transform: uppercase;
     background-color: #e24747;
     border-radius: 6px;
-    color: white;
     font-family: "Lato", sans-serif;
     font-size: 10px;
     font-weight: 700;
+    color: white;
     padding: 2px;
     margin-left: 150px;
+    position: absolute;
   }
   .mobile_nav .mobile_nav_panel_elements .box .mobile_heading {
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: #333333;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1950,6 +1948,10 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333333;
     padding: 0px 0px 10px 0px;
     cursor: pointer;
   }
@@ -1991,7 +1993,6 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
             align-items: center;
     height: 43px;
     margin: 68px 10px 20px 10px;
-    display: flex;
     background-color: #ffff;
   }
   .mobile_nav .mobile_nav_panel_elements .box .box-content .search_input .type_search {
@@ -2040,10 +2041,10 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     text-transform: uppercase;
     background-color: #e24747;
     border-radius: 6px;
-    color: white;
     font-family: "Lato", sans-serif;
     font-size: 10px;
     font-weight: 700;
+    color: white;
     padding: 2px;
     margin-left: 7px;
   }
@@ -2072,11 +2073,8 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     margin-left: 1.5%;
   }
   .mobile_nav .mobile_nav_panel_elements .mobile_form_line form {
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #dfdddd;
-    padding: 10px 0px 10px 0px;
-    color: #333333;
+    width: 98%;
+    margin-left: 1%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2086,18 +2084,27 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 68px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(223, 221, 221, 0);
+    padding: 10px 0px 10px 0px;
+    color: #333333;
     height: 43px;
-    margin: 68px 10px 20px 10px;
-    display: flex;
     background-color: #ffff;
+    border-bottom: 4px solid black;
   }
   .mobile_nav .mobile_nav_panel_elements .mobile_form_line form input {
-    color: #333333;
-    background: transparent;
     border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    background: transparent;
+    color: #333333;
+    font-size: 12px;
+    width: 80%;
+    height: 30px;
     font-size: 12px;
     padding-left: 30px;
-    outline: none;
   }
   .mobile_nav .mobile_nav_panel_elements .mobile_form_line form button {
     border: none;
@@ -2622,6 +2629,9 @@ footer div.footer_section div.footer_right_blog div.footer_container .copyright_
 }
 
 @media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
   header .header_section .container {
     width: 95%;
     margin-left: 2.5%;
