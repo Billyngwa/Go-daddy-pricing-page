@@ -12,11 +12,7 @@ section{
           grid-template-columns:auto auto auto;
           justify-content: space-between;
             @include container(85%,7.5%);
-<<<<<<< HEAD
-            .list-items{ 
-=======
             .list_items{ 
->>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
                 width:90%;
                 background-color: $global;
                 border-radius: 5px;

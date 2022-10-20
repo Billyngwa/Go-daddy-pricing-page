@@ -4,11 +4,7 @@ footer{
         div.footer_logo{
             display: none;
         }
-<<<<<<< HEAD
-        div.footer_right--blog{
-=======
         div.footer_right_blog{
->>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
             width:100%;
         //   @include container(98%, 1%);
             div.footer_container{
@@ -36,14 +32,6 @@ footer{
                     display: block;
                     margin:0px;
                     width: 100%;
-<<<<<<< HEAD
-                    // .footer_links--item{
-
-                    // }
-                }
-                 
-                .footer_links--login_col{
-=======
                     .support_privacy{
                         display: none;
                     }
@@ -141,7 +129,6 @@ footer{
                 }
                  
                 .footer_links_login_col{
->>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
                     ul{
                         display: flex;
                         margin: 20px 0px 0px 5px;
@@ -161,11 +148,7 @@ footer{
                     }
                 }
                 
-<<<<<<< HEAD
-                // .copyright-social_media{
-=======
                 // .copyright_social_media{
->>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
                 //     @include displayElementsflex(center);
                 //     margin:0px 0px 100px 0px;
 
@@ -191,14 +174,9 @@ footer{
 
                 //     }
                 // }
-<<<<<<< HEAD
-                .copyright-social_media{
-                    display: flex;
-=======
                 .copyright_social_media{
                     display: flex;
 
->>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
                     padding:20px 0px 0px 30px;
                     margin:0px 0px 30px 0px;
                     .socialmedia{
@@ -211,10 +189,7 @@ footer{
                                 color:$copyright_color;
                                 font-size: 22px;
                                 font-weight:400;
-<<<<<<< HEAD
-=======
                                 
->>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
                             }
                         }
                     }
