@@ -1,14 +1,22 @@
 section{
     .section_one_main{
         top: -50px;
+<<<<<<< HEAD
+        .section-one{
+=======
         .section_one{
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
             display:flex;
             align-self: center;
             flex-wrap: wrap;
             row-gap:2%;
             @include container(80%, 10%);
             margin-right: auto;
+<<<<<<< HEAD
+            .list-items{
+=======
             .list_items{
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
                 width:31%;
                 padding:27px 20px 30px 30px; 
                 // margin:20px 10px 0px 0px; 
@@ -32,7 +40,11 @@ section{
             }
         }
     }
+<<<<<<< HEAD
+    .section-two{
+=======
     .section_two{
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
         // width: auto;
         // margin: auto;
         @include container(80%,10%);
@@ -40,7 +52,11 @@ section{
         // padding-left: 7%;
         @include displayElementsflex(center);
     
+<<<<<<< HEAD
+        .left-div{
+=======
         .left_div{
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
             // width: 40%;
             h1{
                 font-size: 40px;
@@ -68,7 +84,11 @@ section{
                 padding:14px;
             }
         }
+<<<<<<< HEAD
+        .right-div{
+=======
         .right_div{
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
             display:block;
             width: 48%;
             margin-left: 2%;
@@ -94,7 +114,11 @@ section{
         p{
             font-size: 22px; 
         }
+<<<<<<< HEAD
+        .reasons-to-choose-Domain{
+=======
         .reasons_to_choose_Domain{
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
             // display:block;
             margin: -50px 0px 10px 0px;
             .reason{
@@ -112,9 +136,15 @@ section{
             }
         }
     }
+<<<<<<< HEAD
+    .section-four{
+        @include container(93%, 3.5%);
+        .section-four-header{
+=======
     .section_four{
         @include container(93%, 3.5%);
         .section_four_header{
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
             padding-bottom:15px;
             padding-top: 80px;
             font-size:20px;
@@ -146,19 +176,32 @@ section{
             display: flex;
             justify-content: space-between;
             align-items: center;
+<<<<<<< HEAD
+            .section-five_mobile-img{
+                display: none;
+            }
+            .section-five-img{
+=======
             .section_five_mobile_img{
                 display: none;
             }
             .section_five_img{
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
                 width:80%;
                 img{
                     width: 100%;
                     // height: 100%;
                 }
             }
+<<<<<<< HEAD
+            .right-block{
+                margin:40px 0px 80px 20px;
+                .heading-description{
+=======
             .right_block{
                 margin:40px 0px 80px 20px;
                 .heading_description{
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
                     font-size: 16px;
                     font-weight: 300;
                     line-height: 1.5;

@@ -2,10 +2,17 @@
     @include displayElementsflex(null);
     @include container(85%, 7.5%);
 
+<<<<<<< HEAD
+    .right-div_before{
+       display:none; 
+    }
+    .left-div{
+=======
     .right_div_before{
        display:none; 
     }
     .left_div{
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
         width:50%;
         margin-left:25px;
         h1{
