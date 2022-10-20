@@ -3,12 +3,11 @@ footer{
         div.footer_logo{
             display: none;
         }
-        div.footer_right--blog{
-            width:100%;
-        //   @include container(98%, 1%);
+        div.footer_right_blog{
+            
+            @include sectionWidth-backgroudColor($footer_background,98%);
+            margin-left: 1%;
             div.footer_container{
-                width: 100%;
-
                 div.form_line{
                     display: block;
 
@@ -17,7 +16,7 @@ footer{
                     }
                     form{
                         width: 90%;
-                        margin-right: 5%;
+                        margin-left: 5%;
                         height: 41px;
                         input{
                            height: 41px;
@@ -28,18 +27,100 @@ footer{
 
                 }
                 .footer_links{
-                    display: block;
                     margin:0px;
                     width: 100%;
-                    // .footer_links--item{
-
-                    // }
+                    .footer_links_item{
+                        border-top:1px solid rgb(99, 96, 96);;
+                        border-bottom:1px solid rgb(99, 96, 96);
+                        .heading_icon{
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                           
+                            &::before{
+                                content: "\f078";
+                                color: $red_background;;
+                                position: absolute;
+                                left:-4px ;
+                                z-index: 4;
+                                font-size:20px;
+                                font-weight:900;
+                                font-family: "Font Awesome 5 Free";
+                                transform: rotate(270deg);
+                            }
+                            &.active::before{
+                               transform: rotate(360deg); 
+                                color:$red_background;
+                                display:block;
+                                z-index: 4;
+                            }
+                            h4{
+                                padding-left: 20px;
+                            }
+                        }
+                        .list_footer{
+                            margin-top: 5px;
+                            max-height: 0px;
+                            overflow: hidden;
+                            padding-left: 37px;
+                            width: 100%;
+                            transition: max-height 1s ease-out;
+                            .list_item_footer{
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+                    .support_privacy{
+                        display: none;
+                    }
+                    .footer_links_item_mobile{
+                        border-top:1px solid rgb(99, 96, 96);;
+                        border-bottom:1px solid rgb(99, 96, 96);                     
+                        display: block;
+                        .heading_icon{
+                            display: flex;
+                            align-items: center;
+                            &::before{
+                                content: "\f078";
+                                color: $red_background;;
+                                position: absolute;
+                                left:-4px ;
+                                z-index: 4;
+                                font-size:20px;
+                                font-weight:900;
+                                font-family: "Font Awesome 5 Free";
+                                transform: rotate(270deg);
+                            }
+                            &.active::before{
+                               transform: rotate(360deg); 
+                                color:$red_background;
+                                display:block;
+                                z-index: 4;
+                            }
+                            h4{
+                                padding-left: 20px;
+                            }
+                        }
+                        .list_footer{
+                            margin-top: 5px;
+                            padding-left: 37px;
+                            max-height: 0px;
+                            overflow: hidden;
+                            padding-left: 37px;
+                            width: 100%;
+                            transition: max-height 1s ease-out;
+                            .list_item_footer{
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
                 }
                  
-                .footer_links--login_col{
+                .footer_links_login_col{
                     ul{
+                        width: 100%;
                         display: block;
-                        margin: 0px;
+                        margin: 0px 0px 0px 0px;
                         text-align: center;
                         li{
                             a{
@@ -48,7 +129,9 @@ footer{
                         }
                     }
                 }
-                .copyright-social_media{
+                .copyright_social_media{
+                    width: 95%;
+                    margin-left:2.5%;
                     display: block;
                     padding:50px 0px 0px 0px;
                     position: relative;
@@ -57,6 +140,20 @@ footer{
                         position: absolute;
                         top: 0;
                         display: flex;
+                        width:80%;
+                      
+                        padding: 0px 2px;
+                        margin-left:10%;
+
+                        li{
+                            width: 16%;
+                            a{
+                                margin: 0px 0px 0px 0px; 
+                            }
+                        }
+                    }
+                    p{
+                       text-align: center;
                     }
                 }    
             }

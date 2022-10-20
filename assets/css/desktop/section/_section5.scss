@@ -1,5 +1,5 @@
 section{
-    .section-five{
+    .section_five{
         margin:20px 0px 60px 0px;
         @include container(85%,7.5%);
         border-radius: 5px;
@@ -8,31 +8,35 @@ section{
             // @include displayElementsflex(center);
             display: flex;
             align-items: center;
-            .section-five_mobile-img{
+            .section-five_mobile_img{
                 display: none;
             }
-            .right-block{
+            .right_block{
                 margin:20px 0px 0px 60px;
-                .section-five-heading{
+                .section_five_heading{
                     font-size: 22px;
                     font-weight: 300;
                     color: $footer_background;
                     padding: 0px 0px 15px 0px;
                    
                 }
-                .heading-description{
+                .heading_description{
                     font-size: 16px;
                     font-weight: 300;
                     color: $footer_background;
                     padding: 0px 0px 30px 0px;
                 }
-                .how-to-choose-domain{
+                .how_to_choose_domain{
                     padding: 0px 0px 20px 0px;
 
                     a{
                         font-size: 16px;
                         font-weight: 700;
                         color:$blue_background;
+
+                        i{
+                            padding-left: 6px;
+                        }
 
                         &:hover{
                             color: $blue_backgroundhover;

@@ -3,26 +3,24 @@ header{
         background-color: $global;
       
         .container{
-            padding: 0px 0px ;
+            padding: 0px 0px;
             @include container(85%,7.5%);
             @include displayElementsflex(center);
             padding: 25px 0px 18px 0px;
             .logo{
-                width:150px;
-                // height:10px;
+                max-width:150px;
                 a img{
                     width:100%;
-                    // height:0px;
                 }
             }
             #nav_panel{
                 @include displayElementsflex(center);
-                margin: 0px 158px 0px 0px;
-                .nav_panel--elements{
+                padding: 0px 158px 0px 0px;
+                .nav_panel_elements{
                     display: inherit;
                     justify-content: space-between;
 
-                    .nav_list--relative{
+                    .nav_list_relative{
                         position: relative;
                         cursor: default;
                         margin: 0px 0px 0px 10px;
@@ -30,9 +28,15 @@ header{
                         font-size:14px;
                         font-weight:500;
                         color:$footer_background;
+                        &:hover  i{
+                            color:$red_background;
+                        }
 
                         &:hover  .nav_list_absolute{
                             display: block;
+                        }
+                        i{
+                            font-size: 13px;
                         }
 
                         .nav_list_absolute{
@@ -41,41 +45,41 @@ header{
                             display: none;
                             background-color: $global;
                             width: 260px;
-                            padding-top: 20px;
+                            padding-top:20px;
 
                             .search_input{
                                 border-radius: 5px;
                                 border: 1px solid rgb(223, 221, 221);
-                                margin: 68px 90px 20px 10px;
+                                padding: 10px 0px 10px 0px;
                                 color: $footer_background;
                                 @include displayElementsflex(center);
-                                width:100%;
                                 height:43px;
-                                overflow: hidden;
-                                .type-search{
+                                margin: 68px 10px 20px 10px;
+                                display: flex;
+
+                                .type_search{
                                     color: $footer_background;
                                     background: transparent;
                                     border:none;
-                                    font-size: 20px;
-                                    padding-left:15px;
+                                    font-size: 16px;
+                                    padding-left:10px;
                                     outline:none;
-
                                 }
                                 .search_button{
                                     border: none;
                                     background-color:transparent;
                                     color:$red_backgroundhover;
-                                    // margin: 0px 60px 0px 0px;
+                                    margin: 0px 10px 0px 0px;
 
                                     i{
                                         color:$red_backgroundhover;
-                                        font-size: 30px;
+                                        font-size: 14px;
                                         // padding: 0px 80px 0px 0px;
                                     }
                                 }
                             }
 
-                            .list_items{
+                            .list_items, .new{
                                 width: 100%;
                                 height:45px;
                                 padding: 10px 0px 0px 0px;
@@ -86,13 +90,13 @@ header{
                                 a{
                                     color:$footer_background;
                                     font-weight:500;
-                                    font-size:16px;
+                                    font-size:14px;
                                     text-align: center;
                                     margin: 0px 0px 0px 10px; 
 
                                     &:hover{
                                         color: $footer_background;
-                                        font-size:16px;
+                                        font-size:14px;
                                         text-decoration: underline;
                                     }
                                 }
@@ -103,6 +107,18 @@ header{
                                         color:$blue_backgroundhover;
                                     }
                                 }
+                            }
+                            .new::after{
+                                content: "new";
+                                text-transform: uppercase;
+                                background-color: $red_background;
+                                border-radius: 6px;
+                                color: white;
+                                font-family: $font_family;
+                                font-size: 10px;
+                                font-weight: 700;
+                                padding: 2px;
+                                margin-left: 7px;
                             }
                         }
                     }
@@ -118,6 +134,21 @@ header{
     
     @include displayElementsflex(center);
      //style for the help
+     
+                    
+     b{
+        text-transform: uppercase;
+        background-color: $red_background;
+        border-radius: 6px;
+        color: white;
+        font-family: $font_family;
+        font-size: 10px;
+        font-weight: 700;
+        padding: 2px;
+        position: relative;
+        top: -20px;
+        right: 395px;
+    }
     .nav_list_relative_help{
         position: relative;
         padding: 0px 35px 0px 0px;
@@ -246,14 +277,14 @@ header{
                 font-size:20px; 
             }
             form.shopping_cart_form{
-                // background-color:black;
                 width:100%;
                 input{
                     padding:10px;
                     border:none;
                     border-top: 1px solid $black_color;
                     border-bottom: 1px solid $black_color;
-                    font-size:20px; 
+                    font-size:14px; 
+                    font-weight:700;
                     font-family: $font_family;
                     color:$black_color;
                     margin:20px 0px 15px 0px;
@@ -264,16 +295,16 @@ header{
                 .cart_search{
                     padding:10px;
                     border:none;
-                    border-radius:15px;
-                    font-size:20px; 
-                    font-weight:bold;
+                    border-radius:5px;
+                    font-size:14px; 
+                    font-weight:700;
                     font-family: $font_family;
                     color:$global;
                     margin:20px 0px 15px 0px;
                     background-color: $black_color;
                     text-align: center;
                     width:100%;
-                    height:70px;
+                    height:50px;
                 }
             }
         }
@@ -300,28 +331,65 @@ header{
 .container{
     .hamburger_cart{
         display: none;
-        i{
-            font-size: 29px;
+        button.cart_button{
+            z-index:999;
+            border:none;
+            background-color:transparent;
+            i{
+                font-size: 29px;
+            }
         }
-        #hamburger_btn{
+        .hamburger_btn{
+            z-index: 999;
             border: none;
             background: transparent;
             margin:0px 0px 0px 4px;
-
-            .first_line{
+            &.active .first_line{
+                transform: rotate(47deg) translate(2px,10px);
+                transition: 0.2s;
+                background-color: $red_background;
+            }
+            &.active .third_line{
+                transform: rotate(-45deg) translate(1px,-9px);
+                transition: 0.2s;
+                background-color: $red_background;
+            }
+            &.active .second_line{
+                width: 0px;
+                transition: 0.4s;
+            }
+            .first_line, .third_line{
                 background-color: $footer_background;
                 border-radius: 30px;
                 width: 30px;
                 height: 4px;
                 margin:4px 3px 3px 4px;
             }
+            .first_line{
+                transform: rotate(0deg) translate(0px,-1px);
+                transition: 0.2s;
+            }
+            .third_line{
+                transform: rotate(0deg) translate(0px,1px);
+                transition: 0.2s;
+            }
+            
             .second_line{
                 background-color: $footer_background;
                 border-radius: 30px;
                 width: 23px;
                 height: 4px;
                 margin:4px 0px 3px 4px;
+                transition: 0.3s;
             }
         }
     }
+}
+
+.nav_list_relative:hover i{
+    color: $red_background;
+}
+
+.mobile_nav, .mobile_shopping_cart{
+    display:none;
 }

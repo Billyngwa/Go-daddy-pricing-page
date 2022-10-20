@@ -1,5 +1,5 @@
 section{
-    .section-six{
+    .section_six{
         display: flex;
         align-items: center;
         padding: 30px 0px 30px 20px;
@@ -11,20 +11,23 @@ section{
             color:$footer_background;
         }
 
-        ul{
+        .section_five_ul{
             display: flex;
-            li{
+            .list_items{
                 margin-left: 30px;
                 a{
                     font-size: 16px;
                     font-weight: 700;
                     color:$blue_background;
+                    i{
+                        padding-left: 6px;
+                    }
 
                     &:hover{
                         color:$blue_backgroundhover;
 
                         i{
-                            margin-left: 14px;
+                            padding-left: 6px;
                             transition: 1s;
                         }
                     }

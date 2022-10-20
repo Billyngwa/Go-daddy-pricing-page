@@ -7,7 +7,6 @@ header{
                 position: absolute;
                 top: 60px;
                 right:0px;
-                // margin-left:920px;
                   
                 ul{
                     display: block;
@@ -32,13 +31,8 @@ header{
                     @include container(90%,5%);
                     h1{
                         font-size: 35px;
-                        // font-weight: 900;
-                        // width:100%;
-                        // text-align: center;
-                        // width: 70%;
                     }
                     form{
-                        // width:100%;
                         display:flex;
                         margin: 35px 0px 0px 0px;
                         .icon_input{
@@ -47,7 +41,6 @@ header{
                         }
                         button{
                             width:20%;
-                            // margin:0px 0px 0px 0px;
                             border-radius: 5px;
                             height:60px;
                             font-size:15px;
@@ -71,4 +64,21 @@ header{
             }
         }
     }
+}
+.slide_nav{
+    &.active .mobile_nav{
+        left:50%;
+        transition:0.3s;
+    }
+    &.active .main_header{
+        right:50%;
+        transition: right 0.7s;
+    }
+    &.active .main_section{
+        right:50%;
+        transition: right 0.7s;
+    }
+}
+.mobile_nav{
+    display:block;
 }

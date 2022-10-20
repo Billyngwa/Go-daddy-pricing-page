@@ -7,14 +7,8 @@
     justify-content: space-between;
     align-items: $align;
 }
-@mixin animation_variables 
-($animation_name,$animation_timing_function,$animation_duration,$animation_delay,$animation_direcion,$animation_iteration_count){
-    animation-name:$animation_name;
-    animation-timing-function:$animation_timing_function;
-    animation-duration:$animation_duration;
-    animation-delay:$animation_delay;
-    animation-direction:$animation_direcion;
-    animation-iteration-count:$animation_iteration_count;
+@mixin new {
+
 }
 @mixin container($width,$margin_left){
     width: $width;

@@ -1,34 +1,65 @@
+// *{
+//     // outline:1px solid red;
+//     // overflow-x:hidden;
+// }
 section{
+<<<<<<< HEAD
     .section_one{
         top: -50px;
         .section-one{
             // display: block;
+=======
+    .section_one_main{
+        top: -43px;
+        // background-color: orangered;
+        @include container(90%,5%);
+        .section_one{
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
             display:flex;
             align-self: center;
             flex-wrap: wrap;
             @include container(80%, 10%);
+            // background-color: black;
 
+<<<<<<< HEAD
             .list-items{
             //  width: 95%;
                 width: 100%;
                 // margin:0px 0px 0px 90px;
                 // margin:20px 0px 0px 50px;
+=======
+            .list_items{
+                width: 100%;
+                // background-color: blue;
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
                 box-shadow: 2px 3px 6px #33333346;
-                // align-self: center
+      
             }
         }
     }
+<<<<<<< HEAD
     .section-two{
         display: block;
         width: 100%;
+=======
+    .section_two{
+        display: block;
+        @include container(85%,7.5%);
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
 
-        .right-div_before{
+        .right_div_before{
             display:block;
             @include container(80%, 10%);
             padding:60px 0px 50px 0px;
+<<<<<<< HEAD
+=======
+            img{
+                @include container(80%, 10%);
+            }
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
          }
 
-        .left-div{
+        .left_div{
             width:100%;
             margin: 0px;
 
@@ -36,10 +67,17 @@ section{
                 font-size: 27px;
                 text-align: center;
                 font-weight: 900;
+<<<<<<< HEAD
                 width: 85%;
             }
             p{
                 width: 85%;
+=======
+                width: 100%;
+            }
+            p{
+                width: 100%;
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
                 font-size: 20px;
                 font-weight: 300;
                 text-align: center;
@@ -53,28 +91,30 @@ section{
                 }
             }
             button{
+<<<<<<< HEAD
                 width:85%;
                 // margin-right:30px;
+=======
+                width:100%;
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
                 padding:14px 14px 14px 14px;
             }
         }
-        .right-div{
+        .right_div{
             display:none;
          }
     }
-    .section-three{
+    .section_three{
         h1{
             font-size: 28px;
             font-weight: 700;
             margin:-50px 0px 0px 0px;
-            // width:100%;
-            // text-align: left;
         }
         p{
             font-size: 22px;
 
         }
-        .reasons-to-choose-Domain{
+        .reasons_to_choose_Domain{
             display:block;
             margin: -50px 0px 10px 0px;
             .reason{
@@ -98,46 +138,84 @@ section{
             }
         }
     }
-    .section-four{
-        .section-four-header{
+    .section_four{
+        .section_four_header{
             padding-bottom:15px;
             padding-top: 80px;
             font-size:20px;
         }
+<<<<<<< HEAD
         .section-four-relative{
             .heading_icon{
                 h1{
                     font-size:10px !important;
                     width:100%;
                 }
+=======
+        .section_four_relative{
+            .heading_icon{
+                h1{
+                    font-size:18px !important;
+                    font-weight: 600;
+                    width:100%;
+                }
+            }
+            
+            .section_four_absolute{
+                .heading_description{
+                    font-size:14px;
+                    font-weight:400;
+                }
+              
+            }
+            .heading_description, .domain_names{
+                span{
+                    a{
+                        font-size:14px;
+                        font-weight:400;
+                    }
+                }
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
             }
         }
     }
-    .section-five{
+    .section_five{
         margin-top: 89px;
         @include container(95%,2.5%);
         .section5_flexbox{
             display: block;
-            .section-five_mobile-img{
+            .section_five_mobile_img{
                 display: block;
                 width:50%;
                 margin-left:25%;
                 padding:70px 0px 30px 0px;
+                z-index:999;
+
+                img{
+                    display:block;
+                }
             }
-            .section-five-img{
+            .section_five_img{
                 display:none;
             }
+<<<<<<< HEAD
             .right-block{
+=======
+            .right_block{
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
                 width: 100%;
                 margin:10px 0px 0px 0px;
-                .heading-description{
+                .heading_description{
                     font-size: 16px;
                     font-weight: 300;
                     width: auto;
+<<<<<<< HEAD
                     // color: $footer_background;
                     // padding: 0px 0px 30px 0px;
+=======
+>>>>>>> 500b90698d93b0a7272c68da867d75908cceec26
                 }
-                .how-to-choose-domain{
+                .how_to_choose_domain{
                     a{
                         font-size: 14px;
                         font-weight: 400;
@@ -160,20 +238,34 @@ section{
 //style for section six
 
 section{
-    .section-six{
+    .section_six{
         display: block;
         h1{
             text-align: center;
         }
-        ul{
+        .section_five_ul{
             text-align: center;
             display: block;
-            li{
+            .list_items{
                 padding:15px 0px 5px 0px;
                a{
                     font-size: 14px;
                }
             }
         }
+    }
+}
+.slide_nav{
+    &.active .mobile_nav{
+        left:20%;
+        transition:0.3s;
+    }
+    &.active .main_header{
+        right:80%;
+        transition: right 0.7s;
+    }
+    &.active .main_section{
+        right:80%;
+        transition: right 0.7s;
     }
 }
