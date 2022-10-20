@@ -17,6 +17,13 @@ hamburger.addEventListener('click', function(){
 
 // }
 
+var defaultActive = document.getElementsByClassName('section_four_absolute');
+for(i=0; i<defaultActive.length; i++){
+    defaultActive[i].className += ' active';
+    defaultActive[i].style.maxHeight = defaultActive[i].scrollHeight+'px';
+}
+
+
 var whatIs = document.getElementById('what_is');
 var whatIsAbsolute = document.getElementById('what_is_absolute');
 // console.log(whatIsAbsolute.style.display);
