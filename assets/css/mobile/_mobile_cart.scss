@@ -14,6 +14,27 @@
            position: absolute;
         }
     }
+    // &.active{
+    //     .hamburger_btn{
+    //            .first_line{
+    //             transform: rotate(0deg) translate(0px,-1px);
+    //             transition: 0.2s;
+    //         }
+    //         .third_line{
+    //             transform: rotate(0deg) translate(0px,1px);
+    //             transition: 0.2s;
+    //         }
+            
+    //         .second_line{
+    //             background-color: $footer_background;
+    //             border-radius: 30px;
+    //             width: 23px;
+    //             height: 4px;
+    //             margin:4px 0px 3px 4px;
+    //             transition: 0.3s;
+    //         }
+    //     }
+    // }
     .black{
         background-color: rgba(0, 0, 0, 0.281);
         width:100%;
